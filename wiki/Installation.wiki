@@ -7,7 +7,7 @@ Installation of UrukDroid 0.7+ with EasyInstall method.
 
 = Details =
 
-http://forum.xda-developers.com/picture.php?albumid=2694&pictureid=11054
+<img src="http://forum.xda-developers.com/picture.php?albumid=2694&pictureid=11054">
 
 This is instruction how to install new Android distribution based on Linux, Android and Archos stock os, using SDE from Archos.
 
