@@ -24,24 +24,24 @@ UrukDroid changelog.
  * [NEW] Moved some modules dependencies (cifs,ntfs,dvb) to /etc/modprobe.d
 
 
-*UrukDroid 0.7* (28.02.2011) [URL="http://www.dailymotion.pl/video/x1fvlh_mtv-lord-of-the-rings-parody_fun"]you're﻿ damn right it's a gift!![/URL]
+*UrukDroid 0.7* (28.02.2011) [http://www.dailymotion.pl/video/x1fvlh_mtv-lord-of-the-rings-parody_fun you're﻿ damn right it's a gift!!]
  * [NEW] NFSv4 client support
  * [NEW] FS-Cache (cachefilesd) support for NFS (local disk cache for NFS files)
  * [NEW] sshfs support
- * [FIX] OpenVPN fix - thanks to [B]nenadr[/B]
- * [FIX] PPtP fix - thanks to [B]nenadr[/B]
+ * [FIX] OpenVPN fix - thanks to *nenadr*
+ * [FIX] PPtP fix - thanks to *nenadr*
  * [NEW] vpnc tool for using Cisco VPN connections
  * [NEW] vpnc UrukDroid service
  * [CHANGE] Updated to libc6 2.11 (and all binaries recompiled/changed because of it - big change)
  * [NEW] new gnu tools: nmap
  * [NEW] EasyInstall now allows installing UrukDroid on internal (mmcblk1) storage in A70 and A101
- * [NEW] Integrated 3G USB modem and RNDIS USB tethering  [URL="http://forum.xda-developers.com/showthread.php?t=940470"]service by nenadr[/URL]
+ * [NEW] Integrated 3G USB modem and RNDIS USB tethering  [http://forum.xda-developers.com/showthread.php?t=940470 service by nenadr]
  * [CHANGE] New iobench.sh (with new bonnie++ test)
  * [CHANGE] Changed device fingerprint to work better with google market (enable download some missing apps)
  * [CHANGE] Merged Archos 2.1.8 firmware changes
  * [CHANGE] Changed DVB subsystem support and kernel/modules dependencies to work with new v4l2 modules (it will brake compatibility with most other kernels probably)
  * [FIX] Changes it UrukUpdate mechanism to work every time when file is moved to "/data/UrukUpdate"
- * [NEW] Added required modules and iptables service configuration for [url=http://www.appbrain.com/app/droidwall-android-firewall/com.googlecode.droidwall.free]DroidWall[/url] (firewall) application
+ * [NEW] Added required modules and iptables service configuration for [http://www.appbrain.com/app/droidwall-android-firewall/com.googlecode.droidwall.free DroidWall] (firewall) application
  * [NEW] sudo subsystem for launching properly some root tasks
 
 
