@@ -6,6 +6,10 @@ Welcome to UrukDroid documentation
 
 = Getting started =
 
- ** [WhatIsUruk]
- ** [Installation]
- ** [Changelog]
+ * [WhatIsUruk]
+ * [Installation]
+ * [Changelog]
+ * [UrukServices]
+  * [UrukService-sshd]
+  * [UrukService-smb]
+  * [UrukService-swap]
