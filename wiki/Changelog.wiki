@@ -100,52 +100,39 @@ UrukDroid changelog.
  * Removed two apps. TelephonyProvider.apk, Phone.apk
  * [COLOR="DarkOrange"]Since 0.4 all services are DISABLED by default, to enable it edit proper config file in /etc/uruk.conf/[/COLOR]
 
-[B]UrukDroid 0.3[/B] (9.01.2011) Rise my Uruk... not yet Hai :P
-[LIST]
-[*] iptables, ntfs support
-[*] some more USB modules: usbserial, pl2303
-[*] fixed bluetooth problem (not working in Uruk 0.2)
-[*] automounting improvements (much more bulletproof)
-[*] new configuration files (/etc/uruk.conf/) to enable/disable features
-[*] new Uruk services (/etc/uruk.d/)
-[*] some more GNU utils openssh-client, coreutils
-[*] USB charging enabled (NOT tested!!!) - It would required much more power then standard USB in PC can give, use USB wall/car charges or double/triple USB cables
-[/LIST]
+*UrukDroid 0.3* (9.01.2011) Rise my Uruk... not yet Hai :P
+ * iptables, ntfs support
+ * some more USB modules: usbserial, pl2303
+ * fixed bluetooth problem (not working in Uruk 0.2)
+ * automounting improvements (much more bulletproof)
+ * new configuration files (/etc/uruk.conf/) to enable/disable features
+ * new Uruk services (/etc/uruk.d/)
+ * some more GNU utils openssh-client, coreutils
+ * USB charging enabled (NOT tested!!!) - It would required much more power then standard USB in PC can give, use USB wall/car charges or double/triple USB cables
 
-[B]UrukDroid 0.2[/B] (5.01.2011) Go GNU release ;)
-[LIST]
-[*] "smart" automounting script (that will mount ext4/vfat third partition from sdcard in RIGHT place, AFTER internal storage is mount)
-[*] plenty of useful GNU tools: whole e2fstools (mkfs, fsck for ext2/ext3/ext4), parted (for partition resize, format etc.), vfat tools, new toolbox, mtr, top, strace, bash - and much more (look in /usr/local/bin and /usr/local/sbin)
-[*] swap memory ON by default (50MIB file /swap01.file)
-[*] required compiled libraries libparted, libncurses, libe2fs... etc. (look in /usr/local/lib)
-[*] new text editor in text mode: nano (my favourite)
-[*] some init.rc cleanups
-[*] kernel changes (mostly toward console output)
-[*] fixed small (but problematic) misconfiguration in Archos (yep original one) Android in linking /etc/mtab
-[/LIST]
+*UrukDroid 0.2* (5.01.2011) Go GNU release ;)
+ * "smart" automounting script (that will mount ext4/vfat third partition from sdcard in RIGHT place, AFTER internal storage is mount)
+ * plenty of useful GNU tools: whole e2fstools (mkfs, fsck for ext2/ext3/ext4), parted (for partition resize, format etc.), vfat tools, new toolbox, mtr, top, strace, bash - and much more (look in /usr/local/bin and /usr/local/sbin)
+ * swap memory ON by default (50MIB file /swap01.file)
+ * required compiled libraries libparted, libncurses, libe2fs... etc. (look in /usr/local/lib)
+ * new text editor in text mode: nano (my favourite)
+ * some init.rc cleanups
+ * kernel changes (mostly toward console output)
+ * fixed small (but problematic) misconfiguration in Archos (yep original one) Android in linking /etc/mtab
 
-[B]UrukDroid 0.1[/B] (30.12.2010) Initial "release"
-[LIST]
-[*] recompiled kernel with ext4, nfs4, fb console
-[*] added su and superuser.apk
-[*] bootup changes (to make it work)
-[/LIST]
+*UrukDroid 0.1* (30.12.2010) Initial "release"
+ * recompiled kernel with ext4, nfs4, fb console
+ * added su and superuser.apk
+ * bootup changes (to make it work)
 
-[COLOR="DarkRed"][SIZE="4"][b]Features planed in next releases:[/b][/SIZE][/COLOR]
-[LIST]
-[*] backup scripts
-[*] proxy settings
-[*] adhoc working
-[*] CynanogenMOD parts backported
-[*] OC/UC kernel be default
-[/LIST]
+== Features planed in next releases: ==
+ * backup scripts
+ * proxy settings
+ * adhoc working
+ * CynanogenMOD parts backported
+ * OC/UC kernel be default
 
-[COLOR="DarkRed"][SIZE="4"][b]Distant features plans:[/b][/SIZE][/COLOR]
-[LIST]
-[*] Autoinstall of whole system over initramfs
-[/LIST]
-
-[COLOR="DarkRed"][SIZE="4"][b]Old files:[/b][/SIZE][/COLOR]
+== Old files: ==
 [U]Files (UrukDroid-0.6):[/U]
 From Megaupload.com
 [url=http://www.megaupload.com/?d=C0ZRW6Q9]UrukDroid_0.6-EasyInstall.rar[/url] (md5sum: 21fed654e4b1a226b6fa8c1b5a1d305d)
