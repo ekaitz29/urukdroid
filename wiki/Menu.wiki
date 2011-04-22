@@ -12,4 +12,4 @@ Welcome to UrukDroid documentation
  * [UrukServices UrukDroid services]
   * [UrukService_sshd SSHd service]
   * [UrukService_smb SMB service]
-  * [UrukService_swap SWAP service]
+  * [UrukService_SWAP SWAP service]
