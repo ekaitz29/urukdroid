@@ -53,56 +53,52 @@ UrukDroid changelog.
  * [NEW] IO Benchmark tool: iobench.sh
  * [NEW] Possibility to turn off mediascanner and use it on demand only
 [*] [FIX] Fixed mount_sdcard.sh script to work with 2.1.2 ext3 partitions
-[*] [NEW] Updated boot sequence with progress during upgrade/install
-[*] [NEW] You can hide soft buttons (Archos buttons) with UrukConfig
-[*] [NEW] Easy Install method - no need to know anything about Linux - just plug and wait...
-[*] [NEW] Kernel modules for 3g dongle
-[/LIST]
+ * [NEW] Updated boot sequence with progress during upgrade/install
+ * [NEW] You can hide soft buttons (Archos buttons) with UrukConfig
+ * [NEW] Easy Install method - no need to know anything about Linux - just plug and wait...
+ * [NEW] Kernel modules for 3g dongle
 
-[B]UrukDroid 0.5[/b] (27.01.2011) Tom Bombadil... in red
-[LIST]
-[*] [NEW] [URL="http://code.google.com/p/compcache/"]CompCache[/URL] (aka ramzswap) support
-[*] [NEW] New CPU governor - interactive. Ported from XDA CyanogenMOD
-[*] [NEW] DVB: applied patches by chulri, Siano SMS1XXX USB support
-[*] [NEW] DVB: modules from outside kernel tree
-[*] [NEW] Some more GNU tools: gzip utils, zip utils, unzip utils, nc (NetCut for DVB streaming)
-[*] [CHANGE] New services model - so they can be easily run/configured with help of UI
-[*] [NEW] New kernel modules: usbnet, lzo
-[*] [NEW] Mediascanner modification - it should has much, much smaller impact on system performance
-[*] [NEW] sqlite3 (3.5.9) installed, for easy database file manipulation
-[*] [NEW] after restart of UrukDroid it will boot once again to Uruk without need of pressing any buttons, to boot on stock OS please use boot menu
-[*] [FIX] mount_sdcard.sh fixed so it will mount first ext4 partition on sdcard if exist, and will not interfere with Vold if its vfat
-[*] [CHANGE] New update/upgrade/flash model - everything done on UrukDroid - no boot menu required
-[*] [NEW] New application to configure UrukDroid - UrukConfig.apk. Installed with this release. Can be uninstalled in default way.
-[*] [FIX] Fixed corrupted logo in A101
-[*] [NEW] Unified kernel for UrukDroid on SDCard and internal storage (A70S/A101)
-[*] [CHANGE] Services ENABLED with this release: CpuGovernor, CompCache
-[/LIST]
 
-[B]UrukDroid 0.4.2[/B] (21.01.2011)
-[LIST]
-[*] Just extracted as a separate update file GoogleMarket
-[/LIST]
+*UrukDroid 0.5* (27.01.2011) Tom Bombadil... in red
+ * [NEW] [URL="http://code.google.com/p/compcache/"]CompCache[/URL] (aka ramzswap) support
+ * [NEW] New CPU governor - interactive. Ported from XDA CyanogenMOD
+ * [NEW] DVB: applied patches by chulri, Siano SMS1XXX USB support
+ * [NEW] DVB: modules from outside kernel tree
+ * [NEW] Some more GNU tools: gzip utils, zip utils, unzip utils, nc (NetCut for DVB streaming)
+ * [CHANGE] New services model - so they can be easily run/configured with help of UI
+ * [NEW] New kernel modules: usbnet, lzo
+ * [NEW] Mediascanner modification - it should has much, much smaller impact on system performance
+ * [NEW] sqlite3 (3.5.9) installed, for easy database file manipulation
+ * [NEW] after restart of UrukDroid it will boot once again to Uruk without need of pressing any buttons, to boot on stock OS please use boot menu
+ * [FIX] mount_sdcard.sh fixed so it will mount first ext4 partition on sdcard if exist, and will not interfere with Vold if its vfat
+ * [CHANGE] New update/upgrade/flash model - everything done on UrukDroid - no boot menu required
+ * [NEW] New application to configure UrukDroid - UrukConfig.apk. Installed with this release. Can be uninstalled in default way.
+ * [FIX] Fixed corrupted logo in A101
+ * [NEW] Unified kernel for UrukDroid on SDCard and internal storage (A70S/A101)
+ * [CHANGE] Services ENABLED with this release: CpuGovernor, CompCache
 
-[B]UrukDroid 0.4.1[/B] (15.01.2011) Myyy preciousssss...
-[LIST]
-[*] Some more tools like: bc, proc utils, vim, tcpdump, bzip2, tar etc.
-[*] Android apps (Market, Maps, Talk, Calendar, Contact, Feedback, Locator, Updater) by default
-[*] Samba (3.2.5) support for sharing /mnt/storage (internal and sdcard storage) from Archos
-[*] Dropbear SSH server
-[*] Backported modprobe, depmod etc. tools for modules management
-[*] WiFI driver recompiled, WiFi HW firmware update (from 6.1.0.0.335 to 6.1.5.44.7)
-[*] Initial DVB-T support (Afatech AF9005, Afatech AF9015, DiBcom DiB0700, Terratec CinergyT2/qanu)
-[*] Bootlogo with progress steps
-[*] Cleanups of initramfs and rootfs
-[*] EXT4 drivers backported from 2.6.30 - some mount changes (to prevent config files corruption)
-[*] Initial A70H support
-[*] SDCard/HD layout changed
-[*] Autoupgrade service and installation helper
-[*] ADB fixes
-[*] Removed two apps. TelephonyProvider.apk, Phone.apk
-[*] [COLOR="DarkOrange"]Since 0.4 all services are DISABLED by default, to enable it edit proper config file in /etc/uruk.conf/[/COLOR]
-[/LIST]
+
+*UrukDroid 0.4.2* (21.01.2011)
+ * Just extracted as a separate update file GoogleMarket
+
+
+*UrukDroid 0.4.1* (15.01.2011) Myyy preciousssss...
+ * Some more tools like: bc, proc utils, vim, tcpdump, bzip2, tar etc.
+ * Android apps (Market, Maps, Talk, Calendar, Contact, Feedback, Locator, Updater) by default
+ * Samba (3.2.5) support for sharing /mnt/storage (internal and sdcard storage) from Archos
+ * Dropbear SSH server
+ * Backported modprobe, depmod etc. tools for modules management
+ * WiFI driver recompiled, WiFi HW firmware update (from 6.1.0.0.335 to 6.1.5.44.7)
+ * Initial DVB-T support (Afatech AF9005, Afatech AF9015, DiBcom DiB0700, Terratec CinergyT2/qanu)
+ * Bootlogo with progress steps
+ * Cleanups of initramfs and rootfs
+ * EXT4 drivers backported from 2.6.30 - some mount changes (to prevent config files corruption)
+ * Initial A70H support
+ * SDCard/HD layout changed
+ * Autoupgrade service and installation helper
+ * ADB fixes
+ * Removed two apps. TelephonyProvider.apk, Phone.apk
+ * [COLOR="DarkOrange"]Since 0.4 all services are DISABLED by default, to enable it edit proper config file in /etc/uruk.conf/[/COLOR]
 
 [B]UrukDroid 0.3[/B] (9.01.2011) Rise my Uruk... not yet Hai :P
 [LIST]
