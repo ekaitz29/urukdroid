@@ -16,3 +16,12 @@ When you enable ssh service and your device is visible in local network you can 
 
 You can also use some sftp/scp clients to transfer files to and from your Uruk device. For Windows it can be [http://winscp.net/eng/index.php WinSCP] for example.
 In both cases you need to know your Archos device current IP and use user name "root" and pre-set password "UrukDroid".
+
+= Configuration file =
+*Location:* /etc/uruk.conf/sshd
+
+*Configuration options:*
+ * SSHD_PASS - this is field where you can set your desired ssh password. It's clear text field. _Default: "UrukDroid"_
+ * SSHD_PORT - TCP port number on which SSH daemon will listen for incoming connections. _Default: 22_
+ * SSHD_BANNER - location of text file that will be shown user after his successful login. _Default: $CONFDIR"banner.txt"_
+ * SSHD_HOME - path to user home directory (all initial script like .profilerc should be put there). _Default: "/root/"_
