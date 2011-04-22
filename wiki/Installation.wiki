@@ -1,0 +1,194 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Installation of UrukDroid 0.7+ with EasyInstall method.
+
+
+= Details =
+
+[COLOR="DarkRed"][SIZE="4"][U][b]Changelog:[/b][/U][/SIZE][/COLOR]
+
+[B]UrukDroid 1.0[/b] _ Not yet released _
+[list]
+[*] [FIX] sshfs missing files fix
+[*] [FIX] EasyInstall: changed datafs max size from 2GB to 1.95GB (for market to work), fixed partition sizes for A101 16GB when doing internal install with resize, fixed installation for A70H devices
+[*] [NEW] small script to copy UrukDroid files from SDCard (external) to Internall (copy_from_sd_to_internal.sh)
+[*] [CHANGE] Changed behaviour of dvb service (device configuration)
+[*] [FIX] Added some missing modules for DVB support
+[*] [CHANGE] New kernel modules for more dvb devices (but it requires manual loading and testing)
+[*] [NEW] rsync tool
+[*] [CHANGE] swap service now can work on swap partition (or like before on swap file), also after mounting sdcard ext4 partition
+[*] [NEW] Ad-Hoc WiFi connection support by default (networks are visible with "*" on beginning of it's SSID)
+[*] [CHANGE] Some new progress indicators during install/upgrade
+[*] [NEW] Simple Animation during late phase of bootup
+[*] [NEW] New service: cifs (to load cifs modules)
+[*] [NEW] Added cgroups kernel setting
+[*] [NEW] Moved some modules dependencies (cifs,ntfs,dvb) to /etc/modprobe.d
+[/list]
+
+[B]UrukDroid 0.7[/b] (28.02.2011) [URL="http://www.dailymotion.pl/video/x1fvlh_mtv-lord-of-the-rings-parody_fun"]you're﻿ damn right it's a gift!![/URL]
+[LIST]
+[*] [NEW] NFSv4 client support
+[*] [NEW] FS-Cache (cachefilesd) support for NFS (local disk cache for NFS files)
+[*] [NEW] sshfs support
+[*] [FIX] OpenVPN fix - thanks to [B]nenadr[/B]
+[*] [FIX] PPtP fix - thanks to [B]nenadr[/B]
+[*] [NEW] vpnc tool for using Cisco VPN connections
+[*] [NEW] vpnc UrukDroid service
+[*] [CHANGE] Updated to libc6 2.11 (and all binaries recompiled/changed because of it - big change)
+[*] [NEW] new gnu tools: nmap
+[*] [NEW] EasyInstall now allows installing UrukDroid on internal (mmcblk1) storage in A70 and A101
+[*] [NEW] Integrated 3G USB modem and RNDIS USB tethering  [URL="http://forum.xda-developers.com/showthread.php?t=940470"]service by nenadr[/URL]
+[*] [CHANGE] New iobench.sh (with new bonnie++ test)
+[*] [CHANGE] Changed device fingerprint to work better with google market (enable download some missing apps)
+[*] [CHANGE] Merged Archos 2.1.8 firmware changes
+[*] [CHANGE] Changed DVB subsystem support and kernel/modules dependencies to work with new v4l2 modules (it will brake compatibility with most other kernels probably)
+[*] [FIX] Changes it UrukUpdate mechanism to work every time when file is moved to "/data/UrukUpdate"
+[*] [NEW] Added required modules and iptables service configuration for [url=http://www.appbrain.com/app/droidwall-android-firewall/com.googlecode.droidwall.free]DroidWall[/url] (firewall) application
+[*] [NEW] sudo subsystem for launching properly some root tasks
+[/LIST]
+
+[B]UrukDroid 0.6[/b] (11.02.2011) Eye of the Uruk... in new logo :)
+[LIST]
+[*] [CHANGE] Merged changes from Archos firmware 2.1.2/2.1.3/2.1.4
+[*] [CHANGE] DVB support with [URL="http://code.google.com/p/archos-gen8-dvb/downloads/list?q=label:Featured"]LiveTV.apk[/URL] from [URL="http://forum.xda-developers.com/member.php?u=3282332"]chulri[/URL] (for selected cards, there are more modules then listed in /etc/uruk.conf/dvb - but it requires to do some experiment and report it back)
+[*] [CHANGE] Changed Uruk service to work better with new UrukConfig
+[*] [NEW] New services: openvpn, mediascanner
+[*] [NEW] IO Benchmark tool: iobench.sh
+[*] [NEW] Possibility to turn off mediascanner and use it on demand only
+[*] [FIX] Fixed mount_sdcard.sh script to work with 2.1.2 ext3 partitions
+[*] [NEW] Updated boot sequence with progress during upgrade/install
+[*] [NEW] You can hide soft buttons (Archos buttons) with UrukConfig
+[*] [NEW] Easy Install method - no need to know anything about Linux - just plug and wait...
+[*] [NEW] Kernel modules for 3g dongle
+[/LIST]
+
+[B]UrukDroid 0.5[/b] (27.01.2011) Tom Bombadil... in red
+[LIST]
+[*] [NEW] [URL="http://code.google.com/p/compcache/"]CompCache[/URL] (aka ramzswap) support
+[*] [NEW] New CPU governor - interactive. Ported from XDA CyanogenMOD
+[*] [NEW] DVB: applied patches by chulri, Siano SMS1XXX USB support
+[*] [NEW] DVB: modules from outside kernel tree
+[*] [NEW] Some more GNU tools: gzip utils, zip utils, unzip utils, nc (NetCut for DVB streaming)
+[*] [CHANGE] New services model - so they can be easily run/configured with help of UI
+[*] [NEW] New kernel modules: usbnet, lzo
+[*] [NEW] Mediascanner modification - it should has much, much smaller impact on system performance
+[*] [NEW] sqlite3 (3.5.9) installed, for easy database file manipulation
+[*] [NEW] after restart of UrukDroid it will boot once again to Uruk without need of pressing any buttons, to boot on stock OS please use boot menu
+[*] [FIX] mount_sdcard.sh fixed so it will mount first ext4 partition on sdcard if exist, and will not interfere with Vold if its vfat
+[*] [CHANGE] New update/upgrade/flash model - everything done on UrukDroid - no boot menu required
+[*] [NEW] New application to configure UrukDroid - UrukConfig.apk. Installed with this release. Can be uninstalled in default way.
+[*] [FIX] Fixed corrupted logo in A101
+[*] [NEW] Unified kernel for UrukDroid on SDCard and internal storage (A70S/A101)
+[*] [CHANGE] Services ENABLED with this release: CpuGovernor, CompCache
+[/LIST]
+
+[B]UrukDroid 0.4.2[/B] (21.01.2011)
+[LIST]
+[*] Just extracted as a separate update file GoogleMarket
+[/LIST]
+
+[B]UrukDroid 0.4.1[/B] (15.01.2011) Myyy preciousssss...
+[LIST]
+[*] Some more tools like: bc, proc utils, vim, tcpdump, bzip2, tar etc.
+[*] Android apps (Market, Maps, Talk, Calendar, Contact, Feedback, Locator, Updater) by default
+[*] Samba (3.2.5) support for sharing /mnt/storage (internal and sdcard storage) from Archos
+[*] Dropbear SSH server
+[*] Backported modprobe, depmod etc. tools for modules management
+[*] WiFI driver recompiled, WiFi HW firmware update (from 6.1.0.0.335 to 6.1.5.44.7)
+[*] Initial DVB-T support (Afatech AF9005, Afatech AF9015, DiBcom DiB0700, Terratec CinergyT2/qanu)
+[*] Bootlogo with progress steps
+[*] Cleanups of initramfs and rootfs
+[*] EXT4 drivers backported from 2.6.30 - some mount changes (to prevent config files corruption)
+[*] Initial A70H support
+[*] SDCard/HD layout changed
+[*] Autoupgrade service and installation helper
+[*] ADB fixes
+[*] Removed two apps. TelephonyProvider.apk, Phone.apk
+[*] [COLOR="DarkOrange"]Since 0.4 all services are DISABLED by default, to enable it edit proper config file in /etc/uruk.conf/[/COLOR]
+[/LIST]
+
+[B]UrukDroid 0.3[/B] (9.01.2011) Rise my Uruk... not yet Hai :P
+[LIST]
+[*] iptables, ntfs support
+[*] some more USB modules: usbserial, pl2303
+[*] fixed bluetooth problem (not working in Uruk 0.2)
+[*] automounting improvements (much more bulletproof)
+[*] new configuration files (/etc/uruk.conf/) to enable/disable features
+[*] new Uruk services (/etc/uruk.d/)
+[*] some more GNU utils openssh-client, coreutils
+[*] USB charging enabled (NOT tested!!!) - It would required much more power then standard USB in PC can give, use USB wall/car charges or double/triple USB cables
+[/LIST]
+
+[B]UrukDroid 0.2[/B] (5.01.2011) Go GNU release ;)
+[LIST]
+[*] "smart" automounting script (that will mount ext4/vfat third partition from sdcard in RIGHT place, AFTER internal storage is mount)
+[*] plenty of useful GNU tools: whole e2fstools (mkfs, fsck for ext2/ext3/ext4), parted (for partition resize, format etc.), vfat tools, new toolbox, mtr, top, strace, bash - and much more (look in /usr/local/bin and /usr/local/sbin)
+[*] swap memory ON by default (50MIB file /swap01.file)
+[*] required compiled libraries libparted, libncurses, libe2fs... etc. (look in /usr/local/lib)
+[*] new text editor in text mode: nano (my favourite)
+[*] some init.rc cleanups
+[*] kernel changes (mostly toward console output)
+[*] fixed small (but problematic) misconfiguration in Archos (yep original one) Android in linking /etc/mtab
+[/LIST]
+
+[B]UrukDroid 0.1[/B] (30.12.2010) Initial "release"
+[LIST]
+[*] recompiled kernel with ext4, nfs4, fb console
+[*] added su and superuser.apk
+[*] bootup changes (to make it work)
+[/LIST]
+
+[COLOR="DarkRed"][SIZE="4"][b]Features planed in next releases:[/b][/SIZE][/COLOR]
+[LIST]
+[*] backup scripts
+[*] proxy settings
+[*] adhoc working
+[*] CynanogenMOD parts backported
+[*] OC/UC kernel be default
+[/LIST]
+
+[COLOR="DarkRed"][SIZE="4"][b]Distant features plans:[/b][/SIZE][/COLOR]
+[LIST]
+[*] Autoinstall of whole system over initramfs
+[/LIST]
+
+[COLOR="DarkRed"][SIZE="4"][b]Old files:[/b][/SIZE][/COLOR]
+[U]Files (UrukDroid-0.6):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=C0ZRW6Q9]UrukDroid_0.6-EasyInstall.rar[/url] (md5sum: 21fed654e4b1a226b6fa8c1b5a1d305d)
+[url=http://www.megaupload.com/?d=YMTZE44V]UrukDroid-GoogleMarket_1.0.tbz2[/url] (md5sum: f5427bdefa633d52210cd4ace47ba128)
+Upgrade package (from 0.5 to 0.6) - please read third post of this thread for details
+[url=http://www.megaupload.com/?d=SZ7QO7JZ]UrukDroid-0.6-upgrade.tbz2[/url] (md5sum: bfedb3d4e42a71cb4c6af334ec26186b)
+
+[U]Files (UrukDroid-0.5):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=6NJITC2J]UrukDroid_0.5-install.zip[/url] (md5sum: c52ea6b901572d598a3ef2bec49aa435)
+[url=http://www.megaupload.com/?d=CSRWBZOL]UrukDroid_0.5-update.zip[/url] (md5sum: 944075fb89d18313783d023dad84d651)
+
+[U]Files (UrukDroid-0.4.2):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=FKI4PVBU]UrukDroid-0.4.2-rootfs.rar[/url] (md5sum: 37508b7c03597ea489e7760c3f8296d6)
+[url=http://www.megaupload.com/?d=BFXM9N9I]UrukDroid-0.4.2-kernel.rar[/url] (md5sum: 884c6e6cfaf993eed3aa3c05aaa580dd)
+[url=http://www.megaupload.com/?d=3XZQAGTW]UrukDroid-0.4.2-GoogleMarket.zip[/url] (md5sum: 4f21288981bb3bd303b717f5475a7f2c)
+
+[U]Files (UrukDroid-0.4.1):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=RZZM46IK]UrukDroid-0.4.1-rootfs.rar[/url] (md5sum: 31c5a10104a88857943da48c82568ad9)
+[url=http://www.megaupload.com/?d=U60KI9VR]UrukDroid-0.4.1-kernel.rar[/url] (md5sum: 2670561484ef12115e7d2449aeda9dcc)
+
+[U]Files (UrukDroid 0.3):[/U]
+[URL="http://www.megaupload.com/?d=0KD78VW5"]initramfs.cpio.gz[/URL] (md5:cdc61c9f29afa43db2a66ddef9965af9)
+[URL="http://www.megaupload.com/?d=GCGH72XB"]zImage[/URL] (md5:f20fc343eb203ee935bd577266f4799e)
+[URL="http://www.megaupload.com/?d=3U2R4EJN"]rootfs.tar.gz[/URL](md5:9391797a8fac29997bd711427fb01318)
+
+[U]Files (2.0.71-0.2):[/U]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-02/rootfs.tar.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-02/initramfs.cpio.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-02/zImage[/url]
+
+[U]2.0.71-0.1[/U]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-01/rootfs.tar.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-01/initramfs.cpio.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-01/zImage[/url]
