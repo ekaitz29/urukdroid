@@ -7,7 +7,7 @@ Installation of UrukDroid 0.7+ with EasyInstall method.
 
 = Details =
 
-[IMG]http://forum.xda-developers.com/picture.php?albumid=2694&pictureid=11054[/IMG]
+http://forum.xda-developers.com/picture.php?albumid=2694&pictureid=11054
 
 This is instruction how to install new Android distribution based on Linux, Android and Archos stock os, using SDE from Archos.
 
@@ -50,77 +50,70 @@ This is instruction how to install new Android distribution based on Linux, Andr
 
 Since UrukDroid 0.6 there is new automated install method. It put's some restriction on flexibility of installation - but it should satisfy most of user, for more experienced ones - you can do it in old way.
 
-[SIZE=4][COLOR=Sienna][U][B] Step one [/B][/U][/COLOR][/SIZE]
-Assuming you have already installed [URL="http://www.archos.com/support/support_tech/updates.html?country=us&lang=en"]SDE from Archos[/URL]:
+== Step one ==
+Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
 
-Download and extract installation files from archive [B]UrukDroid_0.7-EasyInstall.rar[/B]. Inside you should find three files: [B]initramfs.cpio.gz[/B], [B]zImage[/B] and [B]UrukDroid-install.tgz[/B]
+Download and extract installation files from archive *UrukDroid_0.7-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
 
 Flash initramfs.cpio.gz and zImage from SDE boot menu:
-[LIST]
-[*] power on Archos70, hold up/+ volume key until you see "[U]Archos AXXXX - Boot Menu[/U]",
-[*] choose "Recovery System"->"Developer Edition Menu"->"Flash Kernel and Initramfs",
-[*] connect Archos to PC and copy zImage and initramfs.cpio.gz
-[*] press power button shortly, you should see Archos flashing new kernel
-[*] if flashed properly, press power button shortly to reboot...
-[/LIST]
+ * power on Archos70, hold up/+ volume key until you see "_Archos AXXXX - Boot Menu_",
+ * choose "Recovery System"->"Developer Edition Menu"->"Flash Kernel and Initramfs",
+ * connect Archos to PC and copy zImage and initramfs.cpio.gz
+ * press power button shortly, you should see Archos flashing new kernel
+ * if flashed properly, press power button shortly to reboot...
 
 Boot to SDE:
-[LIST]
-[*] power on Archos, hold up/+ volume key until you see "[U]Archos AXXXX - Boot Menu[/U]",
-[*] choose "Developer edition"
-[/LIST]
+ * power on Archos, hold up/+ volume key until you see "_Archos AXXXX - Boot Menu_",
+ * choose "Developer edition"
 
-You should see "UrukDroid 07 Installation framework". Please choose simple install method. When asked to, connect Archos to PC once again and copy UrukDroid-install.tgz, disconnect Archos from PC [B]_properly_[/B] (umount, safely remove device etc.) and press power button shortly.
+
+You should see "UrukDroid 07 Installation framework". Please choose simple install method. When asked to, connect Archos to PC once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button shortly.
 
 Later, you will be also able to choose whether you want to copy /data partition. It's recommended not to - but you have this option.
 For advanced install method - look below.
 
 After reboot you should see UrukDroid 0.7 boot up screen (if it happens to boot to stock OS, reboot once again and go to "Boot menu", choose "Developer edition"). With messages on bottom. It should be:
-[LIST]
-[*]"UrukDroid 0.7 Boot: Mounting rootfs...."
-[*]"UrukDroid 0.7 Boot: Mounting /data...."
-[*]"UrukDroid 0.7 Boot: System installation in progress, please wait..." [I](this step may take several minutes)[/I]
-[*]"UrukDroid 0.7 Boot: Copying /data content, please wait...." [I](only if you choose to copy data, this step may take several minutes)[/I]
-[*]"UrukDroid 0.7 Boot: Switching to rootfs...."
-[*]"UrukDroid 0.7 Rootfs: Postinstallation in progress. Please wait..." (this step takes 1-2 minutes)
-[*]"Black screen" ;) - it's a few minutes window when we can't show logo and there is no interface yet - please be patient...
-[/LIST]
+ * "UrukDroid 0.7 Boot: Mounting rootfs...."
+ * "UrukDroid 0.7 Boot: Mounting /data...."
+ * "UrukDroid 0.7 Boot: System installation in progress, please wait..." `(this step may take several minutes)`
+ * "UrukDroid 0.7 Boot: Copying /data content, please wait...." `(only if you choose to copy data, this step may take several minutes)`
+ * "UrukDroid 0.7 Boot: Switching to rootfs...."
+ * "UrukDroid 0.7 Rootfs: Postinstallation in progress. Please wait..." (this step takes 1-2 minutes)
+ * "Black screen" ;) - it's a few minutes window when we can't show logo and there is no interface yet - please be patient...
 
 If first run of "Archos configuration wizard" creates "Force close" errors, please reboot device (hold power button shortly for more than 1 second, this will bring "Power menu" and press power button long until "Reboot" message will appear).
 
 [SIZE=4][COLOR=Sienna][U][B] Congratulations! [/B][/U][/COLOR][/SIZE]
 
-[SIZE=4][COLOR=Sienna][U][B] Step two: optional [/B][/U][/COLOR][/SIZE]
+== Step two: optional ==
 
-If you want [B]GoogleMarket[/B] (and required component to make it work) you can install UrukDroid package - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this packaged are base on kenyu73 work).
+If you want *GoogleMarket* (and required component to make it work) you can install UrukDroid package - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this packaged are base on kenyu73 work).
 [COLOR="DarkRed"]If you copied your old /data, you cannot have installed any other version of Market. If you apply this update, on previously installed market/vending etc. - it won't work.[/COLOR] This packaged is tested with fresh install of Uruk - where it works.
 Download archive and put it in UrukUpdate directory located on /data partition
 (so path is /data/UrukUpdate/). You should do it directly from internet browser on Archos Tablet, file manager like Astro or terminal - you shouldn't do it over USB.
 Installation process will start automatically and silently, file will disappear from that folder after it's done. To run Market, restart is required when you'll be ready.
 
-[SIZE=4][COLOR=Sienna][U][B] Advanced EasyInstall [/B][/U][/COLOR][/SIZE]
+== Advanced EasyInstall ==
 Since UrukDroid 0.7 you are able to choose, during install process, method called "Advanced". This option will give you possibility to choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage.
 You are also able to choose Internal method installation with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose here filesystem sizes (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrink filesystem. So [COLOR="Red"]MAKE SURE[/COLOR] your /mnt/storage has [COLOR="Red"]AT LEAST 1.7GB free space[/COLOR] - preferably more - otherwise this method will fail. This condition is not checked during install process.
 
-[U][B]Files (UrukDroid-0.7):[/B][/U]
+== Files (UrukDroid-0.7): ==
 From Megaupload.com
-[url=http://www.megaupload.com/?d=7BM9XQWG]UrukDroid_0.7-Install.rar[/url] (md5sum: 785fd119d3079d4369e60208cb260c30)
-[url=http://www.megaupload.com/?d=YMTZE44V]UrukDroid-GoogleMarket_1.0.tbz2[/url] (md5sum: f5427bdefa633d52210cd4ace47ba128)
+[http://www.megaupload.com/?d=7BM9XQWG UrukDroid_0.7-Install.rar] (md5sum: 785fd119d3079d4369e60208cb260c30)
+[http://www.megaupload.com/?d=YMTZE44V UrukDroid-GoogleMarket_1.0.tbz2] (md5sum: f5427bdefa633d52210cd4ace47ba128)
 Upgrade package (from 0.6+ to 0.7) - please read third post of this thread for details
-[url=http://www.megaupload.com/?d=F5RYJNI0]UrukDroid-0.7-upgrade.tbz2[/url] (md5sum: 82ced9d18e74902b55157844a7b72f89)
-[B]Additional files:[/B]
-[url=http://www.megaupload.com/?d=66PNG9H0]UrukDroid-0.7-kernel.tbz2[/url]
-[url=http://www.megaupload.com/?d=7Y8V0AO3]UrukDroid-0.7-kernelOC.tbz2[/url] - please [URL="http://forum.xda-developers.com/showpost.php?p=11634087&postcount=572"]read disclaimer[/URL] - this kernel is not supported in any way, and it's probably buggy - don't use it! ... unless you know what are you doing...
+[http://www.megaupload.com/?d=F5RYJNI0 UrukDroid-0.7-upgrade.tbz2] (md5sum: 82ced9d18e74902b55157844a7b72f89)
+*Additional files:*
+[http://www.megaupload.com/?d=66PNG9H0 UrukDroid-0.7-kernel.tbz2]
+[http://www.megaupload.com/?d=7Y8V0AO3 UrukDroid-0.7-kernelOC.tbz2] - please [http://forum.xda-developers.com/showpost.php?p=11634087&postcount=572 read disclaimer] - this kernel is not supported in any way, and it's probably buggy - don't use it! ... unless you know what are you doing...
 
-[SIZE=3][COLOR=Sienna][U][B] Credits [/B][/U][/COLOR][/SIZE]
+== Credits ==
 
-[LIST]
-[*]3G support by [URL="http://forum.xda-developers.com/member.php?u=840086"]Nenad[/URL]
-[*]UrukConfig application is developed by [URL="http://forum.xda-developers.com/member.php?u=874424"]solune[/URL]
-[*]UrukBackup scripts are developed by [URL="http://forum.xda-developers.com/member.php?u=3342207"]cheefy[/URL]
-[*]0.6+ logo by [URL="http://forum.xda-developers.com/member.php?u=1207253"]zizoom[/URL]
-[*]0.5 logo by [URL="http://www.openclipart.org"]OCAL[/URL]
-[*]UrukDroid - mainly by Sauron ;)
-[/LIST]
+ * 3G support by [http://forum.xda-developers.com/member.php?u=840086 Nenad]
+ * UrukConfig application is developed by [http://forum.xda-developers.com/member.php?u=874424 solune]
+ * UrukBackup scripts are developed by [http://forum.xda-developers.com/member.php?u=3342207 cheefy]
+ * 0.6+ logo by [http://forum.xda-developers.com/member.php?u=1207253 zizoom]
+ * 0.5 logo by [http://www.openclipart.org OCAL]
+ * UrukDroid - mainly by Sauron ;)
 
 Special thanks also go for supporters: [B]Andrew, Scott, Serguei, Jean Luc, Chirayu, Scott, Tom, Sarju, Przemek, Jason, Stephen, Carl, Kevin, Richard, Dennis, Donald, Stijn and Frédéric[/B]
