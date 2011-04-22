@@ -1,0 +1,9 @@
+#summary UrukDroid SWAP memory service.
+= Introduction =
+
+Most of operating systems are able to use slower swap memory, when there is a lack of real RAM. Since GEN8 Archos devices have only 256MB of RAM, it's quite essential to use some swap memory.
+Android system uses dedicated subsystem to manage running application and dispose unused ones if more ram memory is needed. Sadly with 256MB of RAM it means that most of the time only one application can be running (one big - like web browser, pdf reader etc).
+
+= When to use SWAP service =
+
+If you are fed up with applications being killed all the time, when you run any new one - you can enable SWAP memory. Drawback of using this type of memory is less snappy device. You will experience some few seconds freezes of user interface while changing applications - during this few seconds system will swap memory from RAM to disk and vice-versa.
