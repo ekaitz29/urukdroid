@@ -22,13 +22,17 @@ Like in every Uruk service, enable it by editing configuration file and changing
 
 By default, when this service is enabled, it tries to use SWAP file on rootfs.
 Those two parameters control size (in MiB) and location of SWAP file.
+{{{
  swap_mem_size=50
  swap_mem_file=/swap01.file
+}}}
 
 == SWAP on partition ==
 
 You need to edit partition location (make sure device exist, and is swap initialized with "mkswap" command line utility).
+{{{
  swap_mem_partition=/dev/block/mmcblk1p4
+}}}
 
 = Configuration file =
 *Location:* /etc/uruk.conf/swap
@@ -36,3 +40,5 @@ You need to edit partition location (make sure device exist, and is swap initial
 *Configuration options:*
  * swap_mem_size - size of SWAP file in [http://en.wikipedia.org/wiki/Mebibyte Mebibytes]. _Default: 50_
  * swap_mem_file - location of SWAP file. Please make sure there is enough free space to create new file of size "swap_mem_size". Swap file will be created and initialized automatically. _Default: "/swap01.file"_
+ * swap_mem_partition - device that should be used as SWAP memory. This device will not be initialized (you have to do it manually - use "mkswap /dev/device") for safety reason. When this value is set, service will ignore SWAP file settings. _Default: not set_
+ * swap_mem_swappiness - this value controls how eagerly Linux kernel will try to swap RAM objects to SWAP memory. Bigger value - more swapping, more free RAM. _Default: 50_ (min:0, max:100)
