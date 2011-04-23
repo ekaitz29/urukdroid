@@ -13,3 +13,4 @@ Welcome to UrukDroid documentation
   * [UrukService_sshd SSHd service]
   * [UrukService_smb SMB service]
   * [UrukService_SWAP SWAP service]
+  * [UrukService_compcache CompCache (SWAP) service]
