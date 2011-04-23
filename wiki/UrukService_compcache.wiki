@@ -1,8 +1,11 @@
-#summary UrukDroid service CompCache
+#summary UrukDroid CompCache service.
 
 = Introduction =
 
-Add your content here.
+This service enables use of another type of [UrukService_SWAP SWAP memory]. This may sounds weird, but this type of SWAP is located in RAM.
+As a matter of facts [http://code.google.com/p/compcache/ CompCache] creates compressed part of RAM and address it as a SWAP memory. It makes sense since quite good compression (zlib) method is still much faster then writing to disk. The compression ratio is about 1:3 (so storing 32MB of CompCache SWAP will use in real RAM only 8MB). Since CompCache does not reserve any memory in advance, you don't loose RAM until it's required to be use for swapping.
+
+So enabling 64MiB of CompCache SWAP memory will add 66MiB of SWAP memory to system, but at very worst case scenario consume about 22MiB of RAM. So we still "gain" 44MiB. I wrote "gain" because it is not RAM and can't be addressed directly. So it's only solution for small memory shortage, or can be used together with SWAP to disk memory (this two services can be enabled simultaneously). In this case, faster CompCache will be used as a first sort of SWAP memory, when totally used, system will try to use slower SWAP disk memory.
 
 
 = Details =
