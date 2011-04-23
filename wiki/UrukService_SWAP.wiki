@@ -10,9 +10,9 @@ If you are fed up with applications being killed all the time, when you run any 
 
 = How to use SWAP service =
 
-You can choose between three ways of using SWAP memory. Two of them do not need any system changes. That is [UrukDroid_compcache CompCache] (witch is another Uruk service) or SWAP memory in file. Third method involves creating separate swap partition - but it's considered faster then "SWAP in file" way.
+You can choose between three ways of using SWAP memory. Two of them do not need any system changes. That is [UrukService_compcache CompCache] (witch is another Uruk service) or SWAP memory in file. Third method involves creating separate swap partition - but it's considered faster then "SWAP in file" way.
 
-If you are unsure what type is the best for you, I would recommend to start with CompCache (at about 64MBs of cache for example). If it won't be enough for you - then use SWAP in file and perhaps later (when you'll be sure that's SWAP memory suits you) - SWAP memory on separate partition - for better performance.
+If you are unsure what type is the best for you, I would recommend to start with [UrukService_compcache CompCache] (at about 64MBs of cache for example). If it won't be enough for you - then use SWAP in file and perhaps later (when you'll be sure that's SWAP memory suits you) - SWAP memory on separate partition - for better performance.
 
 = How to enable SWAP service =
 
