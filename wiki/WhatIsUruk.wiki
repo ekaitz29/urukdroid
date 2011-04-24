@@ -2,12 +2,23 @@
 
 = Introduction =
 
-Basic information about UrukDroid
+UrukDroid is an Android distribution for Archos GEN8 devices. It's mix of Android 2.1.1, original Archos OS with different Linux/GNU utilities, kernel patches and all kind of modification.
 
+Goal of this system is to allow user do most of the operation they are allowed to do on normal Linux distribution. It's aimed for more advanced users, but tries to be useful on basic level of all people if they don't need special features.
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Main Features: ==
+ * Easy install method for external (SDcard) and Internal storage
+ * EXT4 ([http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 much faster than ext3], can store files >4GB comparing to FAT32)
+ * Full read/write access to every part of system
+ * root (su + superuser.apk) out of the box
+ * new services like: samba, sshd, vpnc, openvpn, dvbt, nfs4
+ * [http://forum.xda-developers.com/showthread.php?t=940470 3G/usb tether support]
+ * Possibility to remove some google/Archos apps
+ * Swap memory in RAM (CompCache) or on disk by default or when you need it
+ * No 300MB limit for apps (and no faulty app2sd required)
+ * You can have SD card Class 8/10 - that can be much faster than internal flash (check [http://forum.xda-developers.com/showthread.php?t=934087 this thread])
+ * Many new new kernel modules (usbserial, ntfs, [http://forum.xda-developers.com/showthread.php?t=940470 3G modems], nfs4, cifs, hfs, iptables etc.)
+ * DVB-T support for selected tuners
+ * updated modules, firmware (like WiFi)
+ * User friendly UrukConfig application
+ * ... and much, much more - to much to mention all here - please read [http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 changelog]
