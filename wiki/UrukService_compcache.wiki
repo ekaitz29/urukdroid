@@ -7,10 +7,42 @@ As a matter of facts [http://code.google.com/p/compcache/ CompCache] creates com
 
 So enabling 64MiB of CompCache SWAP memory will add 66MiB of SWAP memory to system, but at very worst case scenario consume about 22MiB of RAM. So we still "gain" 44MiB. I wrote "gain" because it is not RAM and can't be addressed directly. So it's only solution for small memory shortage, or can be used together with SWAP to disk memory (this two services can be enabled simultaneously). In this case, faster CompCache will be used as a first sort of SWAP memory, when totally used, system will try to use slower SWAP disk memory.
 
+= How to enable CompCache service =
 
-= Details =
+You need only enable it like every UrukService. You may want to although change it size in configuration file.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= How to use it with SWAP service =
+
+You can use CompCache service with [UrukService_SWAP SWAP service]. In this method system will use all CompCache memory, and later (it there will be such a need) slower SWAP (file of partition) memory. This can be quite smart way of using this both services.
+
+= Special options ==
+
+This service has build in some statistics subsystem. To see how CompCache memory is used you can use "stats" argument.
+
+{{{
+root@urukdroid:/etc/uruk.d# ./compcache stats
+DiskSize:	   32768 kB
+NumReads:	     468
+NumWrites:	    4726
+FailedReads:	       0
+FailedWrites:	       0
+InvalidIO:	       0
+NotifyFree:	     470
+ZeroPages:	     260
+GoodCompress:	      63 %
+NoCompress:	      18 %
+PagesStored:	    3997
+PagesUsed:	    1735
+OrigDataSize:	   15988 kB
+ComprDataSize:	    6864 kB
+MemUsedTotal:	    6940 kB
+}}}
+
+
+= Configuration file =
+
+*Location:* /etc/uruk.conf/compcache
+
+*Configuration options:*
+ * compcache_memkb - size of CompCache SWAP memory in KiB. _Default: 32768_ (32Mib)
+ * compcache_swappiness - this value controls how eagerly Linux kernel will try to swap RAM objects to SWAP memory. Bigger value - more swapping, more free RAM. _Default: 50_ (min:0, max:100). When used together with [UrukService_SWAP SWAP service] - this value will be overwritten.
