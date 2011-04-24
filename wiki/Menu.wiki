@@ -9,6 +9,7 @@ Welcome to UrukDroid documentation
  * [WhatIsUruk What is UrukDroid?]
  * [Installation]
  * [Changelog]
+ * [Download]
  * [UrukServices UrukDroid services]
   * [UrukService_sshd SSHd service]
   * [UrukService_smb SMB service]
