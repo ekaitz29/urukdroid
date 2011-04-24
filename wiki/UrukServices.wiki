@@ -23,7 +23,7 @@ root@urukdroid:/etc/uruk.conf# cat sshd
 service_enabled=1
 
 # SSH password for root login
-SSHD_PASS="qaz"
+SSHD_PASS="UrukDroid"
 
 # Port number for SSHd to listen on
 SSHD_PORT=22
