@@ -1,0 +1,40 @@
+#summary UrukDroid files download.
+
+== Old files: ==
+[U]Files (UrukDroid-0.6):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=C0ZRW6Q9]UrukDroid_0.6-EasyInstall.rar[/url] (md5sum: 21fed654e4b1a226b6fa8c1b5a1d305d)
+[url=http://www.megaupload.com/?d=YMTZE44V]UrukDroid-GoogleMarket_1.0.tbz2[/url] (md5sum: f5427bdefa633d52210cd4ace47ba128)
+Upgrade package (from 0.5 to 0.6) - please read third post of this thread for details
+[url=http://www.megaupload.com/?d=SZ7QO7JZ]UrukDroid-0.6-upgrade.tbz2[/url] (md5sum: bfedb3d4e42a71cb4c6af334ec26186b)
+
+[U]Files (UrukDroid-0.5):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=6NJITC2J]UrukDroid_0.5-install.zip[/url] (md5sum: c52ea6b901572d598a3ef2bec49aa435)
+[url=http://www.megaupload.com/?d=CSRWBZOL]UrukDroid_0.5-update.zip[/url] (md5sum: 944075fb89d18313783d023dad84d651)
+
+[U]Files (UrukDroid-0.4.2):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=FKI4PVBU]UrukDroid-0.4.2-rootfs.rar[/url] (md5sum: 37508b7c03597ea489e7760c3f8296d6)
+[url=http://www.megaupload.com/?d=BFXM9N9I]UrukDroid-0.4.2-kernel.rar[/url] (md5sum: 884c6e6cfaf993eed3aa3c05aaa580dd)
+[url=http://www.megaupload.com/?d=3XZQAGTW]UrukDroid-0.4.2-GoogleMarket.zip[/url] (md5sum: 4f21288981bb3bd303b717f5475a7f2c)
+
+[U]Files (UrukDroid-0.4.1):[/U]
+From Megaupload.com
+[url=http://www.megaupload.com/?d=RZZM46IK]UrukDroid-0.4.1-rootfs.rar[/url] (md5sum: 31c5a10104a88857943da48c82568ad9)
+[url=http://www.megaupload.com/?d=U60KI9VR]UrukDroid-0.4.1-kernel.rar[/url] (md5sum: 2670561484ef12115e7d2449aeda9dcc)
+
+[U]Files (UrukDroid 0.3):[/U]
+[URL="http://www.megaupload.com/?d=0KD78VW5"]initramfs.cpio.gz[/URL] (md5:cdc61c9f29afa43db2a66ddef9965af9)
+[URL="http://www.megaupload.com/?d=GCGH72XB"]zImage[/URL] (md5:f20fc343eb203ee935bd577266f4799e)
+[URL="http://www.megaupload.com/?d=3U2R4EJN"]rootfs.tar.gz[/URL](md5:9391797a8fac29997bd711427fb01318)
+
+[U]Files (2.0.71-0.2):[/U]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-02/rootfs.tar.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-02/initramfs.cpio.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-02/zImage[/url]
+
+[U]2.0.71-0.1[/U]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-01/rootfs.tar.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-01/initramfs.cpio.gz[/url]
+[url]http://dl.dropbox.com/u/1017593/ArchosGEN8/2.0.71-01/zImage[/url]
