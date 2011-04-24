@@ -11,24 +11,6 @@ Installation of UrukDroid 0.7+ with EasyInstall method.
 
 This is instruction how to install new Android distribution based on Linux, Android and Archos stock os, using SDE from Archos.
 
-== Features: ==
- * Easy install method for external (SDcard) and Internal storage
- * EXT4 ([http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 much faster than ext3], can store files >4GB comparing to FAT32)
- * Full read/write access to every part of system
- * root (su + superuser.apk) out of the box
- * new services like: samba, sshd, vpnc, openvpn, dvbt, nfs4
- * [http://forum.xda-developers.com/showthread.php?t=940470 3G/usb tether support]
- * Possibility to remove some google/Archos apps
- * Swap memory in RAM (CompCache) or on disk by default or when you need it
- * No 300MB limit for apps (and no faulty app2sd required)
- * You can have SD card Class 8/10 - that can be much faster than internal flash (check [http://forum.xda-developers.com/showthread.php?t=934087 this thread])
- * Many new new kernel modules (usbserial, ntfs, [http://forum.xda-developers.com/showthread.php?t=940470 3G modems], nfs4, cifs, hfs, iptables etc.)
- * DVB-T support for selected tuners
- * updated modules, firmware (like WiFi)
- * User friendly UrukConfig application
- * ... and much, much more - to much to mention all here - please read [http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 changelog]
-
-
 == Warning ==
  * UrukDroid is known to work on A70S and H, A101 (8/16GB) and A43
  * Be aware that this modification requires SDE and probably some Linux knowledge.
