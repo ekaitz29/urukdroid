@@ -4,9 +4,9 @@
 
 UrukDroid is an Android distribution for Archos GEN8 devices. It's mix of Android 2.1.1, original Archos OS with different Linux/GNU utilities, kernel patches and all kind of modification.
 
-Goal of this system is to allow users to do most of the operation they are allowed to do on normal Linux distribution. It's aimed for more advanced users, but tries to be useful on basic level of all people if they don't need special features.
+Goal of this system is to allow users to do most of the operation they are allowed to do on normal Linux distributions. It's aimed for more advanced users, but tries to be useful on basic level of all people if they don't need special features.
 
-== Main Features: ==
+== Key Features: ==
  * Easy install method for external (SDcard) and Internal storage
  * EXT4 ([http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 much faster than ext3], can store files >4GB comparing to FAT32)
  * Full read/write access to every part of system
@@ -22,3 +22,15 @@ Goal of this system is to allow users to do most of the operation they are allow
  * updated modules, firmware (like WiFi)
  * User friendly UrukConfig application
  * ... and much, much more - to much to mention all here - please read [http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 changelog]
+
+== How Android/UrukDroid is build ==
+
+It's quite essential to understand that all operating system (including this one) have layers. It's more visible on system like Linux - and less on Windows - but it's a common truth for all of them.
+
+In this case we have a *kernel layer*, witch is a slightly modified Linux kernel (2.6.29) by Android project. This is a place where all hardware drivers reside. This is also a place where Uruk Droid, comparing to other Android/Archos OS, have some important modification.
+
+Next level is a *system layer*. This are applications compiled for exact CPU and run on it natively. All Uruk services run on this layer - this is a place where most of Uruk Droid modification is made.
+
+And third one is *Dalvik/UI layer*. With Android we are given Jave Runtime Environment called Dalvik - this is a place where all Android applications (from Market etc.) reside and work. This is a place where Uruk is just like every other Android - no modification is made here.
+Most of the things you can actually see is from this layer.
+ 
