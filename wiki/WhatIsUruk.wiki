@@ -20,7 +20,7 @@ Goal of this system is to allow users to do most of the operation they are allow
  * Many new new kernel modules (usbserial, ntfs, [http://forum.xda-developers.com/showthread.php?t=940470 3G modems], nfs4, cifs, hfs, iptables etc.)
  * DVB-T support for selected tuners
  * updated modules, firmware (like WiFi)
- * User friendly UrukConfig application
+ * User friendly [UrukConfig] application
  * ... and much, much more - to much to mention all here - please read [http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 changelog]
 
 == How Android/UrukDroid is build ==
