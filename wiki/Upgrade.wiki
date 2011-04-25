@@ -1,0 +1,19 @@
+#summary How to upgrade from previous version of UrukDroid.
+
+= Introduction =
+
+To upgrade from 0.5 you should download special upgrade file (UrukDroid-0.6-upgrade.tbz2) from [Download] section. You need to place this file in directory *"/data/UrukUpdate"*.
+
+== First method: ==
+Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, Astro or RooteExplorer - not build in one) or do as follow in terminal (or over [UrukService_sshd ssh]).
+Code:
+{{{
+su
+cd /sdcard/
+mv UrukDroid-0.6-upgrade.tbz2 /data/UrukUpdate/
+}}}
+
+== Second method: ==
+Use [UrukConfig] to enable [UrukService_sshd SSHD] (if you don't have it started already), and use any SCP/SSH client (like WinSCP, or plain scp on Linux) to copy file (default username is "root", password is "UrukDroid") to "/data/UrukUpdate".
+
+In both cases upgrade will start automatically. It will alter kernel, initramfs and when finished, device will reboot itself. 
