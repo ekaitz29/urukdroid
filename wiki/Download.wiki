@@ -1,6 +1,18 @@
 #summary UrukDroid files download.
 
+All UrukDroid version can be downloaded from [http://sauron.pourix.com/UrukDroid/ Uruk file server]. Below you will find direct links to chosen Uruk files.
+
 = Current files: =
+== Files (UrukDroid-0.7): ==
+From Megaupload.com
+ * [http://www.megaupload.com/?d=7BM9XQWG UrukDroid_0.7-Install.rar] (md5sum: 785fd119d3079d4369e60208cb260c30)
+ * [http://www.megaupload.com/?d=YMTZE44V UrukDroid-GoogleMarket_1.0.tbz2] (md5sum: f5427bdefa633d52210cd4ace47ba128)
+Upgrade package (from 0.6+ to 0.7) - please read [Upgrade] howto for details
+ * [http://www.megaupload.com/?d=F5RYJNI0 UrukDroid-0.7-upgrade.tbz2] (md5sum: 82ced9d18e74902b55157844a7b72f89)
+*Additional files:*
+ * [http://www.megaupload.com/?d=66PNG9H0 UrukDroid-0.7-kernel.tbz2]
+ * [http://www.megaupload.com/?d=7Y8V0AO3 UrukDroid-0.7-kernelOC.tbz2] - please  [http://forum.xda-developers.com/showpost.php?p=11634087&postcount=572 read disclaimer] - this kernel is not supported in any way, and it's probably buggy - don't use it! ... unless you know what are you doing...
+
 
 = Old files: =
 == Files (UrukDroid-0.6): ==
