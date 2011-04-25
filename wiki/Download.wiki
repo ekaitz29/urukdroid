@@ -12,6 +12,7 @@ Upgrade package (from 0.6+ to 0.7) - please read [Upgrade] howto for details
 *Additional files:*
  * [http://www.megaupload.com/?d=66PNG9H0 UrukDroid-0.7-kernel.tbz2]
  * [http://www.megaupload.com/?d=7Y8V0AO3 UrukDroid-0.7-kernelOC.tbz2] - please  [http://forum.xda-developers.com/showpost.php?p=11634087&postcount=572 read disclaimer] - this kernel is not supported in any way, and it's probably buggy - don't use it! ... unless you know what are you doing...
+ * [http://sauron.pourix.com/UrukDroid/UrukConfig/0.7/UrukConfig.apk UrukConfig 0.7]
 
 
 = Old files: =
