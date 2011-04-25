@@ -1,0 +1,9 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+UrukConfig is and Android application created by "[http://forum.xda-developers.com/member.php?u=874424 solune]" to control UrukDroid features from User Interface level.
+
+= Installation =
+
+This application should be already installed on your Uruk. If not - you can [Download download] it and install manually.
