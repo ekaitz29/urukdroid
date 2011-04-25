@@ -7,3 +7,16 @@ UrukConfig is and Android application created by "[http://forum.xda-developers.c
 = Installation =
 
 This application should be already installed on your Uruk. If not - you can [Download download] it and install manually.
+
+= ChangeLog =
+
+== UrukConfig 0.7 ==
+ * now a button give acces to service description and will give access to it configuration for those who need it.
+ * you don't change service settings in Options tab now. There will be buttons in the new setting windows to start/stop state and startup too soon.
+ * In options tab for now you'll just find "force update" and "hide buttons".
+
+== UrukConfig 0.6 ==
+ * new icons to fit with new UrukDroid design
+ * new tab : Informations who give fews infos (more to come) and 2 tools : force update and possibility to hide/show softs buttons (thanks to jerry101 in this thread)
+ * change in tab "options" now refresh tab "Services" when come back to it
+ * new tab "Backup" but nothing inside for now, still in todo list.
