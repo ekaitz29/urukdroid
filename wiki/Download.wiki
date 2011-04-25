@@ -22,6 +22,7 @@ From Megaupload.com
  * [http://www.megaupload.com/?d=YMTZE44V UrukDroid-GoogleMarket_1.0.tbz2] (md5sum: f5427bdefa633d52210cd4ace47ba128)
 Upgrade package (from 0.5 to 0.6) - please read third post of this thread for details
  * [http://www.megaupload.com/?d=SZ7QO7JZ UrukDroid-0.6-upgrade.tbz2] (md5sum: bfedb3d4e42a71cb4c6af334ec26186b)
+ * [http://sauron.pourix.com/UrukDroid/UrukConfig/0.6/UrukConfig.apk UrukConfig 0.6]
 
 == Files (UrukDroid-0.5): ==
 From Megaupload.com
