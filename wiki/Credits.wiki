@@ -11,4 +11,8 @@
 
 Special thanks also goes to supporters: *Andrew, Scott, Serguei, Jean Luc, Chirayu, Scott, Tom, Sarju, Przemek, Jason, Stephen, Carl, Kevin, Richard, Dennis, Donald, Stijn, Oscar and Frédéric*
 
-More special thanks goes to [http://forum.xda-developers.com/member.php?u=3282332 chulri] for his work on DVBT support, and all other useful stuff.
+More special thanks goes to:
+ * [http://forum.xda-developers.com/member.php?u=3282332 chulri] for his work on DVBT support, and all other useful stuff,
+ * desiresush for hosting files
+ * Martin for A101 testing
+ * Scott for A70H testing
