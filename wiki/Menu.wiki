@@ -18,3 +18,4 @@ Welcome to UrukDroid documentation
   * [UrukService_SWAP SWAP service]
   * [UrukService_compcache CompCache (SWAP) service]
  * [UrukConfig]
+ * [Credits]
