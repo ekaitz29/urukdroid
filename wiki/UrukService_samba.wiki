@@ -2,17 +2,29 @@
 
 = Introduction =
 
-SMB is a network protocol 
+SMB is a network protocol used mainly by Microsoft Windows systems to share files. With this service you will be able to create SMB share from Archos disks and managed all it's storage/sdcard data on your Windows PC.
 
-= How to use SSHd service =
+= How to use SMB service =
 
-
+In most cases it's enough to enable it like all other services. But you may want to change exported directory or password.
 
 = Configuration file =
 *Location:* /etc/uruk.conf/samba
 
-*Configuration options:*
- * SSHD_PASS - this is field where you can set your desired ssh password. It's clear text field. _Default: "UrukDroid"_
- * SSHD_PORT - TCP port number on which SSH daemon will listen for incoming connections. _Default: 22_
- * SSHD_BANNER - location of text file that will be shown user after his successful login. _Default: $CONFDIR"banner.txt"_
- * SSHD_HOME - path to user home directory (all initial script like .profilerc should be put there). _Default: "/root/"_
+There are not special parameters in Uruk Service Samba configuration file. Although you may want to edit smb.conf file
+
+*Location:* /etc/samba/smb.conf
+{{{
+[storage]
+        comment = Archos storage
+        path = /mnt/storage/
+        guest ok = no
+        writable = yes
+#       share modes = yes
+        create mode = 0775
+        create mask = 0775
+        directory mask = 0775
+        valid users = storage
+        invalid users = root daemon bin sys sync mail proxy www-data backup operator sshd nobody media default
+}}}
+This is part of configuration file describing Archos share. You may want to change file path, name or user.
