@@ -4,7 +4,7 @@
 
 = Introduction =
 
-DVB service for Uruk Droid should make a bit easier initializing your USB DVB-T dongle with Archos devices. Only few devices are already tested to work, so if you please try it with different hardware - let us know.
+DVB service for Uruk Droid should make a bit easier initializing your USB DVB-T dongle with Archos devices. Only few devices are already tested to work, so if you try it with different hardware - please let us know if it works.
 
 This manual is for UrukDroid 1.0+ only (older release did it in a different way).
 
