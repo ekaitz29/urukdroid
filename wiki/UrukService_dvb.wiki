@@ -82,6 +82,26 @@ This is how it should work and since now you should be able to use your dvb free
 
 Sometimes devices like WinTV-HVR-950Q don't want to configure properly while plugged in (modules are reporting errors). You will need to load service first and then connect USB. But in this case we will miss some required information to create _/etc/uruk.conf/dvb-devices_ - that's why there is "./dvb fixdev"
 
+== More detailed steps ==
+
+ * ./dvb start (or during system start)
+ * dvb checks if it's not already started and loads dvb core and usb modules
+ * dvb loads modules from /etc/uruk.conf/dvb file
+  * before loading modules "modprobe" will check for modules dependencies and try to load some required modules before - you can see it in /etc/modprobe.d/dvb.conf
+ * dvb will check if /dev/dvb0.* devices are present (driver reported working dvb device)
+  * if device is present, dvb will try to update _/etc/uruk.conf/dvb-devices_ with proper node values and create devices in /etc/dvb/
+  * if device is NOT present, dvb will try to create devices like configured in _/etc/uruk.conf/dvb-devices_ in /etc/dvb/
+
+What for is _/etc/uruk.conf/dvb-devices_ file? Drivers will create proper device in /etc/dvb0.`*`. LiveTV applications requires devices to be created in /etc/dvb/frontend0/`*`.  So we need to create those devices in different place (this stuff is usually made with mknod tool). We could do a simple symlink (ln -s /dev/dvb0.demux /dev/dvb/frontend0/dvb.demux) but this will not solve one more problem - file access permissions. Devices to be readable/writeable by Android apps requires (long story short) 0777 permission.
+
+
+= Special options =
+DVB service has two special options, to help you configure it properly.
+
+ * ./dvb devstatus - this will show you if your device IS or ISN'T visible to system. Even if this option shows that device is configured, you may need still use "fixdev" to make it work with LiveTV app.
+ * ./dvb fixdev - this option fill force creating dvb configuration file _/etc/uruk.conf/dvb-devices_. This file is updated automatically on every dvb service start, but with some devices it may not work. This option should be required to be called just once - later dvb service will use alread created dvb configuration.
+
+
 = Example =
 
 Here is small example of working DVBT with Uruk Droid 0.7 and LiveDVB app.
