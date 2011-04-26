@@ -12,6 +12,7 @@ Welcome to UrukDroid documentation
  * [Changelog]
  * [Download]
  * [UrukServices UrukDroid services]
+  * [UrukService_cpugovernor CPU Governor]
   * [UrukService_sshd SSHd service]
   * [UrukService_smb SMB service]
   * [UrukService_SWAP SWAP service]
