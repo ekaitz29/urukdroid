@@ -4,14 +4,10 @@
 
 = Introduction =
 
-Installation of UrukDroid 0.7+ with EasyInstall method.
+This is installation procedure of UrukDroid 0.7+ with EasyInstall method. You can also do it [http://forum.xda-developers.com/showpost.php?p=10249905&postcount=7 manually].
 
 
-= Details =
-
-<img src="http://forum.xda-developers.com/picture.php?albumid=2694&pictureid=11054">
-
-This is instruction how to install new Android distribution based on Linux, Android and Archos stock os, using SDE from Archos.
+= Some useful informations =
 
 == Warning ==
  * UrukDroid is known to work on A70S and H, A101 (8/16GB) and A43
@@ -32,7 +28,9 @@ This is instruction how to install new Android distribution based on Linux, Andr
  * This method REQUIRES 2GB+[URL="http://en.wikipedia.org/wiki/SDHC#SDHC"]SDHC (SD)[/URL] by default, or resizing internal storage.
 
 
-Since UrukDroid 0.6 there is new automated install method. It put's some restriction on flexibility of installation - but it should satisfy most of user, for more experienced ones - you can do it in old way.
+Since UrukDroid 0.6 there is new automated install method. It puts some restriction on flexibility of installation - but it should satisfy most of user, for more experienced ones - you can do it in old (manual) way.
+
+= Installation =
 
 == Step one ==
 Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
@@ -90,14 +88,3 @@ Upgrade package (from 0.6+ to 0.7) - please read third post of this thread for d
 *Additional files:*
  * [http://www.megaupload.com/?d=66PNG9H0 UrukDroid-0.7-kernel.tbz2]
  * [http://www.megaupload.com/?d=7Y8V0AO3 UrukDroid-0.7-kernelOC.tbz2] - please [http://forum.xda-developers.com/showpost.php?p=11634087&postcount=572 read disclaimer] - this kernel is not supported in any way, and it's probably buggy - don't use it! ... unless you know what are you doing...
-
-== Credits ==
-
- * 3G support by [http://forum.xda-developers.com/member.php?u=840086 Nenad]
- * UrukConfig application is developed by [http://forum.xda-developers.com/member.php?u=874424 solune]
- * UrukBackup scripts are developed by [http://forum.xda-developers.com/member.php?u=3342207 cheefy]
- * 0.6+ logo by [http://forum.xda-developers.com/member.php?u=1207253 zizoom]
- * 0.5 logo by [http://www.openclipart.org OCAL]
- * UrukDroid - mainly by Sauron ;)
-
-Special thanks also go for supporters: [B]Andrew, Scott, Serguei, Jean Luc, Chirayu, Scott, Tom, Sarju, Przemek, Jason, Stephen, Carl, Kevin, Richard, Dennis, Donald, Stijn and Frédéric[/B]
