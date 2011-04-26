@@ -4,7 +4,7 @@
 
 UrukDroid is an Android distribution for Archos GEN8 devices. It's mix of Android 2.1.1, original Archos OS with different Linux/GNU utilities, kernel patches and all kind of modification.
 
-Goal of this system is to allow users to do most of the operation they are allowed to do on normal Linux distributions. It's aimed for more advanced users, but tries to be useful on basic level of all people if they don't need special features.
+Goal of this system is to allow users to do most of the operations they are allowed to do on normal Linux distributions. It's aimed for more advanced users, but tries to be useful on basic level of all people if they don't need special features.
 
 == Key Features: ==
  * Easy install method for external (SDcard) and Internal storage
