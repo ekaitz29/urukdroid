@@ -25,10 +25,13 @@ CPU statistics (tick spend in every frequency range):
 300000 47807
 }}}
 You can see here current CPU governor, min/max CPU frequencies (used by governor - this are not hardware min/max), available CPU frequencies and table with CPU frequency and number of ticks CPU spend with this clock value.
-In this case CPU mostly works on 300Mhz.
+In this case CPU mostly works on 300Mhz (62,3%), 600Mhz (28,1%), 800Mhz (0,7%) and 1Ghz (8,9%).
 
 = Configuration file =
 
 *Location:* /etc/uruk.conf/cpugovernor
 
-*Configuration options:* 
+*Configuration options:*
+ * cpu_governor - name of CPU governor (can be any one from Linux available). _Default: interactive_
+ * cpu_governor_default - name of CPU governor used when this service is disabled/stopped. _Default: ondemand_
+ * cpu_freq_max/cpu_freq_min - if you want to narrow down range of frequencies that CPU governor will use - set this option. You can choose only values from "Available frequencies" (see ./cpugovernor stats). _Default: ""_ (not set)
