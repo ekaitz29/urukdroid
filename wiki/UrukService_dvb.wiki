@@ -88,7 +88,7 @@ Sometimes devices like WinTV-HVR-950Q don't want to configure properly while plu
  * dvb checks if it's not already started and loads dvb core and usb modules
  * dvb loads modules from /etc/uruk.conf/dvb file
   * before loading modules "modprobe" will check for modules dependencies and try to load some required modules before - you can see it in /etc/modprobe.d/dvb.conf
- * dvb will check if /dev/dvb0.* devices are present (driver reported working dvb device)
+ * dvb will check if /dev/dvb0.`*` devices are present (driver reported working dvb device)
   * if device is present, dvb will try to update _/etc/uruk.conf/dvb-devices_ with proper node values and create devices in /etc/dvb/
   * if device is NOT present, dvb will try to create devices like configured in _/etc/uruk.conf/dvb-devices_ in /etc/dvb/
 
