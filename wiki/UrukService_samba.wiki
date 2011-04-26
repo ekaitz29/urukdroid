@@ -6,7 +6,7 @@ SMB is a network protocol used mainly by Microsoft Windows systems to share file
 
 = How to use SMB service =
 
-In most cases it's enough to enable it like all other services. But you may want to change exported directory or password.
+In most cases it's enough to enable it like all other services. But you may want to change exported directory or password. Default user name is "storage" and password "UrukDroid".
 
 = Configuration file =
 *Location:* /etc/uruk.conf/samba
