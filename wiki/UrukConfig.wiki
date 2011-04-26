@@ -1,5 +1,7 @@
 #summary One-sentence summary of this page.
 
+[uruk_1.0_splash.png]
+
 = Introduction =
 
 UrukConfig is and Android application created by "[http://forum.xda-developers.com/member.php?u=874424 solune]" to control UrukDroid features from User Interface level.
@@ -7,6 +9,20 @@ UrukConfig is and Android application created by "[http://forum.xda-developers.c
 = Installation =
 
 This application should be already installed on your Uruk. If not - you can [Download download] it and install manually.
+
+= Usage =
+
+With first run of UrukConfig you will be prompted to allow SuperUser access to this application. Please grant this privileges - otherwise application will be unable to function properly.
+
+UrukConfig is divided in three screens. First one is a place where you can managed (in a bit restricted manner) your Uruk Services. Second one gives some additional configuration options and third one is for information purpose.
+
+== Services Tab ==
+
+You can see here list of services, with it's Cfg (configuration) button, service name, bootup status (Enabled/Disabled), current status (running/down) and some key parameters for every service.
+
+== Options Tab ==
+
+== Informations Tab ==
 
 = ChangeLog =
 
