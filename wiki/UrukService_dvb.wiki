@@ -4,14 +4,52 @@
 
 DVB service for Uruk Droid should make a bit easier initializing your USB DVB-T dongle with Archos devices. Only few devices are already tested to work, so if you please try it with different hardware - let us know.
 
+This manual is for UrukDroid 1.0+ only (older release did it in a different way).
+
 = DVB devices that are known to work =
 
  * [http://www.linuxtv.org/wiki/index.php/Hauppauge_WinTV-HVR-950Q WinTV-HVR-950Q] xc5000 chipset
  * [http://www.linuxtv.org/wiki/index.php/E3C_EC168 EzTV DUTV009 USB DVB-T Receiver] EC168 chipset
  * DiBcom DiB0700 USB DVB devices dib0700 chipset
 
-
 = How to use DVB service =
+
+If your device is on above list - you need only to uncomment proper line in configuration (/etc/uruk.conf/dvb) file.
+{{{
+# Part of Uruk-Droid Android configuration system
+#
+# ver. 1.2 (26.04.2011) Adrian (Sauron) Siemieniak
+#
+
+# 1 to enable this service
+# 0 to disable this service
+service_enabled=0
+
+# Where to store device information
+dvb_devices_conf="/etc/uruk.conf/dvb-devices"
+
+# DVB card type
+# Working USB DVB devices
+# 1. (dvb-usb-af9005) Afatech AF9005 DVB-T USB1.1 support
+# 2. (dvb-usb-dib0700) DiBcom DiB0700 USB DVB devices (see help for supported devices)
+#dvb_driver='dvb-usb-dib0700'
+# 3. (dvb-usb-af9015) Afatech AF9015 DVB-T USB2.0 support
+# 4. (dvb-usb-cinergyT2) Terratec CinergyT2/qanu USB 2.0 DVB-T receiver
+# 5. (smsusb) Siano SMS1XXX USB dongle support
+# 6. (dvb-usb-ec168) EC168 USB dongle support
+#dvb_driver='dvb-usb-ec168'
+# 7. (xc5000) WinTV-HVR-950Q dongle support
+dvb_driver="xc5000"
+}}}
+And restart DVB service with USB DVB device connected to Archos. Above  you can see an example for Haupage 950Q DVB device.
+
+To is if device is configured properly you can use command like:
+{{{
+root@urukdroid:/root# cd /etc/uruk.d/
+root@urukdroid:/etc/uruk.d# ./dvb devstatus
+Uruk-DVB: device configured
+}}}
+If you will see message "device not found" you may wan to try "./dvb fixdev" command. 
 
 = Example =
 
