@@ -73,7 +73,14 @@ TIInit_7.2.31.bts  af9005.fw  dvb-fe-xc5000-1.6.114.fw  dvb-usb-af9015.fw  dvb-u
 }}}
 If it's not there already - you have to find it on net (and if working - report back to us).
 
-When DVB service is started, it loads some required modules and  configured in _/etc/uruk.conf/dvb_. If device is present, and driver will report back it existence by creating _/dev/dvb0.*_ devices, service will create/update dvb configuration in _/etc/uruk.conf/dvb-devices_.
+When DVB service is started:
+ * it loads some default, required modules and modules configured in _/etc/uruk.conf/dvb_
+ * if device is present, and driver will report back it existence by creating _/dev/dvb0.`*`_ devices,
+ * service will create/update dvb configuration file in _/etc/uruk.conf/dvb-devices_.
+
+This is how it should work and since now you should be able to use your dvb freely.
+
+Sometimes devices like WinTV-HVR-950Q don't want to configure properly while plugged in (modules are reporting errors). You will need to load service first and then connect USB. But in this case we will miss some required information to create _/etc/uruk.conf/dvb-devices_ - that's why there is "./dvb fixdev"
 
 = Example =
 
