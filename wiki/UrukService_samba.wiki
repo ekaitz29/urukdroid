@@ -1,0 +1,18 @@
+#summary UrukDroid SMB service.
+
+= Introduction =
+
+SMB is a network protocol 
+
+= How to use SSHd service =
+
+
+
+= Configuration file =
+*Location:* /etc/uruk.conf/samba
+
+*Configuration options:*
+ * SSHD_PASS - this is field where you can set your desired ssh password. It's clear text field. _Default: "UrukDroid"_
+ * SSHD_PORT - TCP port number on which SSH daemon will listen for incoming connections. _Default: 22_
+ * SSHD_BANNER - location of text file that will be shown user after his successful login. _Default: $CONFDIR"banner.txt"_
+ * SSHD_HOME - path to user home directory (all initial script like .profilerc should be put there). _Default: "/root/"_
