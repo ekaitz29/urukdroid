@@ -49,7 +49,31 @@ root@urukdroid:/root# cd /etc/uruk.d/
 root@urukdroid:/etc/uruk.d# ./dvb devstatus
 Uruk-DVB: device configured
 }}}
-If you will see message "device not found" you may wan to try "./dvb fixdev" command. 
+If you will see message "device not found" you may wan to try "./dvb fixdev" command. This will try to generate proper configuration file for your device.
+
+= How DVB service works =
+
+This knowledge may be required to run your device.
+
+First of all, like every other device DVB-T dongles requires driver and probably firmware. Driver is a Linux kernel part shipped with UrukDroid. There is quite a big bunch of those drivers - but they need to be tested and configured properly.
+{{{
+root@urukdroid:/etc/uruk.d# cd /lib/modules/2.6.29-omap1/kernel/drivers/media/dvb/dvb-usb/
+root@urukdroid:/lib/modules/2.6.29-omap1/kernel/drivers/media/dvb/dvb-usb# ls
+dvb-usb-a800.ko           dvb-usb-au6610.ko     dvb-usb-dib0700.ko        dvb-usb-dtt200u.ko  dvb-usb-gl861.ko        dvb-usb-ttusb2.ko
+dvb-usb-af9005-remote.ko  dvb-usb-az6027.ko     dvb-usb-dibusb-common.ko  dvb-usb-dtv5100.ko  dvb-usb-gp8psk.ko       dvb-usb-umt-010.ko
+dvb-usb-af9005.ko         dvb-usb-ce6230.ko     dvb-usb-dibusb-mb.ko      dvb-usb-dw2102.ko   dvb-usb-m920x.ko        dvb-usb-vp702x.ko
+dvb-usb-af9015.ko         dvb-usb-cinergyT2.ko  dvb-usb-dibusb-mc.ko      dvb-usb-ec168.ko    dvb-usb-nova-t-usb2.ko  dvb-usb-vp7045.ko
+dvb-usb-anysee.ko         dvb-usb-cxusb.ko      dvb-usb-digitv.ko         dvb-usb-friio.ko    dvb-usb-opera.ko        dvb-usb.ko
+}}}
+
+Some of this drivers requires proper firmware
+{{{
+root@urukdroid:/root# ls /lib/firmware/
+TIInit_7.2.31.bts  af9005.fw  dvb-fe-xc5000-1.6.114.fw  dvb-usb-af9015.fw  dvb-usb-dib0700-1.20.fw  dvb-usb-ec168.fw
+}}}
+If it's not there already - you have to find it on net (and if working - report back to us).
+
+When DVB service is started, it loads some required modules and  configured in _/etc/uruk.conf/dvb_. If device is present, and driver will report back it existence by creating _/dev/dvb0.*_ devices, service will create/update dvb configuration in _/etc/uruk.conf/dvb-devices_.
 
 = Example =
 
