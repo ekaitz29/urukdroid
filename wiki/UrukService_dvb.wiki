@@ -161,3 +161,7 @@ common  dvb  video
 root@urukdroid:/lib/modules/2.6.29-omap1/kernel/drivers/media# grep -ri 950q *
 Binary file video/au0828/au0828.ko matches
 }}}
+
+== Create configuration ==
+
+When you will gather all dependency information, you can edit "/etc/modprobe.d/dvb.conf" to add some missing modules dependencies (it's quite simple). And modify DVB service config file. Then reboot device, start dvb service manually and check if it's working properly.
