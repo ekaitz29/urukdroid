@@ -1,10 +1,14 @@
 #summary UrukDroid DVB service.
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 DVB service for Uruk Droid should make a bit easier initializing your USB DVB-T dongle with Archos devices. Only few devices are already tested to work, so if you please try it with different hardware - let us know.
 
 This manual is for UrukDroid 1.0+ only (older release did it in a different way).
+
+You will also require some application to stream data from DVB to mediasystem. This kind of application is LiveTV made by chrulri. You can download it from [http://code.google.com/p/archos-gen8-dvb/downloads/list project page].
 
 = DVB devices that are known to work =
 
@@ -102,7 +106,15 @@ So in this file we have stored information how to recreate device in /dev/dvb/fr
 DVB service has two special options, to help you configure it properly.
 
  * ./dvb devstatus - this will show you if your device IS or ISN'T visible to system. Even if this option shows that device is configured, you may need still use "fixdev" to make it work with LiveTV app.
- * ./dvb fixdev - this option fill force creating dvb configuration file _/etc/uruk.conf/dvb-devices_. This file is updated automatically on every dvb service start, but with some devices it may not work. This option should be required to be called just once - later dvb service will use alread created dvb configuration.
+ * ./dvb fixdev - this option fill force creating dvb configuration file _/etc/uruk.conf/dvb-devices_. This file is updated automatically on every dvb service start, but with some devices it may not work. This option should be required to be called just once - later dvb service will use already created dvb configuration.
+
+= Configuration file =
+
+*Location:* /etc/uruk.conf/dvb
+
+*Configuration options:* 
+ * dvb_devices_conf - file name, where DVB service should store information about DVB devices. _Default: "/etc/uruk.conf/dvb-devices"_
+ * dvb_driver - name of DVB driver that suits your DVB usb dongle. Please choose one from listen in configuration file, or add new. _Default: none_
 
 
 = Example =
