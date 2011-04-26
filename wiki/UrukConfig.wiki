@@ -1,5 +1,7 @@
 #summary One-sentence summary of this page.
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 UrukConfig is and Android application created by "[http://forum.xda-developers.com/member.php?u=874424 solune]" to control UrukDroid features from User Interface level.
@@ -20,15 +22,30 @@ UrukConfig is divided in three screens. First one is a place where you can manag
 
 You can see here list of services, with it's Cfg (configuration) button, service name, bootup status (Enabled/Disabled), current status (running/down) and some key parameters for every service.
 
+
 == Options Tab ==
 
 [http://urukdroid.googlecode.com/files/UrukConfig_0.7_options.png]
+
+Like for now you will find here only two options.
+
+ * SoftButtons - allows to enable/disable soft buttons from right part of Archos screen (search,home,menu,back). When you disable this buttons, they will appear on the top of the screen (after reboot) - now they can be hidden by games, movie players etc. If you find yourself in a need of doing some work with "hidden" buttons (while they are hidden by some application) you can show extended button menu by pressing "long power button" (>1s) and choosing "Button mode".
+
+ * Force Update - this options will force Uruk update service to check for new files in /data/UrukUpdate folder.
+
+
 
 == Informations Tab ==
 
 [http://urukdroid.googlecode.com/files/UrukConfig_0.7_informations.png]
 
-= ChangeLog =
+Here you can find some usefull informations about your device like:
+ * UrukDroid release, and date of release
+ * Current IP address
+ * Free space on rootfs (/) and datafs (/data)
+ * Free space on SDcard
+
+= Change Log =
 
 == UrukConfig 0.7 ==
  * now a button give acces to service description and will give access to it configuration for those who need it.
