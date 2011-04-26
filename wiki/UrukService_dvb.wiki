@@ -8,7 +8,7 @@ DVB service for Uruk Droid should make a bit easier initializing your USB DVB-T 
 
 This manual is for UrukDroid 1.0+ only (older release did it in a different way).
 
-You will also require some application to stream data from DVB to mediasystem. This kind of application is LiveTV made by chrulri. You can download it from [http://code.google.com/p/archos-gen8-dvb/downloads/list project page].
+You will also require some application to stream data from DVB to mediasystem. This kind of application is LiveTV made by chulri. You can download it from [http://code.google.com/p/archos-gen8-dvb/downloads/list project page].
 
 = DVB devices that are known to work =
 
