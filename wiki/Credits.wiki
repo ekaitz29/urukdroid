@@ -1,0 +1,12 @@
+#summary UrukDroid Credits page.
+
+*Credits*
+
+ * 3G support by [http://forum.xda-developers.com/member.php?u=840086 Nenad]
+ * UrukConfig application is developed by [http://forum.xda-developers.com/member.php?u=874424 solune]
+ * UrukBackup scripts are developed by [http://forum.xda-developers.com/member.php?u=3342207 cheefy]
+ * 0.6+ logo by [http://forum.xda-developers.com/member.php?u=1207253 zizoom]
+ * 0.5 logo by [http://www.openclipart.org OCAL]
+ * UrukDroid - mainly by Sauron ;)
+
+Special thanks also goes to supporters: [B]Andrew, Scott, Serguei, Jean Luc, Chirayu, Scott, Tom, Sarju, Przemek, Jason, Stephen, Carl, Kevin, Richard, Dennis, Donald, Stijn and Frédéric[/B]
