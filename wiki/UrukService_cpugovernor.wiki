@@ -1,13 +1,34 @@
-#summary One-sentence summary of this page.
+#summary UrukDroid CPU governor service.
 
 = Introduction =
 
-Add your content here.
+Since our Android/Linux is [http://en.wikipedia.org/wiki/Computer_multitasking multitasking] capable, CPU needs to share it's cycles to more then one running task. This is a job for "CPU governor".
 
+Linux has few default governors like performace, ondemand, powersafe. With UrukDroid there is one more called interactive - this CPU governor was made by people from CyanogenMOD.
 
-= Details =
+To set desired governor you should use this service (this can be done by many more applications from market - but not with all available options).
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Special options =
+
+With cpugovernor service you can see some low level CPU statistics. It's quite useful for performance/battery draining tuning - and debugging of course.
+{{{
+root@urukdroid:/etc/uruk.d# ./cpugovernor stats
+Uruk-CPUGovernor statistics:
+        Current governor: interactive
+        CPU Max: 1000000
+        CPU Min: 300000
+        Available frequencies: 1000000 800000 600000 300000
+CPU statistics (tick spend in every frequency range):
+1000000 6823
+800000 533
+600000 21580
+300000 47807
+}}}
+You can see here current CPU governor, min/max CPU frequencies (used by governor - this are not hardware min/max), available CPU frequencies and table with CPU frequency and number of ticks CPU spend with this clock value.
+In this case CPU mostly works on 300Mhz.
+
+= Configuration file =
+
+*Location:* /etc/uruk.conf/cpugovernor
+
+*Configuration options:* 
