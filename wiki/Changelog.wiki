@@ -8,74 +8,74 @@ UrukDroid changelog.
 = Changelog: =
 
 *UrukDroid 1.0* _ Not yet released _
- * [FIX] sshfs missing files fix
- * [FIX] EasyInstall: changed datafs max size from 2GB to 1.95GB (for market to work), fixed partition sizes for A101 16GB when doing internal install with resize, fixed installation for A70H devices
- * [NEW] small script to copy UrukDroid files from SDCard (external) to Internall (copy_from_sd_to_internal.sh)
- * [CHANGE] Changed behaviour of dvb service (device configuration)
- * [FIX] Added some missing modules for DVB support
- * [CHANGE] New kernel modules for more dvb devices (but it requires manual loading and testing)
- * [NEW] rsync tool
- * [CHANGE] swap service now can work on swap partition (or like before on swap file), also after mounting sdcard ext4 partition
- * [NEW] Ad-Hoc WiFi connection support by [UrukService_wap WPA service] (networks are visible with "`*`" on beginning of it's SSID)
- * [CHANGE] Some new progress indicators during install/upgrade
- * [NEW] Simple Animation during late phase of bootup
- * [NEW] New service: cifs (to load cifs modules), wpa (ad-hoc wifi)
- * [NEW] Added cgroups kernel setting
- * [NEW] Moved some modules dependencies (cifs,ntfs,dvb) to /etc/modprobe.d
+ * `[`FIX`]` sshfs missing files fix
+ * `[`FIX`]` EasyInstall: changed datafs max size from 2GB to 1.95GB (for market to work), fixed partition sizes for A101 16GB when doing internal install with resize, fixed installation for A70H devices
+ * `[`NEW`]` small script to copy UrukDroid files from SDCard (external) to Internall (copy_from_sd_to_internal.sh)
+ * `[`CHANGE`]` Changed behaviour of dvb service (device configuration)
+ * `[`FIX`]` Added some missing modules for DVB support
+ * `[`CHANGE`]` New kernel modules for more dvb devices (but it requires manual loading and testing)
+ * `[`NEW`]` rsync tool
+ * `[`CHANGE`]` swap service now can work on swap partition (or like before on swap file), also after mounting sdcard ext4 partition
+ * `[`NEW`]` Ad-Hoc WiFi connection support by `[`UrukService_wap WPA service`]` (networks are visible with "`*`" on beginning of it's SSID)
+ * `[`CHANGE`]` Some new progress indicators during install/upgrade
+ * `[`NEW`]` Simple Animation during late phase of bootup
+ * `[`NEW`]` New service: cifs (to load cifs modules), wpa (ad-hoc wifi)
+ * `[`NEW`]` Added cgroups kernel setting
+ * `[`NEW`]` Moved some modules dependencies (cifs,ntfs,dvb) to /etc/modprobe.d
 
 
-*UrukDroid 0.7* (28.02.2011) [http://www.dailymotion.pl/video/x1fvlh_mtv-lord-of-the-rings-parody_fun you're﻿ damn right it's a gift!!]
- * [NEW] NFSv4 client support
- * [NEW] FS-Cache (cachefilesd) support for NFS (local disk cache for NFS files)
- * [NEW] sshfs support
- * [FIX] OpenVPN fix - thanks to *nenadr*
- * [FIX] PPtP fix - thanks to *nenadr*
- * [NEW] vpnc tool for using Cisco VPN connections
- * [NEW] vpnc UrukDroid service
- * [CHANGE] Updated to libc6 2.11 (and all binaries recompiled/changed because of it - big change)
- * [NEW] new gnu tools: nmap
- * [NEW] EasyInstall now allows installing UrukDroid on internal (mmcblk1) storage in A70 and A101
- * [NEW] Integrated 3G USB modem and RNDIS USB tethering  [http://forum.xda-developers.com/showthread.php?t=940470 service by nenadr]
- * [CHANGE] New iobench.sh (with new bonnie++ test)
- * [CHANGE] Changed device fingerprint to work better with google market (enable download some missing apps)
- * [CHANGE] Merged Archos 2.1.8 firmware changes
- * [CHANGE] Changed DVB subsystem support and kernel/modules dependencies to work with new v4l2 modules (it will brake compatibility with most other kernels probably)
- * [FIX] Changes it UrukUpdate mechanism to work every time when file is moved to "/data/UrukUpdate"
- * [NEW] Added required modules and iptables service configuration for [http://www.appbrain.com/app/droidwall-android-firewall/com.googlecode.droidwall.free DroidWall] (firewall) application
- * [NEW] sudo subsystem for launching properly some root tasks
+*UrukDroid 0.7* (28.02.2011) `[`http://www.dailymotion.pl/video/x1fvlh_mtv-lord-of-the-rings-parody_fun you're? damn right it's a gift!!`]`
+ * `[`NEW`]` NFSv4 client support
+ * `[`NEW`]` FS-Cache (cachefilesd) support for NFS (local disk cache for NFS files)
+ * `[`NEW`]` sshfs support
+ * `[`FIX`]` OpenVPN fix - thanks to *nenadr*
+ * `[`FIX`]` PPtP fix - thanks to *nenadr*
+ * `[`NEW`]` vpnc tool for using Cisco VPN connections
+ * `[`NEW`]` vpnc UrukDroid service
+ * `[`CHANGE`]` Updated to libc6 2.11 (and all binaries recompiled/changed because of it - big change)
+ * `[`NEW`]` new gnu tools: nmap
+ * `[`NEW`]` EasyInstall now allows installing UrukDroid on internal (mmcblk1) storage in A70 and A101
+ * `[`NEW`]` Integrated 3G USB modem and RNDIS USB tethering  `[`http://forum.xda-developers.com/showthread.php?t=940470 service by nenadr`]`
+ * `[`CHANGE`]` New iobench.sh (with new bonnie++ test)
+ * `[`CHANGE`]` Changed device fingerprint to work better with google market (enable download some missing apps)
+ * `[`CHANGE`]` Merged Archos 2.1.8 firmware changes
+ * `[`CHANGE`]` Changed DVB subsystem support and kernel/modules dependencies to work with new v4l2 modules (it will brake compatibility with most other kernels probably)
+ * `[`FIX`]` Changes it UrukUpdate mechanism to work every time when file is moved to "/data/UrukUpdate"
+ * `[`NEW`]` Added required modules and iptables service configuration for `[`http://www.appbrain.com/app/droidwall-android-firewall/com.googlecode.droidwall.free DroidWall`]` (firewall) application
+ * `[`NEW`]` sudo subsystem for launching properly some root tasks
 
 
 *UrukDroid 0.6* (11.02.2011) Eye of the Uruk... in new logo :)
- * [CHANGE] Merged changes from Archos firmware 2.1.2/2.1.3/2.1.4
- * [CHANGE] DVB support with [URL="http://code.google.com/p/archos-gen8-dvb/downloads/list?q=label:Featured"]LiveTV.apk[/URL] from [URL="http://forum.xda-developers.com/member.php?u=3282332"]chulri[/URL] (for selected cards, there are more modules then listed in /etc/uruk.conf/dvb - but it requires to do some experiment and report it back)
- * [CHANGE] Changed Uruk service to work better with new UrukConfig
- * [NEW] New services: openvpn, mediascanner
- * [NEW] IO Benchmark tool: iobench.sh
- * [NEW] Possibility to turn off mediascanner and use it on demand only
-[*] [FIX] Fixed mount_sdcard.sh script to work with 2.1.2 ext3 partitions
- * [NEW] Updated boot sequence with progress during upgrade/install
- * [NEW] You can hide soft buttons (Archos buttons) with UrukConfig
- * [NEW] Easy Install method - no need to know anything about Linux - just plug and wait...
- * [NEW] Kernel modules for 3g dongle
+ * `[`CHANGE`]` Merged changes from Archos firmware 2.1.2/2.1.3/2.1.4
+ * `[`CHANGE`]` DVB support with `[`URL="http://code.google.com/p/archos-gen8-dvb/downloads/list?q=label:Featured"`]`LiveTV.apk`[`/URL`]` from `[`URL="http://forum.xda-developers.com/member.php?u=3282332"`]`chulri`[`/URL`]` (for selected cards, there are more modules then listed in /etc/uruk.conf/dvb - but it requires to do some experiment and report it back)
+ * `[`CHANGE`]` Changed Uruk service to work better with new UrukConfig
+ * `[`NEW`]` New services: openvpn, mediascanner
+ * `[`NEW`]` IO Benchmark tool: iobench.sh
+ * `[`NEW`]` Possibility to turn off mediascanner and use it on demand only
+`[`*`]` `[`FIX`]` Fixed mount_sdcard.sh script to work with 2.1.2 ext3 partitions
+ * `[`NEW`]` Updated boot sequence with progress during upgrade/install
+ * `[`NEW`]` You can hide soft buttons (Archos buttons) with UrukConfig
+ * `[`NEW`]` Easy Install method - no need to know anything about Linux - just plug and wait...
+ * `[`NEW`]` Kernel modules for 3g dongle
 
 
 *UrukDroid 0.5* (27.01.2011) Tom Bombadil... in red
- * [NEW] [URL="http://code.google.com/p/compcache/"]CompCache[/URL] (aka ramzswap) support
- * [NEW] New CPU governor - interactive. Ported from XDA CyanogenMOD
- * [NEW] DVB: applied patches by chulri, Siano SMS1XXX USB support
- * [NEW] DVB: modules from outside kernel tree
- * [NEW] Some more GNU tools: gzip utils, zip utils, unzip utils, nc (NetCut for DVB streaming)
- * [CHANGE] New services model - so they can be easily run/configured with help of UI
- * [NEW] New kernel modules: usbnet, lzo
- * [NEW] Mediascanner modification - it should has much, much smaller impact on system performance
- * [NEW] sqlite3 (3.5.9) installed, for easy database file manipulation
- * [NEW] after restart of UrukDroid it will boot once again to Uruk without need of pressing any buttons, to boot on stock OS please use boot menu
- * [FIX] mount_sdcard.sh fixed so it will mount first ext4 partition on sdcard if exist, and will not interfere with Vold if its vfat
- * [CHANGE] New update/upgrade/flash model - everything done on UrukDroid - no boot menu required
- * [NEW] New application to configure UrukDroid - UrukConfig.apk. Installed with this release. Can be uninstalled in default way.
- * [FIX] Fixed corrupted logo in A101
- * [NEW] Unified kernel for UrukDroid on SDCard and internal storage (A70S/A101)
- * [CHANGE] Services ENABLED with this release: CpuGovernor, CompCache
+ * `[`NEW`]` `[`URL="http://code.google.com/p/compcache/"`]`CompCache`[`/URL`]` (aka ramzswap) support
+ * `[`NEW`]` New CPU governor - interactive. Ported from XDA CyanogenMOD
+ * `[`NEW`]` DVB: applied patches by chulri, Siano SMS1XXX USB support
+ * `[`NEW`]` DVB: modules from outside kernel tree
+ * `[`NEW`]` Some more GNU tools: gzip utils, zip utils, unzip utils, nc (NetCut for DVB streaming)
+ * `[`CHANGE`]` New services model - so they can be easily run/configured with help of UI
+ * `[`NEW`]` New kernel modules: usbnet, lzo
+ * `[`NEW`]` Mediascanner modification - it should has much, much smaller impact on system performance
+ * `[`NEW`]` sqlite3 (3.5.9) installed, for easy database file manipulation
+ * `[`NEW`]` after restart of UrukDroid it will boot once again to Uruk without need of pressing any buttons, to boot on stock OS please use boot menu
+ * `[`FIX`]` mount_sdcard.sh fixed so it will mount first ext4 partition on sdcard if exist, and will not interfere with Vold if its vfat
+ * `[`CHANGE`]` New update/upgrade/flash model - everything done on UrukDroid - no boot menu required
+ * `[`NEW`]` New application to configure UrukDroid - UrukConfig.apk. Installed with this release. Can be uninstalled in default way.
+ * `[`FIX`]` Fixed corrupted logo in A101
+ * `[`NEW`]` Unified kernel for UrukDroid on SDCard and internal storage (A70S/A101)
+ * `[`CHANGE`]` Services ENABLED with this release: CpuGovernor, CompCache
 
 
 *UrukDroid 0.4.2* (21.01.2011)
@@ -98,7 +98,7 @@ UrukDroid changelog.
  * Autoupgrade service and installation helper
  * ADB fixes
  * Removed two apps. TelephonyProvider.apk, Phone.apk
- * [COLOR="DarkOrange"]Since 0.4 all services are DISABLED by default, to enable it edit proper config file in /etc/uruk.conf/[/COLOR]
+ * `[`COLOR="DarkOrange"`]`Since 0.4 all services are DISABLED by default, to enable it edit proper config file in /etc/uruk.conf/`[`/COLOR`]`
 
 *UrukDroid 0.3* (9.01.2011) Rise my Uruk... not yet Hai :P
  * iptables, ntfs support
