@@ -1,5 +1,7 @@
 #summary Installation of UrukDroid 0.7+ with EasyInstall method.
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 Installation of UrukDroid 0.7+ with EasyInstall method.
