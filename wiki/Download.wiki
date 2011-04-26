@@ -2,7 +2,7 @@
 
 <wiki:toc max_depth="2" />
 
-All UrukDroid version can be downloaded from [http://sauron.pourix.com/UrukDroid/ Uruk file server]. Below you will find direct links to chosen Uruk files.
+All UrukDroid releases (and other files) can be downloaded from [http://sauron.pourix.com/UrukDroid/ Uruk file server]. Below you will find direct links to chosen Uruk files.
 
 = Current files: =
 == Files (UrukDroid-0.7): ==
