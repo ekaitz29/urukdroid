@@ -47,7 +47,7 @@ dvb_driver="xc5000"
 }}}
 And restart DVB service with USB DVB device connected to Archos. Above  you can see an example for Haupage 950Q DVB device.
 
-To is if device is configured properly you can use command like:
+To test if device is configured properly you can use command:
 {{{
 root@urukdroid:/root# cd /etc/uruk.d/
 root@urukdroid:/etc/uruk.d# ./dvb devstatus
