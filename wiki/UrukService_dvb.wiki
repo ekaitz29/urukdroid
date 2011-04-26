@@ -1,0 +1,19 @@
+#summary UrukDroid DVB service.
+
+= Introduction =
+
+DVB service for Uruk Droid should make a bit easier initializing your USB DVB-T dongle with Archos devices. Only few devices are already tested to work, so if you please try it with different hardware - let us know.
+
+= DVB devices that are known to work =
+
+ * [http://www.linuxtv.org/wiki/index.php/Hauppauge_WinTV-HVR-950Q WinTV-HVR-950Q] xc5000 chipset
+ * [http://www.linuxtv.org/wiki/index.php/E3C_EC168 EzTV DUTV009 USB DVB-T Receiver] EC168 chipset
+ * DiBcom DiB0700 USB DVB devices dib0700 chipset
+
+
+= How to use DVB service =
+
+= Example =
+
+Here is small example of working DVBT with Uruk Droid 0.7 and LiveDVB app.
+<wiki:video url="http://www.youtube.com/watch?v=sJjoiP4fAt4"/>
