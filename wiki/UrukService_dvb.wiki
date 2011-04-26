@@ -121,3 +121,43 @@ DVB service has two special options, to help you configure it properly.
 
 Here is small example of working DVBT with Uruk Droid 0.7 and LiveDVB app.
 <wiki:video url="http://www.youtube.com/watch?v=sJjoiP4fAt4"/>
+
+= How to configure DVB service for new DVB devices =
+
+== Gather information ==
+
+Please find all required information about this device. [http://www.linuxtv.org/vdrwiki/index.php/Main_Page LinuxTV wiki] page is a good place to start. If you will find name for proper Linux kernel module, and it's present in Uruk - your are ready to go. If this modules is not present - you can try in this [http://forum.xda-developers.com/showthread.php?t=871391 XDA thread] to find help.
+
+Check if this chip requires any firmware, if this firmware is present in Uruk. If not - find it and put in /lib/firmware directory of your Archos device.
+
+== Find module dependencies ==
+
+SSH to your Uruk device, became root (su) and load required module
+{{{
+root@urukdroid:/root# modprobe -a dvb-core dvb-usb
+root@urukdroid:/root# lsmod | grep dvb
+dvb_usb                19996  0
+dvb_core               89240  1 dvb_usb,[permanent]
+}}}
+
+The task now is to find all modules that driver depends on - this is example for "dvb-usb-af9015" module. You will need to try load module and check in "dmesg" if it's missing something. Then look where missing stuff is, load new modules - and try again.
+
+{{{
+root@urukdroid:/etc/uruk.conf# modprobe dvb-usb-af9015
+root@urukdroid:/etc/uruk.conf# dmesg | tail -5
+Configure McBSP TX FIFO threshold to 1260
+init: sys_prop: mis-match msg size recieved: -1 expected: 128
+Configure McBSP for 1 phase
+Configure McBSP TX FIFO threshold to 1260
+usbcore: registered new interface driver dvb_usb_af9015
+}}}
+In this case we can see that "dvb-usb-af9015" loaded properly and does not requires any additional modules. So work is done :)
+
+In some cases you will find here lines like "missing symbol xxxaaabbb" - then you need to find module with the missing symbol. Crude but working way of doing this is using "grep" command.
+{{{
+root@urukdroid:/etc/uruk.conf# cd /lib/modules/2.6.29-omap1/kernel/drivers/media/
+root@urukdroid:/lib/modules/2.6.29-omap1/kernel/drivers/media# ls
+common  dvb  video
+root@urukdroid:/lib/modules/2.6.29-omap1/kernel/drivers/media# grep -ri 950q *
+Binary file video/au0828/au0828.ko matches
+}}}
