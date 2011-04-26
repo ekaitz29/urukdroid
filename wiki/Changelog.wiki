@@ -52,7 +52,7 @@ UrukDroid changelog.
  * `[`NEW`]` New services: openvpn, mediascanner
  * `[`NEW`]` IO Benchmark tool: iobench.sh
  * `[`NEW`]` Possibility to turn off mediascanner and use it on demand only
-`[`*`]` `[`FIX`]` Fixed mount_sdcard.sh script to work with 2.1.2 ext3 partitions
+ * `[`FIX`]` Fixed mount_sdcard.sh script to work with 2.1.2 ext3 partitions
  * `[`NEW`]` Updated boot sequence with progress during upgrade/install
  * `[`NEW`]` You can hide soft buttons (Archos buttons) with UrukConfig
  * `[`NEW`]` Easy Install method - no need to know anything about Linux - just plug and wait...
