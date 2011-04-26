@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 
-[uruk_1.0_splash.png]
+[http://urukdroid.googlecode.com/files/uruk_1.0_splash.png]
 
 = Introduction =
 
