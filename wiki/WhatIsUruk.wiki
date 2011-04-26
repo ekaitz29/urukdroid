@@ -31,6 +31,6 @@ In this case we have a *kernel layer*, witch is a slightly modified Linux kernel
 
 Next level is a *system layer*. This are applications compiled for exact CPU and run on it natively. All Uruk services run on this layer - this is a place where most of Uruk Droid modification is made.
 
-And third one is *Dalvik/UI layer*. With Android we are given Jave Runtime Environment called Dalvik - this is a place where all Android applications (from Market etc.) reside and work. This is a place where Uruk is just like every other Android - no modification is made here.
+And third one is *Dalvik/UI layer*. With Android we are given Java Runtime Environment called Dalvik - this is a place where all Android applications (from Market etc.) reside and work. This is a place where Uruk is just like every other Android - no modification is made here.
 Most of the things you can actually see is from this layer.
  
