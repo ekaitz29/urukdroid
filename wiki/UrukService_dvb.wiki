@@ -91,14 +91,14 @@ Sometimes devices like WinTV-HVR-950Q don't want to configure properly while plu
  * ./dvb start (or during system start)
  * dvb checks if it's not already started and loads dvb core and usb modules
  * dvb loads modules from /etc/uruk.conf/dvb file
-  * before loading modules "modprobe" will check for module dependencies and try to load some required modules before - you can see it in /etc/modprobe.d/dvb.conf
- * dvb will check if /dev/dvb0.`*` devices are present (driver reported working dvb device)
-  * if device is present, dvb will try to update _/etc/uruk.conf/dvb-devices_ with proper node values and create devices in /dev/dvb/
-  * if device is NOT present, dvb will try to create devices like configured in _/etc/uruk.conf/dvb-devices_ in /dev/dvb/
+  * before this, "modprobe" will check for module dependencies and try to load all required modules before - you can see all soft dependencies in _/etc/modprobe.d/dvb.conf_
+ * dvb will check if /dev/dvb0.`*` devices are present (this are driver reported working dvb devices)
+  * if device is present, dvb will try to update _/etc/uruk.conf/dvb-devices_ with proper MIN/MAJ values and create devices in /dev/dvb/
+  * if device is NOT present, dvb will try to create devices in /dev/dvb/ based on configuration from _/etc/uruk.conf/dvb-devices_
 
 == What for is _/etc/uruk.conf/dvb-devices_ file? ==
 
-DVB driver creates proper device in /dev/dvb0.`*`. LiveTV application requires devices to be created in /dev/dvb/frontend0/`*`.  So we need to create those devices in different place (this stuff is usually made with mknod tool). We could do a simple symlink (ln -s /dev/dvb0.demux /dev/dvb/frontend0/dvb.demux) but this will not solve one more problem - file access permissions. Devices to be readable/writeable by Android apps requires (long story short) 0777 permission.
+DVB driver creates proper device in /dev/dvb0.`*`. LiveTV application requires devices to be created in /dev/dvb/frontend0/`*`.  So we need to create those devices in different place (this stuff is usually made with mknod tool). We could do this with a simple symlink (ln -s /dev/dvb0.demux /dev/dvb/frontend0/dvb.demux) but this will not solve one more problem - file access permissions. Devices to be readable/writeable by Android apps requires (long story short) 0777 permission.
 
 So in this file we have stored information how to recreate device in /dev/dvb/frontend0/ directory, even when our DVB device is not plugged in (so we can start Archos, later plug DVB device and it should work instantly).
 
