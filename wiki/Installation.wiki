@@ -77,7 +77,7 @@ Installation process will start automatically and silently, file will disappear 
 
 == Advanced EasyInstall ==
 Since UrukDroid 0.7 you are able to choose, during install process, method called "Advanced". This option will give you possibility to choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage.
-You are also able to choose Internal method installation with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose here filesystem sizes (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrink filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
+You are also able to choose Internal method installation with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose here filesystem sizes (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
 
 == Files (UrukDroid-0.7): ==
 From Megaupload.com
