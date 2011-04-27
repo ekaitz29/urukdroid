@@ -8,6 +8,13 @@ SMB is a network protocol used mainly by Microsoft Windows systems to share file
 
 In most cases it's enough to enable it like all other services. But you may want to change exported directory or password. Default user name is "storage" and password "UrukDroid".
 
+You can also change password for user "storage" by using "smbpasswd" command.
+{{{
+root@urukdroid:/root# smbpasswd storage
+New SMB password:
+Retype new SMB password:
+}}}
+
 = Configuration file =
 *Location:* /etc/uruk.conf/samba
 
