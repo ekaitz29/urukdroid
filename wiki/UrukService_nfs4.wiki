@@ -83,4 +83,4 @@ root@urukdroid:/root# mount -o loop=/dev/block/loop1,noatime,nodiratime,nosuid,u
 }}}
 After this you need to edit "/etc/cachefilesd.conf" and change it to point to "/mnt/cache/fscache" instead of "dir /mnt/storage/sdcard/cache/fscache/".
 
-I know it's a bit harsh (I use all the time the first way) - but it there will be a single people who will use second method - let me know, I'll add it to service.
+I know it's a bit harsh (I use all the time the first way) - but if there will be a single person who will use second method (use - not test) - let me know, I'll add it to service.
