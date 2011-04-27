@@ -1,0 +1,10 @@
+#summary UrukDroid NFS4 service.
+
+= Introduction =
+
+NFS is another network file sharing protocol (like [UrukService_smb smb], [UrukService_cifs cifs]), but this one is most efficient and robust. It's usable probably only for Linux/UN*X users (they can easily create shares) - but there are some Windows implementation of NFS servers.
+NFS4 is a most recent NFS implementation that is easier to maintain on firewall, and requires less daemons to work on both client and server side.
+
+UrukDroid implementation of NFS4 has also one more feature - it can use EXT4 filesystem as a local cache. This may help streaming video on WiFi network.
+
+= Details =
