@@ -7,4 +7,18 @@ NFS4 is a most recent NFS implementation that is easier to maintain on firewall,
 
 UrukDroid implementation of NFS4 has also one more feature - it can use EXT4 filesystem as a local cache. This may help streaming video on WiFi network.
 
-= Details =
+= How to use NFS4 service =
+
+Most simple configuration requires you to have NFS4 server visible in local network. Then you need to setup share option in configuration file "/etc/uruk.conf/nfs4"
+{{{
+nfs4_source="10.8.0.1:/dane/"
+}}}
+and of course start NFS4 service.
+
+In configuration above I use [UrukService_openvpn OpenVPN] server so it works from (almost) every place I have internet.
+
+= Configuration file =
+
+*Location: /etc/uruk.conf/compcache*
+
+*Configuration options:*
