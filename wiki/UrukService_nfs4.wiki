@@ -19,7 +19,7 @@ In configuration above I use [UrukService_openvpn OpenVPN] server so it works fr
 
 = Configuration file =
 
-*Location: /etc/uruk.conf/compcache*
+*Location: /etc/uruk.conf/nfs4*
 
 *Configuration options:*
  * nfs4_disable_smbc - if enabled, NFS4 service will disable smb fuse client before mounting share. Since default place to mount nfs4 on Archos is in place of SMB share - it's wise to disable it. _Default: 1_ (disable smb client)
@@ -29,3 +29,14 @@ In configuration above I use [UrukService_openvpn OpenVPN] server so it works fr
  * nfs4_cache_enable - should NFS4 service use local cache for remote files. It may greatly increase NFS4 file streaming "feel" - but requires some additional work (see below). _Default: 0_
 
 = How to enable caching =
+
+Cache system requires ext4/ext3 storage with enabled extended attributes and running "cachefilesd" daemon. Be default, if your SDcard storage partition (/sdcard/sdcard or /mnt/storage/sdcard) is EXT4 partition, you don't need to do nothing - just set "nfs4_cache_enable=0" and restart NFS4 service. With "ps -ef |grep cache" you should see "cachefilesd" process, and cache files in "
+{{{
+root@urukdroid:/root# ps -ef |grep cache
+root     13165     1  0 17:42 ?        00:00:00 /usr/local/sbin/cachefilesd
+root     13176 12144  0 17:42 pts/5    00:00:00 grep cache
+root@urukdroid:/root# ls -l /sdcard/sdcard/cache/fscache/
+total 8
+drwx------ 3 root root 4096 Feb 23 20:43 cache
+drwx------ 2 root root 4096 Feb 23 20:36 graveyard
+}}}
