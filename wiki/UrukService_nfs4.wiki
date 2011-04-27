@@ -11,7 +11,7 @@ UrukDroid implementation of NFS4 has also one more feature - it can use EXT4 fil
 
 Most simple configuration requires you to have NFS4 server visible in local network. Then you need to setup share option in configuration file "/etc/uruk.conf/nfs4"
 {{{
-nfs4_source="10.8.0.1:/dane/"
+nfs4_source="10.8.10.1:/data/"
 }}}
 and of course start NFS4 service.
 
@@ -22,3 +22,10 @@ In configuration above I use [UrukService_openvpn OpenVPN] server so it works fr
 *Location: /etc/uruk.conf/compcache*
 
 *Configuration options:*
+ * nfs4_disable_smbc - if enabled, NFS4 service will disable smb fuse client before mounting share. Since default place to mount nfs4 on Archos is in place of SMB share - it's wise to disable it. _Default: 1_ (disable smb client)
+ * nfs4_disable_ndmp - if enabled, NFS4 service will disable NDMP client before mounting share. This is just for memory consumption limitation. _Default: 1_ (disable ndmp client)
+ * nfs4_source - NFS4 share in form of IP/path value. For example "192.168.1.200:/export". _Default: none_
+ * nfs4_mpoint - this is local NFS4 mount point. Place where all mounted files will be visible. By default it points to place where smb files are mounted "/mnt/storage/network/smb/" - with this "trick" MediaPlayer will be able to play all files from NFS4 share. Of course it can by any location, like usual Linux place in "/mnt" directory. _Default: "/mnt/storage/network/smb/"_
+ * nfs4_cache_enable - should NFS4 service use local cache for remote files. It may greatly increase NFS4 file streaming "feel" - but requires some additional work (see below). _Default: 0_
+
+= How to enable caching =
