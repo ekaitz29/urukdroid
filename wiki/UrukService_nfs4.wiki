@@ -78,6 +78,9 @@ Writing superblocks and filesystem accounting information: done
 
 This filesystem will be automatically checked every 28 mounts or
 180 days, whichever comes first.  Use tune2fs -c or -i to override.
+root@urukdroid:/root# mkdir /mnt/cache
 root@urukdroid:/root# mount -o loop=/dev/block/loop1,noatime,nodiratime,nosuid,user_xattr /sdcard/sdcard/nfs4.cache /mnt/cache/
 }}}
 After this you need to edit "/etc/cachefilesd.conf" and change it to point to "/mnt/cache/fscache" instead of "dir /mnt/storage/sdcard/cache/fscache/".
+
+I know it's a bit harsh (I use all the time the first way) - but it there will be a single people who will use second method - let me know, I'll add it to service.
