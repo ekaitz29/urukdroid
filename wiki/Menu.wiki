@@ -21,4 +21,5 @@ Welcome to UrukDroid documentation
   * [UrukService_sshd SSHd service]
   * [UrukService_SWAP SWAP service]
  * [UrukConfig]
+ * [UrukDroid_utilities UrukDroid utilities]
  * [Credits]
