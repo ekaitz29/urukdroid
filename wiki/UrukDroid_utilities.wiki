@@ -1,0 +1,12 @@
+#summary Some UrukDroid installed utilities.
+
+= Introduction =
+
+There are plenty of utilities installed with UrukDroid. Most of them are OS level binary tools and scripts, so they can be used over SSH and/or terminal. They can be also used by some rare Android programs. Here you can find list of most common GNU tools available on Uruk and more detailed information about native Uruk scripts and tools.
+
+
+= Installed GNU tools =
+
+List of tools installed with UrukDroid: ssh, sshfs, scp, ncftp, bc, 
+
+= UrukDroid specific tools =
