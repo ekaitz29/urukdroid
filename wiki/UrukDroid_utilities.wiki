@@ -10,3 +10,9 @@ There are plenty of utilities installed with UrukDroid. Most of them are OS leve
 List of tools installed with UrukDroid: ssh, sshfs, scp, ncftp, bc, 
 
 = UrukDroid specific tools =
+
+== IOBench.sh ==
+
+== Copy_from_sdcard ==
+
+== mount_sdcard.sh ==
