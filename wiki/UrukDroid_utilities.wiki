@@ -7,7 +7,9 @@ There are plenty of utilities installed with UrukDroid. Most of them are OS leve
 
 = Installed GNU tools =
 
-List of tools installed with UrukDroid: ssh, sshfs, scp, ncftp, bc, 
+List of tools installed with UrukDroid: awk, azap, bash, bc, bz(cat,cmp,diff,egrep,exe,fgrep,grep,less,more), bzip2, bzip2recover, cifsiostat, cpio, dash, date, dd, dmesg, dnsdomainname, egrep, fgrep, file, find, ionice, iostat, ldd, less, lessecho, lessfile, lesskey, lesspipe, lsmod, lsof, lsusb, mawk, md5sum, md5sum.textutils, mknod, mktemp, mount, mountpoint, mpstat, mt, mt-gnu, nano, nc, ncftp, netstat, nfsiostat, nisdomainname, nmap, nohup, pgrep, pidstat, ping, pkill, rbash, readlink, renice, rnano, rpcinfo, rsync, run-parts, scp, screen, sed, sftp, sh, sh.distrib, smbpasswd, sort, sqlite3, ssh, ssh-add, ssh-agent, ssh-argv0, ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-vulnkey, sshfs, stat, strace, stty, sudo, sync, tail, tailf, tar, tee, telnet, telnet.netkit, tempfile, test, top, traceroute, tzap, umount, uname, uncompress, unzip, uptime, vdir, vi, vim, vim.tiny, vmstat, w, w_scan, watch, whereis, which, who, ypdomainname, z(cat,cmp,diff,egrep,fgrep,force,grep), zip, zipinfo, zless, zmore, znew,
+
+Root specific: badblocks, bonnie, bonnie++, cachefilesd, cfdisk, chroot, depmod, dosfsck, dropbear, dropbearkey, dumpe2fs, e2fsck, e2image, e2label, e2undo, fdisk, fsck, fsck.ext2, fsck.ext3, fsck.ext4, fsck.msdos, fsck.nfs, fsck.vfat, ifconfig, incrond, insmod, iptables, iptables-multi, iptables-restore, iptables-save, kd_flasher, logsave, losetup, lsmod, mkdosfs, mke2fs, mkfs, mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.msdos, mkfs.vfat, mkswap, modinfo, modprobe, mount, mount.nfs, mount.nfs4, mountpoint, parted, partprobe, portmap, reboot_into, resize2fs, rmmod, route, rpc.idmapd, rzscontrol, sftp-server, showmount, smbd, start-stop-daemon, sudoedit, swapoff, swapon, sysctl, thttpd, tune2fs, update-usbids, usb_modeswitch, visudo, vpnc, vpnc-connect, vpnc-disconnect
 
 = UrukDroid specific tools =
 
