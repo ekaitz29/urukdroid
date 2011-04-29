@@ -37,21 +37,21 @@ Since UrukDroid 0.6 there is new automated install method. It puts some restrict
 == Step one ==
 Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
 
-Download and extract installation files from archive *UrukDroid_0.7-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
+Download and extract installation files from archive *UrukDroid_1.0-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
 
 Flash initramfs.cpio.gz and zImage from SDE boot menu:
- * power on Archos70, hold up/+ volume key until you see "_Archos AXXXX - Boot Menu_",
- * choose "Recovery System"->"Developer Edition Menu"->"Flash Kernel and Initramfs",
- * connect Archos to PC and copy zImage and initramfs.cpio.gz
- * press power button shortly, you should see Archos flashing new kernel
- * if flashed properly, press power button shortly to reboot...
+ * power on (2) Archos70, hold up/+ volume key (1) until you see "_Archos AXXXX - Boot Menu_",
+ * choose with Volume +/- (1) "Recovery System"->"Developer Edition Menu"->"Flash Kernel and Initramfs",
+ * connect Archos to PC (5) and copy zImage and initramfs.cpio.gz
+ * press power button (2) shortly, you should see Archos flashing new kernel
+ * if flashed properly, press power button (2) shortly to reboot...
 
 Boot to SDE:
- * power on Archos, hold up/+ volume key until you see "_Archos AXXXX - Boot Menu_",
+ * power on (2) Archos, hold up/+ volume key (1) until you see "_Archos AXXXX - Boot Menu_",
  * choose "Developer edition"
 
 
-You should see "UrukDroid 07 Installation framework". Please choose simple install method. When asked to, connect Archos to PC once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button shortly.
+You should see "UrukDroid 1.0 Installation framework" title. Please choose simple install method. When asked to, connect Archos to PC (5) once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button (2) shortly. Now EI will check installation file and prepare it for next step.
 
 Later, you will be also able to choose whether you want to copy /data partition. It's recommended not to - but you have this option.
 For advanced install method - look below.
