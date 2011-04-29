@@ -1,0 +1,17 @@
+#summary UrukDroid WPA service..
+
+= Introduction =
+
+Encrypted WiFi connection requires some kind of WPA supplicant. This is done by the tool called exactly the same _"wpa_supplicant"_ (located in /system/bin directory).
+
+To enabled connecting to Ad-Hoc WiFi networks, one of the way is to used [http://szym.net/2010/12/adhoc-wifi-in-android/ patched] and recompiled "wpa_supplicant". This way ad-hoc networks are visible like every other network but with "`*`" prefix. Since this kind of modification made wpa_supplicant not compatible with build in configuration user interface it's disabled by default.
+
+If you would like to use Ad-Hoc WiFi networks please enable "wpa" service (this will exchange wpa_supplicants) and use should use from now on "[http://www.appbrain.com/app/wifi-manager/org.kman.WifiManager WiFi Manager]" instead of Android/Archos default WiFi configuration wizard (anyway - it's much better tool and I use it all the time). Since Uruk Droid 1.0 this tool (and widget) is installed by default.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
