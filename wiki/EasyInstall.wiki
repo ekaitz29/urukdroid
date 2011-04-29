@@ -1,0 +1,9 @@
+#summary UrukDroid Easy Install.
+
+= Introduction =
+
+EasyInstall is a code name for simple installation framework for UrukDroid. It was created as a successor of previous installation method, involving Linux usage which was to harsh for most of our users.
+
+= Usage =
+
+EasyInstall consist of two files, initramfs and kernel image. Both need to be applied to Archos device with help "Boot Menu" (see [http://code.google.com/p/urukdroid/wiki/Installation#Step_one installation process]}.
