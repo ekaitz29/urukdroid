@@ -67,6 +67,10 @@ If with first run "Archos configuration wizard" creates "Force close" errors, pl
 
 *Congratulations!* you have just installed UrukDroid
 
+Here you can watch video created by [http://www.arctablet.com/blog/ ArcTablet] with Easy Installation of UrukDroid 0.6
+<wiki:video url="http://www.youtube.com/watch?v=LbqKwl6ggFo">
+It's a bit old but gives a good insight how it should look like.
+
 == Step two: optional ==
 
 If you want *GoogleMarket* (and required component to make it work) you can install UrukDroid package - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this packaged are base on kenyu73 work).
