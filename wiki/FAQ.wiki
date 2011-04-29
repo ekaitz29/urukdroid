@@ -9,6 +9,7 @@
 
 If you have already installed Uruk Droid on SDCard, please do an internal installation with EasyInstall. Boot again from SDCard and use "[http://code.google.com/p/urukdroid/wiki/UrukDroid_utilities#copy_from_sd_to_internal.sh copy_from_sd_to_internal.sh]".
 
+
 == What applications need to be removed to install the UrukDroid Market? ==
 
 If you have already installed Market, and you don't want to reinstall your application (do fresh install without copying /data (datafs)). You can try with removing this files before install UrukDroid Market package.
@@ -30,4 +31,38 @@ system/app/GoogleServicesFramework.apk
 system/app/Vending.apk
 system/app/MediaUploader.apk
 system/app/GoogleBackupTransport.apk
+}}}
+
+
+== How to gather data from UrukDroid for reports purpose ? ==
+
+The best way is to use [http://en.wikipedia.org/wiki/Secure_Shell SSH]. To do this, please start "[UrukService_sshd sshd service] on UrukDroid by using [UrukConfig] application or by editing /etc/uruk.conf/sshd file.
+First start can take up to one minute - since sshd has to generate unique encryption keys.
+If you use Windows download [http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe putty.exe] (ssh client) and run it. Write your Archos IP (it has to be visible in local WiFi network) and connect.
+Use
+{{{
+Login: root
+Password: UrukDroid
+}}}
+Now you can write Linux commands and cut/paste results for help/debug purpose.
+
+
+== What is current directory/disk layout? ==
+{{{
+/ -> SDCard first partition (512M) - for root filesystem
+/data -> SDCard second partition (1GB) - for installed apps
+/mnt/storage -> internal 6GB partition - for data used by installed apps
+/mnt/storage/sdcard -> SDCard third partition - anything you want, nothing by default
+/mnt/sdcard2 - proposed mount point for other volumes, not used by default
+}}}
+
+And there is something called symbolic links (symlinks) - witch is kind of Win shortcut used on UN*X extensively.
+{{{
+/sdcard -> /mnt/storage
+/storage -> /mnt/storage
+/mnt/sdcard -> /mnt/storage
+}}}
+So you can enter /sdcard - and you are be using files from /mnt/storage. You can also create symblinks by yourself
+{{{
+ln -s /source destinations
 }}}
