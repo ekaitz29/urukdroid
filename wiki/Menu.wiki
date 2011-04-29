@@ -20,6 +20,7 @@ Welcome to UrukDroid documentation
   * [UrukService_samba Samba service]
   * [UrukService_sshd SSHd service]
   * [UrukService_SWAP SWAP service]
+  * [UrukService_wpa WPA service]
  * [UrukConfig]
  * [UrukDroid_utilities UrukDroid utilities]
  * [Credits]
