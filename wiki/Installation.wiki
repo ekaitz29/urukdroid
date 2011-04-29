@@ -31,8 +31,9 @@ Since UrukDroid 0.6 there is new automated install method. It puts some restrict
 
 = Installation =
 
-== Buttons location in A70 ==
+== Location of buttons and sockets in A70 ==
 [http://urukdroid.googlecode.com/files/A70_desc.png]
+Use numbers from above picture to find buttons/sockets description in text below.
 
 == Step one ==
 Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
@@ -51,23 +52,20 @@ Boot to SDE:
  * choose "Developer edition"
 
 
-You should see "UrukDroid 1.0 Installation framework" title. Please choose simple install method. When asked to, connect Archos to PC (5) once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button (2) shortly. Now EI will check installation file and prepare it for next step.
+You should see "UrukDroid 1.0 Installation framework" title. Please choose simple install method. When asked to, connect Archos to PC (5) once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button (2) shortly. Now [EasyInstall EI] will check installation file and prepare it for next step.
 
 Later, you will be also able to choose whether you want to copy /data partition. It's recommended not to - but you have this option.
 For advanced install method - look below.
 
-After reboot you should see UrukDroid 0.7 boot up screen (if it happens to boot to stock OS, reboot once again and go to "Boot menu", choose "Developer edition"). With messages on bottom. It should be:
- * "UrukDroid 0.7 Boot: Mounting rootfs...."
- * "UrukDroid 0.7 Boot: Mounting /data...."
- * "UrukDroid 0.7 Boot: System installation in progress, please wait..." `(this step may take several minutes)`
- * "UrukDroid 0.7 Boot: Copying /data content, please wait...." `(only if you choose to copy data, this step may take several minutes)`
- * "UrukDroid 0.7 Boot: Switching to rootfs...."
- * "UrukDroid 0.7 Rootfs: Postinstallation in progress. Please wait..." (this step takes 1-2 minutes)
- * "Black screen" ;) - it's a few minutes window when we can't show logo and there is no interface yet - please be patient...
+After reboot you should see UrukDroid 1.0 boot up screen (if it happens to boot to stock OS, reboot once again and go to "Boot menu", choose "Developer edition"). 
 
-If first run of "Archos configuration wizard" creates "Force close" errors, please reboot device (hold power button shortly for more than 1 second, this will bring "Power menu" and press power button long until "Reboot" message will appear).
+You should see now some progress information on bottom of the screen.
+For few minutes you will see installation message with progress bar.
+Few minutes later, after some postinstallation procedures you should see UrukDroid boot animation and shortly after Archos setup wizard.
 
-*Congratulations!*
+If with first run "Archos configuration wizard" creates "Force close" errors, please reboot device (hold power button shortly for more than 1 second, this will bring "Power menu" and press power button long until "Reboot" message will appear).
+
+*Congratulations!* you have just installed UrukDroid
 
 == Step two: optional ==
 
@@ -78,8 +76,9 @@ Download archive and put it in UrukUpdate directory located on /data partition
 Installation process will start automatically and silently, file will disappear from that folder after it's done. To run Market, restart is required when you'll be ready.
 
 == Advanced EasyInstall ==
-Since UrukDroid 0.7 you are able to choose, during install process, method called "Advanced". This option will give you possibility to choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage.
-You are also able to choose Internal method installation with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose here filesystem sizes (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
+Since UrukDroid 0.7 you are able to choose, during install process, method called "Advanced". This option will give you possibility to:
+ * choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage,
+ * you are also able to choose Internal installation method with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose here filesystem sizes (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
 
 == Files (UrukDroid-0.7): ==
 From Megaupload.com
