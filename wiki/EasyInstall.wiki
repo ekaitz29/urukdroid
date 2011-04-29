@@ -19,9 +19,11 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
     # Do you want UrukDroid to copy you existing /data partition (may cause trouble in future)?
    # [#Advanced_method Advanced]
     # [#Install_to_SDCard Install to SDCard]
+     * You will be asked for partitions sizes here
     # [#Install_to_Internal_storage Install to Internal storage]
      # Resize existing partition
      # Format and create new partitions
+      * You will be asked for partitions sizes here
   # [#ReInstall_UrukDroid ReInstall UrukDroid]
    # ReInstall to SDCard (default for Simple installation)"
    # ReInstall to Internal storage
@@ -56,6 +58,8 @@ On all devices, except A70H, you will have to choose:
 On A70H you will be moved already to partition size chooser - just like with "[#Install_to_SDCard Install to SDCard]".
 
 === Install to SDCard ==
+
+You will be asked for partitions sizes here. Not much to write here :)
 
 === Install to Internal storage ==
 
