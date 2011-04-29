@@ -57,6 +57,24 @@ On A70H you will be moved already to partition size chooser - just like with "[#
 
 === Install to Internal storage ==
 
+ * Do you want to resize existing internal partition or format and create new ones? (Resizing requires enough free space of /sdcard storage! - it will no be checked)
+  # Resize existing partition
+  # Format and create new partitions
+
+You may choose to resize existing storage partition or format internal storage and create partition from scratch.
+What is internal storage? Archos has 2 internal, virtual disks visible on system.
+ # /dev/block/mmcblk0
+ # /dev/block/mmcblk1
+
+1) This disk holds boot record, rawfs (with kernel and initramfs), system and data partitions
+2) This disk holds only one partition mounted by default as /mnt/storage (symlink to /sdcard)
+
+So if you want to have custom sized _rootfs_ and _datafs_ (different then default - 512MiB i 1GiB) for UrukDroid and you are willing to loose all stuff on /mnt/storage partition you may choose _"Format and create new partitions"_.
+
+If you will choose _"Resize existing partition"_ EI will shrink your /mnt/storage partition and create two new, required filesystem. Be aware that:
+ * This operation is not entirely safe, it's done with _"parted"_ utility - it's good, tested tool but authors give a fair warning it may fail
+ * You HAVE TO prepare /mnt/storage partition before this operation so there will be AT LEAST 1.7GiB free space. This condition is not checked during resizing procedure and if you fail to meet this condition - resizing will certainly also fail, and you may damage your /mnt/storage partition (called on Uruk _"storagefs"_)
+
 
 == `ReInstall UrukDroid` ==
 
