@@ -1,0 +1,33 @@
+#summary UrukDroid frequently asked question.
+
+= FAQ =
+
+<wiki:toc max_depth="2" />
+
+
+== How to migrate from SDCard to Internal installation method ? ==
+
+If you have already installed Uruk Droid on SDCard, please do an internal installation with EasyInstall. Boot again from SDCard and use "[http://code.google.com/p/urukdroid/wiki/UrukDroid_utilities#copy_from_sd_to_internal.sh copy_from_sd_to_internal.sh]".
+
+== What applications need to be removed to install the UrukDroid Market? ==
+
+If you have already installed Market, and you don't want to reinstall your application (do fresh install without copying /data (datafs)). You can try with removing this files before install UrukDroid Market package.
+{{{
+system/lib/libzxing.so
+system/lib/libinterstitial.so
+system/lib/libspeech.so
+system/lib/libvoicesearch.so
+system/lib/libimageutils.so
+system/framework/com.google.android.maps.jar
+system/app/Talk.apk
+system/app/GoogleCalendarSyncAdapter.apk
+system/app/GenieWidget.apk
+system/app/GoogleContactsSyncAdapter.apk
+system/app/NetworkLocation.apk
+system/app/GoogleFeedback.apk
+system/app/MarketUpdater.apk
+system/app/GoogleServicesFramework.apk
+system/app/Vending.apk
+system/app/MediaUploader.apk
+system/app/GoogleBackupTransport.apk
+}}}
