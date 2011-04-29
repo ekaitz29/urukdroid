@@ -1,4 +1,4 @@
-#summary UrukDroid frequently asked question.
+#summary UrukDroid frequently asked questions.
 
 = FAQ =
 
