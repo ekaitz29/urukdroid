@@ -17,8 +17,7 @@ This is installation procedure of UrukDroid 0.7+ with EasyInstall method. You ca
 
 
 == Known problems: ==
- * EasyInstall on A70H does not work (to be fixed in new release)
- * People reporting some system freezes - during investigation. No any special condition required to hang.
+ * None
 
 
 == Before you start: ==
@@ -31,6 +30,9 @@ This is installation procedure of UrukDroid 0.7+ with EasyInstall method. You ca
 Since UrukDroid 0.6 there is new automated install method. It puts some restriction on flexibility of installation - but it should satisfy most of user, for more experienced ones - you can do it in old (manual) way.
 
 = Installation =
+
+== Buttons location in A70 ==
+[http://urukdroid.googlecode.com/files/A70_desc.png]
 
 == Step one ==
 Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
