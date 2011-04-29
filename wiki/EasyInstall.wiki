@@ -9,3 +9,18 @@ EasyInstall is a code name for simple installation framework for UrukDroid. It w
 EasyInstall consist of two files, initramfs and kernel image. Both need to be applied to Archos device with help of "Boot Menu" (see [http://code.google.com/p/urukdroid/wiki/Installation#Step_one installation process]}.
 
 After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should see screen with title "UrukDroid? 1.0 Installation framework" and simple menu tree:
+
+ * Are you sure you want to proced with installation of UrukDroid?
+  # No
+  # [#ReInstall_UrukDroid Install UrukDroid]
+  # [#ReInstall_UrukDroid ReInstall UrukDroid]
+
+== Install UrukDroid ==
+
+== ReInstall UrukDroid ==
+EI will help you to repair damaged UrukDroid installation by reformatting rootfs without touching datafs (stored apps and settings).
+
+ # Do you want to ReInstall/Repair UrukDroid on removable SD card, or internal storage?
+  * ReInstall to SDCard"
+  * ReInstall to Internal storage
+In both cases EI will try to format partition, ask for installation file and prepare device for installation.
