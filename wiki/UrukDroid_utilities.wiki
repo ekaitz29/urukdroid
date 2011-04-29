@@ -1,5 +1,7 @@
 #summary Some UrukDroid installed utilities.
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 There are plenty of utilities installed with UrukDroid. Most of them are OS level binary tools and scripts, so they can be used over SSH and/or terminal. They can be also used by some rare Android programs. Here you can find list of most common GNU tools available on Uruk and more detailed information about native Uruk scripts and tools.
@@ -13,7 +15,48 @@ There are plenty of utilities installed with UrukDroid. Most of them are OS leve
 
 = UrukDroid specific tools =
 
-== IOBench.sh ==
+== iobench.sh ==
+
+This script was created for sdcard speed test purpose. You can find more information and results in this [http://forum.xda-developers.com/showthread.php?t=934087 XDA thread]. Basicly this is script with some io tests (based on bonnie++) - it should check both raw r/w performance and small files operations speed. It should be more precise that "dd" speed test (witch is of course also good ;) - but can be not fully true if some sd cards prefer some specific block sizes)
+
+Since UrukDroid 0.6 this script is installed by default. But with Uruk 0.7 it's output has changed so it's not compatible (comparable) with previous results.
+
+=== How to run test? ===
+To run the test, connect archos to power supply and run from shell
+{{{
+su
+iobench.sh
+}}}
+
+Test run looks like this:
+{{{
+[root@localhost tst]# iobench.sh 
+Turning on max CPU frequency: 1000000 hz
+Performing disk (/data) IO test. Test make take about 1h on slower systems - please connect device to power supply!
+Done: 0%...12%...20%...28%...36%...44%...52%...60%...68%...76%...84%...92%...100%
+------------------- Please report this data ---------------------
+Your throughput score is: 4847.8
+Your metadata score is: 2328.3
+localhost,128M,2242,78,6313,6,5014,5,2984,98,17486,9,20.3,0,16,93,1,+++++,+++,73,0,94,1,+++++,+++,68,0
+SDCard by LEXAR (0x1:) manufacture date 10/2010, oemid 0x4245
+-----------------------------------------------------------------
+Restoring previous cpu setting....
+}}}
+
+=== What does tests do? ===
+Script creates files with different method (per char, per block, in sequential or random order) - this is throughput part.
+Second tests check how fast we can create/access/remove files. More you can read about tool called [http://www.coker.com.au/bonnie++/readme.html bonnie++] on Internet.
+
+So called score is just for you - it may be not precise, full exact data are in line below score.
+
+This are charts created with help of people from XDA - they compare performance of some selected SDCards.
+
+Pre 0.7 results
+[http://adrian.siemieniak.net/UrukDroid/SDCard-results.png]
+
+0.7+ results
+http://adrian.siemieniak.net/UrukDroid/SDCard-resultsV2.png
+
 
 == copy_from_sd_to_internal.sh ==
 
