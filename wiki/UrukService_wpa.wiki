@@ -14,7 +14,7 @@ If you would like to use Ad-Hoc WiFi networks please enable "wpa" service (this 
 You should use WPA service if:
  * you use Ad-Hoc WiFi networks
 
-You should:
+To use service you should:
  * Enable WPA service
- * Use [http://www.appbrain.com/app/wifi-manager/org.kman.WifiManager WiFi Manager] to configure WiFi networks
+ * Use [http://www.appbrain.com/app/wifi-manager/org.kman.WifiManager WiFi Manager] to configure WiFi networks and enable/disable WiFi support
  * Ignore signal strength on upper bar of the system (it's always zero)
