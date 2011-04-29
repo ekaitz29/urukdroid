@@ -19,11 +19,19 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
 
 == Install UrukDroid ==
 
+ # What type of installation you want to use? (simple recommended)
+  * Simple
+  * Advanced
+
+
 == ReInstall UrukDroid ==
+
 EI will help you to repair damaged UrukDroid installation by reformatting rootfs without touching datafs (stored apps and settings).
 
+For all devices except A70H you will be asked for location of Uruk Droid to be repaired (with A70H process will start automatically - since it can be only installed on HD).
+
  # Do you want to ReInstall/Repair UrukDroid on removable SD card, or internal storage?
-  * ReInstall to SDCard"
+  * ReInstall to SDCard (default for Simple installation)"
   * ReInstall to Internal storage
 
 In both cases EI will try to format proper partition, will ask you to transfer installation file and will prepare device for later installation.
