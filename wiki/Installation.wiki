@@ -41,23 +41,23 @@ Assuming you have already installed [http://www.archos.com/support/support_tech/
 Download and extract installation files from archive *UrukDroid_1.0-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
 
 Flash initramfs.cpio.gz and zImage from SDE boot menu:
- * power on (2) Archos70, hold up/+ volume key (1) until you see "_Archos AXXXX - Boot Menu_",
- * choose with Volume +/- (1) "Recovery System"->"Developer Edition Menu"->"Flash Kernel and Initramfs",
+ * power on (2) Archos70, hold up/+ volume key (1) until you see _"Archos AXXXX - Boot Menu"_,
+ * choose with Volume +/- (1) _"Recovery System"_->_"Developer Edition Menu"_->_"Flash Kernel and Initramfs"_,
  * connect Archos to PC (5) and copy zImage and initramfs.cpio.gz
  * press power button (2) shortly, you should see Archos flashing new kernel
  * if flashed properly, press power button (2) shortly to reboot...
 
 Boot to SDE:
- * power on (2) Archos, hold up/+ volume key (1) until you see "_Archos AXXXX - Boot Menu_",
+ * power on (2) Archos, hold up/+ volume key (1) until you see _"Archos AXXXX - Boot Menu"_,
  * choose "Developer edition"
 
 
-You should see "UrukDroid 1.0 Installation framework" title. Please choose simple install method. When asked to, connect Archos to PC (5) once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button (2) shortly. Now [EasyInstall EI] will check installation file and prepare it for next step.
+You should see *"UrukDroid 1.0 Installation framework"* title. Please choose simple install method. When asked to, connect Archos to PC (5) once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button (2) shortly. Now [EasyInstall EI] will check installation file and prepare it for next step.
 
 Later, you will be also able to choose whether you want to copy /data partition. It's recommended not to - but you have this option.
 For advanced install method - look below.
 
-After reboot you should see UrukDroid 1.0 boot up screen (if it happens to boot to stock OS, reboot once again and go to "Boot menu", choose "Developer edition"). 
+After reboot you should see UrukDroid 1.0 boot up screen (if it happens to boot to stock OS, reboot once again and go to _"Boot menu"_, choose _"Developer edition"_). 
 
 You should see now some progress information on bottom of the screen.
 For few minutes you will see installation message with progress bar.
