@@ -20,6 +20,8 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
    # [#Advanced_method Advanced]
     # [#Install_to_SDCard Install to SDCard]
     # [#Install_to_Internal_storage Install to Internal storage]
+     # Resize existing partition
+     # Format and create new partitions
   # [#ReInstall_UrukDroid ReInstall UrukDroid]
    # ReInstall to SDCard (default for Simple installation)"
    # ReInstall to Internal storage
