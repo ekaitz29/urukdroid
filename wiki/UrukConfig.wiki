@@ -47,12 +47,16 @@ Here you can find some usefull informations about your device like:
 
 = Change Log =
 
-== UrukConfig 0.7 ==
+== `UrukConfig 1.0` ==
+ * two new services cifs, wpa
+ * UrukConfig should not show _"unknown"_ state to services and should update it's state much faster
+
+== `UrukConfig 0.7` ==
  * now a button give acces to service description and will give access to it configuration for those who need it.
  * you don't change service settings in Options tab now. There will be buttons in the new setting windows to start/stop state and startup too soon.
  * In options tab for now you'll just find "force update" and "hide buttons".
 
-== UrukConfig 0.6 ==
+== `UrukConfig 0.6` ==
  * new icons to fit with new UrukDroid design
  * new tab : Informations who give fews infos (more to come) and 2 tools : force update and possibility to hide/show softs buttons (thanks to jerry101 in this thread)
  * change in tab "options" now refresh tab "Services" when come back to it
