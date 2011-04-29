@@ -8,7 +8,7 @@ EasyInstall is a code name for simple installation framework for UrukDroid. It w
 
 = Usage =
 
-EasyInstall consist of two files, initramfs and kernel image. Both need to be applied to Archos device with help of "Boot Menu" (see [http://code.google.com/p/urukdroid/wiki/Installation#Step_one installation process]}.
+EasyInstall consist of two files, initramfs and kernel image. Both need to be applied to Archos device with help of "Boot Menu" (see [http://code.google.com/p/urukdroid/wiki/Installation#Step_one installation process]).
 
 After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should see screen with title "UrukDroid? 1.0 Installation framework" and simple menu tree:
 
@@ -19,13 +19,29 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
 
 == Install UrukDroid ==
 
- # What type of installation you want to use? (simple recommended)
-  * Simple
-  * Advanced
+ * What type of installation you want to use? (simple recommended)
+  # Simple
+  # Advanced
 
 *Simple method* will start installation on SDCard or HD (A70H) with predefined partition sizes - if you don't know what to choose, pick this one.
 
 *Advanced method* will give you choice of where you want to install Uruk (except A70H) - whether it should be internal or SDCard installation. And under some condition you will be also able to choose partition sizes.
+
+=== Simple method ===
+
+EI will partition your SDcard and format it, then you will be asked to transfer installation file (UrukDroid-install.tgz). After testing archive it will be prepared to next step.
+
+If for some reason EI will report error - that install file is corrupted, please make sure that downloaded file is correct (check file md5sum or RAR installation package integrity).
+
+Before reboot you will be asked if you want to copy "datafs" partition content from stock Archos OS. You can do it - but under some condition it may be a cause of future instability.
+
+=== Advanced method ===
+
+On all devices, except A70H, you will have to choose:
+
+ * Do you want to install UrukDroid on removable SD card, or internal storage. (SD card installation recommended)
+  # Install to SDCard
+  # Install to Internal storage
 
 
 == ReInstall UrukDroid ==
@@ -34,9 +50,9 @@ EI will help you to repair damaged UrukDroid installation by reformatting rootfs
 
 For all devices except A70H you will be asked for location of installed UrukDroid you want to repair (with A70H process will start automatically - since it can be only installed on HD).
 
- # Do you want to ReInstall/Repair UrukDroid on removable SD card, or internal storage?
-  * ReInstall to SDCard (default for Simple installation)"
-  * ReInstall to Internal storage
+ * Do you want to ReInstall/Repair UrukDroid on removable SD card, or internal storage?
+  # ReInstall to SDCard (default for Simple installation)"
+  # ReInstall to Internal storage
 
 In both cases EI will try to format proper partition, will ask you to transfer installation file and will prepare device for later installation.
 
