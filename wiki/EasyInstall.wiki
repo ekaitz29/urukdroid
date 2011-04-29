@@ -15,13 +15,21 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
  * Are you sure you want to proced with installation of UrukDroid?
   # No
   # [#Install_UrukDroid Install UrukDroid]
+   # [#Simple_method Simple]
+    # Do you want UrukDroid to copy you existing /data partition (may cause trouble in future)?
+   # [#Advanced_method Advanced]
+    # [#Install_to_SDCard Install to SDCard]
+    # [#Install_to_Internal_storage Install to Internal storage]
   # [#ReInstall_UrukDroid ReInstall UrukDroid]
+   # ReInstall to SDCard (default for Simple installation)"
+   # ReInstall to Internal storage
+
 
 == `Install UrukDroid` ==
 
  * What type of installation you want to use? (simple recommended)
-  # Simple
-  # Advanced
+  # [#Simple_method Simple]
+  # [#Advanced_method Advanced]
 
 *Simple method* will start installation on SDCard or HD (A70H) with predefined partition sizes - if you don't know what to choose, pick this one.
 
@@ -40,8 +48,14 @@ Before reboot you will be asked if you want to copy "datafs" partition content f
 On all devices, except A70H, you will have to choose:
 
  * Do you want to install UrukDroid on removable SD card, or internal storage. (SD card installation recommended)
-  # Install to SDCard
-  # Install to Internal storage
+  # [#Install_to_SDCard Install to SDCard]
+  # [#Install_to_Internal_storage Install to Internal storage]
+
+On A70H you will be moved already to partition size chooser - just like with "[#Install_to_SDCard Install to SDCard]".
+
+=== Install to SDCard ==
+
+=== Install to Internal storage ==
 
 
 == `ReInstall UrukDroid` ==
