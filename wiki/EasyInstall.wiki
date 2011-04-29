@@ -1,5 +1,7 @@
 #summary UrukDroid Easy Install.
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 EasyInstall is a code name for simple installation framework for UrukDroid. It was created as a successor of previous installation method, involving Linux usage which was to harsh for most of our users.
@@ -12,7 +14,7 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
 
  * Are you sure you want to proced with installation of UrukDroid?
   # No
-  # [#ReInstall_UrukDroid Install UrukDroid]
+  # [#Install_UrukDroid Install UrukDroid]
   # [#ReInstall_UrukDroid ReInstall UrukDroid]
 
 == Install UrukDroid ==
@@ -23,4 +25,7 @@ EI will help you to repair damaged UrukDroid installation by reformatting rootfs
  # Do you want to ReInstall/Repair UrukDroid on removable SD card, or internal storage?
   * ReInstall to SDCard"
   * ReInstall to Internal storage
-In both cases EI will try to format partition, ask for installation file and prepare device for installation.
+
+In both cases EI will try to format proper partition, will ask you to transfer installation file and will prepare device for later installation.
+
+EI can't really check if what you have chosen is correct answer (about installation type) - so if you choose badly it may format wrong partition - so please be careful.
