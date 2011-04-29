@@ -66,3 +66,8 @@ So you can enter /sdcard - and you are be using files from /mnt/storage. You can
 su
 ln -s /source destinations
 }}}
+
+
+== How to mount ext4 under Windows? ==
+
+There is project called "ext2read" that claims to work also with ext4  (I've only tested it with ext2 long time ago - it worked) [http://sourceforge.net/projects/ext2read/] - please write some comments if you use it.
