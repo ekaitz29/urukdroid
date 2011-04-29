@@ -16,12 +16,13 @@ UrukDroid changelog.
  * `[`CHANGE`]` New kernel modules for more dvb devices (but it requires manual loading and testing)
  * `[`NEW`]` rsync tool
  * `[`CHANGE`]` swap service now can work on swap partition (or like before on swap file), also after mounting sdcard ext4 partition
- * `[`NEW`]` Ad-Hoc WiFi connection support by [UrukService_wap WPA service] (networks are visible with "`*`" on beginning of it's SSID)
+ * `[`NEW`]` Ad-Hoc WiFi connection support by [UrukService_wpa WPA service] (networks are visible with "`*`" on beginning of it's SSID)
  * `[`CHANGE`]` Some new progress indicators during install/upgrade
  * `[`NEW`]` Simple Animation during late phase of bootup
- * `[`NEW`]` New service: cifs (to load cifs modules), wpa (ad-hoc wifi)
+ * `[`NEW`]` New services: cifs (to load cifs modules), wpa (ad-hoc wifi)
  * `[`NEW`]` Added cgroups kernel setting
  * `[`NEW`]` Moved some modules dependencies (cifs,ntfs,dvb) to /etc/modprobe.d
+ * `[`NEW`]` EasyInstall has now simple "Repair" option to reformat rootfs, and install from scratch (this operation preserves all application data from datafs)
 
 
 *UrukDroid 0.7* (28.02.2011) [http://www.dailymotion.pl/video/x1fvlh_mtv-lord-of-the-rings-parody_fun you're? damn right it's a gift!!]
