@@ -4,7 +4,7 @@
 
 = Introduction =
 
-This is installation procedure of UrukDroid 0.7+ with EasyInstall method. You can also do it [http://forum.xda-developers.com/showpost.php?p=10249905&postcount=7 manually].
+This is installation procedure for UrukDroid 1.0+ with [EasyInstall] method. You can also do it [http://forum.xda-developers.com/showpost.php?p=10249905&postcount=7 manually].
 
 
 = Some useful informations =
@@ -13,7 +13,7 @@ This is installation procedure of UrukDroid 0.7+ with EasyInstall method. You ca
  * UrukDroid is known to work on A70S and H, A101 (8/16GB) and A43
  * Be aware that this modification requires SDE and probably some Linux knowledge.
  * By doing described below steps you probably can't brick your Archos - but do it on your own risk.
- * Root access on your devices makes it less secure form malicious software (use more head - less fingers ;) )
+ * Root access on your devices makes it less secure for malicious software (use more head - less fingers ;) )
 
 
 == Known problems: ==
@@ -24,7 +24,7 @@ This is installation procedure of UrukDroid 0.7+ with EasyInstall method. You ca
  * Read about SDE on forum, read SDE warning on Archos page before install
  * All operations described here, are done on Linux or Android and should be done from `root` user (you can switch to that user in terminal by typing "su" or "sudo su" command)
  * If you don't have Linux on your PC - you can find any recent [http://www.sysresccd.org/Download Rescue CD], Live CD or Virtual disk (VirtualBox or VMware) - distributions does not matter. If you don't know what to choose - get Rescue CD from above link.
- * This method REQUIRES 2GB+[http://en.wikipedia.org/wiki/SDHC#SDHC SDHC (SD)] by default, or resizing internal storage.
+ * This method REQUIRES 2GB+[http://en.wikipedia.org/wiki/SDHC#SDHC SDHC (SD)] by default, or resizing/formatting internal storage.
 
 
 Since UrukDroid 0.6 there is new automated install method. It puts some restriction on flexibility of installation - but it should satisfy most of user, for more experienced ones - you can do it in old (manual) way.
@@ -33,7 +33,7 @@ Since UrukDroid 0.6 there is new automated install method. It puts some restrict
 
 == Location of buttons and sockets in A70 ==
 [http://urukdroid.googlecode.com/files/A70_desc.png]
-Use numbers from above picture to find buttons/sockets description in text below.
+Use numbers from above picture to find corresponding buttons/sockets in text below.
 
 == Step one ==
 Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
@@ -41,7 +41,7 @@ Assuming you have already installed [http://www.archos.com/support/support_tech/
 Download and extract installation files from archive *UrukDroid_1.0-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
 
 Flash initramfs.cpio.gz and zImage from SDE boot menu:
- * power on (2) Archos70, hold up/+ volume key (1) until you see _"Archos AXXXX - Boot Menu"_,
+ * power on (2) Archos device, hold up/+ volume key (1) until you see _"Archos AXXXX - Boot Menu"_,
  * choose with Volume +/- (1) _"Recovery System"_->_"Developer Edition Menu"_->_"Flash Kernel and Initramfs"_,
  * connect Archos to PC (5) and copy zImage and initramfs.cpio.gz
  * press power button (2) shortly, you should see Archos flashing new kernel
