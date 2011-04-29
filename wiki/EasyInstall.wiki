@@ -68,8 +68,8 @@ What is internal storage? Archos has 2 internal, virtual disks visible on system
  # /dev/block/mmcblk0
  # /dev/block/mmcblk1
 
-1) This disk holds boot record, rawfs (with kernel and initramfs), system and data partitions
-2) This disk holds only one partition mounted by default as /mnt/storage (symlink to /sdcard)
+ # This disk holds boot record, rawfs (with kernel and initramfs), system and data partitions
+ # This disk holds only one partition mounted by default as /mnt/storage (symlink to /sdcard)
 
 So if you want to have custom sized _rootfs_ and _datafs_ (different then default - 512MiB i 1GiB) for UrukDroid and you are willing to loose all stuff on /mnt/storage partition you may choose _"Format and create new partitions"_.
 
