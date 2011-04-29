@@ -1,6 +1,6 @@
 #summary UrukDroid Easy Install.
 
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
@@ -44,7 +44,7 @@ On all devices, except A70H, you will have to choose:
   # Install to Internal storage
 
 
-== ReInstall UrukDroid ==
+== Reinstall UrukDroid ==
 
 EI will help you to repair damaged UrukDroid installation by reformatting rootfs without touching datafs (stored apps and settings).
 
