@@ -17,7 +17,7 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
   # [#Install_UrukDroid Install UrukDroid]
   # [#ReInstall_UrukDroid ReInstall UrukDroid]
 
-== Install UrukDroid ==
+== `Install UrukDroid` ==
 
  * What type of installation you want to use? (simple recommended)
   # Simple
@@ -44,7 +44,7 @@ On all devices, except A70H, you will have to choose:
   # Install to Internal storage
 
 
-== Reinstall UrukDroid ==
+== `ReInstall UrukDroid` ==
 
 EI will help you to repair damaged UrukDroid installation by reformatting rootfs without touching datafs (stored apps and settings).
 
