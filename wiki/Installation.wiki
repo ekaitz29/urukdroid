@@ -1,4 +1,5 @@
 #summary Installation of UrukDroid 0.7+ with EasyInstall method.
+#labels Featured
 
 <wiki:toc max_depth="2" />
 
