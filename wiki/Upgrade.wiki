@@ -2,18 +2,26 @@
 
 = Introduction =
 
-To upgrade from 0.5 you should download special upgrade file (UrukDroid-0.6-upgrade.tbz2) from [Download] section. You need to place this file in directory *"/data/UrukUpdate"*.
+To upgrade from UrukDroid 0.7 you should download special upgrade file (UrukDroid-1.0-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
+
+This upgrade should also work for UrukDroid 0.6 - but it's not tested.
 
 == First method: ==
-Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, Astro or RooteExplorer - not build in one) or do as follow in terminal (or over [UrukService_sshd ssh]).
+Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, Astro or RooteExplorer - not build in one "File" manager) to movie file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
 Code:
 {{{
 su
 cd /sdcard/
-mv UrukDroid-0.6-upgrade.tbz2 /data/UrukUpdate/
+mv UrukDroid-1.0-upgrade.tbz2 /data/UrukUpdate/
 }}}
 
 == Second method: ==
 Use [UrukConfig] to enable [UrukService_sshd SSHD] (if you don't have it started already), and use any SCP/SSH client (like WinSCP, or plain scp on Linux) to copy file (default username is "root", password is "UrukDroid") to "/data/UrukUpdate".
 
-In both cases upgrade will start automatically. It will alter kernel, initramfs and when finished, device will reboot itself. 
+= Upgrade =
+
+In both above cases upgrade will start automatically. It will alter kernel, initramfs and when finished, device will reboot itself. This upgrade can take up to 10 minutes - so be patient.
+
+If you are unsure if upgrade is still in progress - you can watch CPU usage. For example with "top" - if there is something (like bzip2, gzip, tar) intensively working - upgrade is still in progress.
+
+You can also monitor _"/var/lib/urukdroid/update.log"_ file - to see upgrade progress.
