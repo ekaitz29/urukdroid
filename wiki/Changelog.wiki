@@ -23,8 +23,9 @@ UrukDroid changelog.
  * `[`NEW`]` Added cgroups kernel setting
  * `[`NEW`]` Moved some modules dependencies (cifs,ntfs,dvb) to /etc/modprobe.d
  * `[`NEW`]` EasyInstall has now simple "Repair" option to reformat rootfs, and install from scratch (this operation preserves all application data from datafs)
-* `[`NEW`]` Installation package brings [http://www.appbrain.com/app/wifi-manager/org.kman.WifiManager WiFi manager], [http://www.appbrain.com/app/file-manager/com.rhmsoft.fm File Manager] and [http://www.appbrain.com/app/android-terminal-emulator/jackpal.androidterm Terminal] application
-* `[`CHANGE`]` New [UrukConfig] application
+ * `[`NEW`]` Installation package brings [http://www.appbrain.com/app/wifi-manager/org.kman.WifiManager WiFi manager], [http://www.appbrain.com/app/file-manager/com.rhmsoft.fm File Manager] and [http://www.appbrain.com/app/android-terminal-emulator/jackpal.androidterm Terminal] application
+ * `[`CHANGE`]` New [UrukConfig] application
+
 
 *UrukDroid 0.7* (28.02.2011) [http://www.dailymotion.pl/video/x1fvlh_mtv-lord-of-the-rings-parody_fun you're? damn right it's a gift!!]
  * `[`NEW`]` NFSv4 client support
