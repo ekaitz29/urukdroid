@@ -84,12 +84,10 @@ Since UrukDroid 0.7 you are able to choose, during install process, method calle
  * choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage,
  * you are also able to choose Internal installation method with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose here filesystem sizes (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
 
-== Files (UrukDroid-0.7): ==
-From Megaupload.com
- *[http://www.megaupload.com/?d=7BM9XQWG UrukDroid_0.7-Install.rar] (md5sum: 785fd119d3079d4369e60208cb260c30)
- *[http://www.megaupload.com/?d=YMTZE44V UrukDroid-GoogleMarket_1.0.tbz2] (md5sum: f5427bdefa633d52210cd4ace47ba128)
-Upgrade package (from 0.6+ to 0.7) - please read third post of this thread for details
- * [http://www.megaupload.com/?d=F5RYJNI0 UrukDroid-0.7-upgrade.tbz2] (md5sum: 82ced9d18e74902b55157844a7b72f89)
+== Files (UrukDroid-1.0): ==
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid_1.0-Install.rar UrukDroid_1.0-Install.rar] (md5sum: 66082bea8d63ed82dcb9fc57d7bd5d81)
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-0.5/UrukDroid-GoogleMarket_1.0.tbz2 UrukDroid-GoogleMarket_1.0.tbz2] (md5sum: f5427bdefa633d52210cd4ace47ba128)
+[Upgrade Upgrade package] (from 0.6+ to 1.0)
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 UrukDroid-1.0-upgrade.tbz2] (md5sum: 4bc5901e169663a9842c0d6242d5fd7d)
 *Additional files:*
- * [http://www.megaupload.com/?d=66PNG9H0 UrukDroid-0.7-kernel.tbz2]
- * [http://www.megaupload.com/?d=7Y8V0AO3 UrukDroid-0.7-kernelOC.tbz2] - please [http://forum.xda-developers.com/showpost.php?p=11634087&postcount=572 read disclaimer] - this kernel is not supported in any way, and it's probably buggy - don't use it! ... unless you know what are you doing...
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-kernel.tbz2 UrukDroid-1.0-kernel.tbz2] (md5sum: c817f5ce4aefdc33327f1dc3bf6dbbc6)
