@@ -7,7 +7,7 @@ UrukDroid changelog.
 
 = Changelog: =
 
-*UrukDroid 1.0* _ Not yet released _
+*UrukDroid 1.0* (30.04.2011) "[http://www.youtube.com/watch?v=DVx6bXoCnC0 For he is the Kwisatz﻿ Haderach]"
  * `[`FIX`]` sshfs missing files fix
  * `[`FIX`]` EasyInstall: changed datafs max size from 2GB to 1.95GB (for market to work), fixed partition sizes for A101 16GB when doing internal install with resize, fixed installation for A70H devices
  * `[`NEW`]` small script to copy UrukDroid files from SDCard (external) to Internall (copy_from_sd_to_internal.sh)
