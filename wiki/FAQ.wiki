@@ -71,3 +71,14 @@ ln -s /source destinations
 == How to mount ext4 under Windows? ==
 
 There is project called "ext2read" that claims to work also with ext4  (I've only tested it with ext2 long time ago - it worked) [http://sourceforge.net/projects/ext2read/] - please write some comments if you use it.
+
+== I'm getting "Firmware Update Available" notification, what should I do? ==
+
+This is notification of Archos updater, you should ignore it and if you want to get rid of this message - remove "Daos.apk". This application is required only during initial run, later it can be safely removed. Use file manager or from shell:
+{{{
+root@urukdroid:$ su
+root@urukdroid:/root# cd /system/app
+root@urukdroid:/system/app# ls -l Daos.apk 
+-rw-r--r-- 1 root root 79043 Feb  1 23:32 Daos.apk
+root@urukdroid:/system/app# mv Daos.apk ../app.old/
+}}}
