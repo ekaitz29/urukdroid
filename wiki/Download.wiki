@@ -5,6 +5,14 @@
 All UrukDroid releases (and other files) can be downloaded from [http://sauron.pourix.com/UrukDroid/ Uruk file server]. Below you will find direct links to chosen Uruk files.
 
 = Current files: =
+== Files (`UrukDroid-1.0`): ==
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid_1.0-Install.rar UrukDroid_1.0-Install.rar] (md5sum: 6f4fae907d0ec00f62534ea938913936)
+[Upgrade Upgrade] package (from 0.6+ to 1.0)
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 UrukDroid-1.0-upgrade.tbz2] (md5sum: e5d5ab31446b338cd37d50bbbcc3cdd0)
+*Additional files:*
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-kernel.tbz2 UrukDroid-1.0-kernel.tbz2] (md5sum: c817f5ce4aefdc33327f1dc3bf6dbbc6)
+
+= Old files: =
 == Files `(UrukDroid-0.7)`: ==
 From Megaupload.com
  * [http://www.megaupload.com/?d=7BM9XQWG UrukDroid_0.7-Install.rar] (md5sum: 785fd119d3079d4369e60208cb260c30)
@@ -16,8 +24,6 @@ Upgrade package (from 0.6+ to 0.7) - please read [Upgrade] howto for details
  * [http://www.megaupload.com/?d=7Y8V0AO3 UrukDroid-0.7-kernelOC.tbz2] - please  [http://forum.xda-developers.com/showpost.php?p=11634087&postcount=572 read disclaimer] - this kernel is not supported in any way, and it's probably buggy - don't use it! ... unless you know what are you doing...
  * [http://sauron.pourix.com/UrukDroid/UrukConfig/0.7/UrukConfig.apk UrukConfig 0.7]
 
-
-= Old files: =
 == Files `(UrukDroid-0.6)`: ==
 From Megaupload.com
  * [http://www.megaupload.com/?d=C0ZRW6Q9 UrukDroid_0.6-EasyInstall.rar] (md5sum: 21fed654e4b1a226b6fa8c1b5a1d305d)
