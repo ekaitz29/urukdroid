@@ -8,31 +8,31 @@
 This is installation procedure for UrukDroid 1.0+ with [EasyInstall] method. You can also do it [http://forum.xda-developers.com/showpost.php?p=10249905&postcount=7 manually].
 
 
-= Some useful informations =
+= Some useful information =
 
 == Warning ==
  * UrukDroid is known to work on A70S and H, A101 (8/16GB) and A43
  * Be aware that this modification requires SDE and probably some Linux knowledge.
- * By doing described below steps you probably can't brick your Archos - but do it on your own risk.
- * Root access on your devices makes it less secure for malicious software (use more head - less fingers ;) )
+ * By doing the steps described below you probably can't brick your Archos - but do it on your own risk.
+ * Root access on your device makes it less secure for malicious software (use more head - less fingers ;) )
 
 
 == Known problems: ==
- * None
+ * Sometimes WiFi can't be turned on - restart fix problem
 
 
 == Before you start: ==
  * Read about SDE on forum, read SDE warning on Archos page before install
  * All operations described here, are done on Linux or Android and should be done from `root` user (you can switch to that user in terminal by typing "su" or "sudo su" command)
- * If you don't have Linux on your PC - you can find any recent [http://www.sysresccd.org/Download Rescue CD], Live CD or Virtual disk (VirtualBox or VMware) - distributions does not matter. If you don't know what to choose - get Rescue CD from above link.
+ * If you don't have Linux on your PC - you can find any recent [http://www.sysresccd.org/Download Rescue CD], Live CD or Virtual disk (VirtualBox or VMware) - distribution does not matter. If you don't know what to choose - get Rescue CD from above link.
  * This method REQUIRES 2GB+[http://en.wikipedia.org/wiki/SDHC#SDHC SDHC (SD)] by default, or resizing/formatting internal storage.
 
 
-Since UrukDroid 0.6 there is new automated install method. It puts some restriction on flexibility of installation - but it should satisfy most of user, for more experienced ones - you can do it in old (manual) way.
+Since UrukDroid 0.6 there is new automated install method. It puts some restriction on flexibility of installation - but it should satisfy most of user; for more experienced users - you can do it in old (manual) way.
 
 = Installation =
 
-== Location of buttons and sockets in A70 ==
+== Location of buttons and sockets on A70 ==
 [http://urukdroid.googlecode.com/files/A70_desc.png]
 Use numbers from above picture to find corresponding buttons/sockets in text below.
 
@@ -60,7 +60,7 @@ For advanced install method - look below.
 
 After reboot you should see UrukDroid 1.0 boot up screen (if it happens to boot to stock OS, reboot once again and go to _"Boot menu"_, choose _"Developer edition"_). 
 
-You should see now some progress information on bottom of the screen.
+You should see some progress information on bottom of the screen.
 For few minutes you will see installation message with progress bar.
 Few minutes later, after some postinstallation procedures you should see UrukDroid boot animation and shortly after Archos setup wizard.
 
@@ -74,7 +74,7 @@ It's a bit old but gives a good insight how it should look like.
 
 == Step two: optional ==
 
-If you want *GoogleMarket* (and required component to make it work) you can install UrukDroid package - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this packaged are base on kenyu73 work).
+If you want *GoogleMarket* (and required component to make it work) you can install UrukDroid package - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this package are base on kenyu73 work).
 <font color="darkred" size="+1">If you copied your old /data, you cannot have installed any other version of Market. If you apply this update, on previously installed market/vending etc. - it won't work.</font> This packaged is tested with fresh install of Uruk - where it works.
 Download archive and put it in UrukUpdate directory located on /data partition
 (so path is /data/UrukUpdate/). You should do it directly from internet browser on Archos Tablet, file manager like Astro or terminal - you shouldn't do it over USB.
@@ -83,7 +83,7 @@ Installation process will start automatically and silently, file will disappear 
 == Advanced EasyInstall ==
 Since UrukDroid 0.7 you are able to choose, during install process, method called "Advanced". This option will give you possibility to:
  * choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage,
- * you are also able to choose Internal installation method with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose here filesystem sizes (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
+ * you are also able to choose Internal installation method with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose filesystem sizes here (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
 
 == Files (`UrukDroid-1.0`): ==
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid_1.0-Install.rar UrukDroid_1.0-Install.rar] (md5sum: 6f4fae907d0ec00f62534ea938913936)
