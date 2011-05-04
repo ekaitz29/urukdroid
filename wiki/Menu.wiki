@@ -17,6 +17,7 @@ Welcome to UrukDroid documentation
   * [UrukService_cpugovernor CPU Governor]
   * [UrukService_dvb DVB service]
   * [UrukService_iptables IPtables service]
+  * [UrukService_mediascanner Mediascanner service]
   * [UrukService_nfs4 NFS4 service]
   * [UrukService_samba Samba service]
   * [UrukService_sshd SSHd service]
