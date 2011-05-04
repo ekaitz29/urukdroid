@@ -1,0 +1,11 @@
+#summary UrukDroid Medaiscanner service..
+
+= Introduction =
+
+Android OS has a multimedia SQL database. Since to be useful it has to be up-to-date, every time you change something  (mount Archos over usb, download something etc.) mediascanner is starting to work. This can be time a CPU consuming task and often people don't want it to run. There is no options to do so, that's why there is MediaScanner service.
+
+= How mediascanner works? =
+
+Original mediascanner can work in two ways, full media rescan (you can do it from Settings menu) and update scan. When doing full media scan it should use Android building scanner, when doing update it start system level scripts to prepare list of updated files and then just re-index new/deleted files.
+
+Update scans are much more often and this scans can be disabled by disabling UrukDroid Mediascanner service. This service won't affects full scans.
