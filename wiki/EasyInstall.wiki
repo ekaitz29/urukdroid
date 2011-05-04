@@ -16,7 +16,7 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
   # No
   # [#Install_UrukDroid Install UrukDroid]
    # [#Simple_method Simple]
-    * Do you want UrukDroid to copy you existing /data partition (may cause trouble in future)?
+    * Do you want UrukDroid to copy your existing /data partition (may cause trouble in future)?
    # [#Advanced_method Advanced]
     # [#Install_to_SDCard Install to SDCard]
      * You will be asked for partitions sizes here
