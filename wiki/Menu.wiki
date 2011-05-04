@@ -8,7 +8,7 @@ Welcome to UrukDroid documentation
 
  * [WhatIsUruk What is UrukDroid?]
  * [Installation]
-  * [EasyInstall EasyInstall]
+  * [EasyInstall EasyInstall detailed]
  * [Upgrade]
  * [Changelog]
  * [Download]
