@@ -4,7 +4,7 @@
 
 = Introduction =
 
-EasyInstall is a code name for simple installation framework for UrukDroid. It was created as a successor of previous installation method, involving Linux usage which was to harsh for most of our users.
+EasyInstall is a code name for simple installation framework for UrukDroid. It was created as a successor of the previous installation method, involving Linux usage which was to harsh for most of our users.
 
 = Usage =
 
@@ -39,7 +39,7 @@ After boot up (use _"Boot Menu"_ and choose _"Developer edition"_) you should se
 
 *Simple method* will start installation on SDCard or HD (A70H) with predefined partition sizes - if you don't know what to choose, pick this one.
 
-*Advanced method* will give you choice of where you want to install Uruk (except A70H) - whether it should be internal or SDCard installation. And under some condition you will be also able to choose partition sizes.
+*Advanced method* will give you choice of where you want to install Uruk (except A70H) - whether it should be internal or SDCard installation. In some conditions you will also be able to choose partition sizes.
 
 === Simple method ===
 
@@ -65,7 +65,7 @@ You will be asked for partitions sizes here. Not much to write here :)
 
 === Install to Internal storage ==
 
- * Do you want to resize existing internal partition or format and create new ones? (Resizing requires enough free space of /sdcard storage! - it will no be checked)
+ * Do you want to resize existing internal partition or format and create new ones? (Resizing requires enough free space of /sdcard storage! - it will not be checked)
   # Resize existing partition
   # Format and create new partitions
 
@@ -88,7 +88,7 @@ If you will choose _"Resize existing partition"_ EI will shrink your /mnt/storag
 
 EI will help you to repair damaged UrukDroid installation by reformatting rootfs without touching datafs (stored apps and settings).
 
-For all devices except A70H you will be asked for location of installed UrukDroid you want to repair (with A70H process will start automatically - since it can be only installed on HD).
+For all devices except A70H you will be asked for location of installed UrukDroid you want to repair (with A70H process will start automatically - since it can only be installed on HD).
 
  * Do you want to ReInstall/Repair UrukDroid on removable SD card, or internal storage?
   # ReInstall to SDCard (default for Simple installation)"
