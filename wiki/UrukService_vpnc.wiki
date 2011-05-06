@@ -1,0 +1,13 @@
+#summary UrukDroid Cisco VPN service.
+
+= Introduction =
+
+CISCO developed it's own standard for VPN. Because of it, we have to use separate VPN tool. Luckily there is open source "[http://www.unix-ag.uni-kl.de/~massar/vpnc/ vpnc]".
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
