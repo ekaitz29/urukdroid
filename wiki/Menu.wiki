@@ -23,6 +23,7 @@ Welcome to UrukDroid documentation
   * [UrukService_sshd SSHd service]
   * [UrukService_SWAP SWAP service]
   * [UrukService_wpa WPA service]
+  * [UrukService_vpnc VPN Cisco service]
  * [UrukConfig]
  * [UrukDroid_utilities UrukDroid utilities]
  * [FAQ Frequently Asked Questions]
