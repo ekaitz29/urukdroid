@@ -19,7 +19,7 @@ vpnc is supposed to work with:
 
 = How to use VPNC service? =
 
-Like with every service you can enable it for boot time, or run every time you need it with UrukConfig. Then you should edit VPNC profile configuration, called "archos.conf". Profiles are located in _"/etc/vpnc/"_ directory. You can find there an example called "example.conf"
+Like with every service you can enable it for boot time, or run every time you need it with UrukConfig. In both cases you should edit VPNC profile configuration file, called _"archos.conf"_. Profiles are located in _"/etc/vpnc/"_ directory. You can find there an example called "example.conf"
 {{{
 #IPSec gateway <gateway>
 #IPSec ID <group-id>
@@ -31,4 +31,12 @@ Like with every service you can enable it for boot time, or run every time you n
 
 This are the same configuration options like in Cisco vpn client.
 
-If you want to use different profile, you can change it's name in "/etc/uruk.conf/vpnc.conf".
+If you want to use different profile, you can change it's name in _"/etc/uruk.conf/vpnc"_.
+
+= Configuration file =
+
+*Location:* /etc/uruk.conf/vpnc
+
+*Configuration options:* 
+ * VPNC_PATH - path to directory where VPNC profiles are stored. _Default: "/etc/vpnc"_
+ * VPNC_PROFILE - name of the default profiles used by vpnc. _Default: "archos"_
