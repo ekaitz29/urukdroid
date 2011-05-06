@@ -2,12 +2,19 @@
 
 = Introduction =
 
-CISCO developed it's own standard for VPN. Because of it, we have to use separate VPN tool. Luckily there is open source "[http://www.unix-ag.uni-kl.de/~massar/vpnc/ vpnc]".
+CISCO developed it's own standard for VPN. Because of it, we have to use separate VPN tool. Luckily there is a open source "[http://www.unix-ag.uni-kl.de/~massar/vpnc/ vpnc]".
 
+vpnc is supposed to work with:
 
-= Details =
+ * Cisco VPN concentrator 3000 Series
+ * Cisco IOS routers
+ * Cisco PIX / ASA Zecurity Appliances
+ * Juniper/Netscreen 
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ * Supported Authentications: Hybrid, Pre-Shared-Key + XAUTH, Pre-Shared-Key
+ * Supported IKE DH-Groups: dh1 dh2 dh5
+ * Supported Hash Algo (IKE/IPSEC): md5 sha1
+ * Supported Encryptions (IKE/IPSEC): (null) (1des) 3des aes128 aes192 aes256
+ * Perfect Forward Secrecy: nopfs dh1 dh2 dh5
+
+= How to use VPNC service? =
