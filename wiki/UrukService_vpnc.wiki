@@ -18,3 +18,17 @@ vpnc is supposed to work with:
  * Perfect Forward Secrecy: nopfs dh1 dh2 dh5
 
 = How to use VPNC service? =
+
+Like with every service you can enable it for boot time, or run every time you need it with UrukConfig. Then you should edit VPNC profile configuration, called "archos.conf". Profiles are located in _"/etc/vpnc/"_ directory. You can find there an example called "example.conf"
+{{{
+#IPSec gateway <gateway>
+#IPSec ID <group-id>
+#IPSec secret <group-psk>
+#IKE Authmode hybrid
+#Xauth username <username>
+#Xauth password <password>
+}}}
+
+This are the same configuration options like in Cisco vpn client.
+
+If you want to use different profile, you can change it's name in "/etc/uruk.conf/vpnc.conf".
