@@ -7,7 +7,7 @@ To upgrade from UrukDroid 0.7 you should download special upgrade file (UrukDroi
 This upgrade should also work for UrukDroid 0.6 - but it's not tested.
 
 == First method: ==
-Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, Astro or RooteExplorer - not build in one "File" manager) to movie file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
+Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, Astro or RooteExplorer - not build in one "File" manager) to move file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
 Code:
 {{{
 su
