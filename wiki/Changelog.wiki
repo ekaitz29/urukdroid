@@ -9,12 +9,13 @@ UrukDroid changelog.
 
 *UrukDroid 1.1* _Not yet released_
  * `[`CHANGE`]` Removed "wpa" service - since wpa_supplicant now can work with standard wifi manager and adhoc networks
- * `[`NEW`]` New wpa_supplicant - hopefully with all features and without problems
+ * `[`NEW`]` New wpa_supplicant - hopefully with all features and without most of known problems (sometimes it still refuses to start)
  * `[`CHANGE`]` Updated modules and kernel
  * `[`FIX`]` Fix camera support for A43
  * `[`CHANGE`]` Merged changes from Archos 2.3.26 OS
  * `[`CHANGE`]` Redesigned services to output more reliable status
  * `[`FIX`]` Mediascanner fixes (did not rescan data sometimes)
+ * `[`CHANGE`]` Changed file browser app to "File Expert" (with root access feature)
 
 *UrukDroid 1.0* (30.04.2011) "[http://www.youtube.com/watch?v=DVx6bXoCnC0 For he is the Kwisatz﻿ Haderach]"
  * `[`FIX`]` sshfs missing files fix
