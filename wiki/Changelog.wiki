@@ -16,6 +16,9 @@ UrukDroid changelog.
  * `[`CHANGE`]` Redesigned services to output more reliable status
  * `[`FIX`]` Mediascanner fixes (did not rescan data sometimes)
  * `[`CHANGE`]` Changed file browser app to "File Expert" (with root access feature)
+ * `[`NEW`]` Introduced in 1.0 "Rescue Menu" now fully functional (RM)
+ * `[`NEW`]` RM now have "[Alternative OS]" boot feature
+ * `[`NEW`]` RM now have "bare metal" backup/restore functionality
 
 *UrukDroid 1.0* (30.04.2011) "[http://www.youtube.com/watch?v=DVx6bXoCnC0 For he is the Kwisatz﻿ Haderach]"
  * `[`FIX`]` sshfs missing files fix
