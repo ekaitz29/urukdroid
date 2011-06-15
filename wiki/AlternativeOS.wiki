@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Since 1.1 (some hardly working features were introduced in 1.0) there is [RescueMenu Rescue Menu] with Alternative OS boot functionality. Now you can store and boot more operating systems on your table.
+Since UrukDroid 1.1 (some hardly working features were introduced in 1.0) there is [RescueMenu Rescue Menu] with Alternative OS boot functionality. Now you can store and boot more operating systems on your tablet.
 
 
 = Details =
@@ -16,7 +16,7 @@ To do so you need to create proper boot file in /AlternativeOS directory called 
 Every boot file is a simple shell script with header. In header there should be name and description (for future use).
 Body of the script is usually a mount option (to mount proper root file system) and chroot operation with launching init process.
 
-Debian.boot example
+debian.boot example
 {{{
 #!/bin/sh
 
@@ -37,3 +37,5 @@ exec /sbin/switch_root /AlternativeOS/ /sbin/init
 # IF it fails - we can do some clean ups
 /bin/umount /AlternativeOS/
 }}}
+
+Output of boot script is stored in /AlternativeOS/debug.txt file. So you can check why it failed to boot ;)
