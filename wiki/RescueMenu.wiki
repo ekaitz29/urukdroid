@@ -1,0 +1,13 @@
+#summary UrukDroid RescueMenu.
+
+= Introduction =
+
+Since UrukDroid 1.0 there is boot menu called "Rescue Menu". It's called during early boot up process - before any Android specific features are run. It's designed to allow boot other operating systems, restore "bare metal" backups etc.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
