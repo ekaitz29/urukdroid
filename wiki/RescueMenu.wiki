@@ -5,9 +5,6 @@
 Since UrukDroid 1.0 there is boot menu called "Rescue Menu". It's called during early boot up process - before any Android specific features are run. It's designed to allow boot other operating systems, restore "bare metal" backups etc.
 
 
-= Details =
+= Entering menu =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+To enter Rescue Menu, you need to press any volume button just after "Archos" logo is gone (there is few seconds window to do that). You can push volume button multiple times (it won't harm). If you succeed you should see message "Rescue menu initialized...", and shortly after you should see menu itself.
