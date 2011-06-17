@@ -36,7 +36,7 @@ Like you can see this are plain "tar" archives compressed with "gzip". There are
 
 = How to use Backup Menu =
 
-You should boot to "Rescue Menu", choose "Backup Menu". Then you can create backup of "rootfs" and "datafs" or restore those backups.
+You should boot to "Rescue Menu", choose "Backup Menu". Then you can create backup of _"rootfs"_ and _"datafs"_ or restore those backups.
 
 == Creating backup ==
 
@@ -46,4 +46,4 @@ Then you will see backup progress, with estimated time to finish. After successf
 
 == Restoring backup ==
 
-Restoring backup should be as straight forward as doing it. So you choose to restore rootfs or datafs, then you are able to choose from your backups found on SDCard. Later system will check backup file consistency
+Restoring backup should be as straight forward as doing it. So you choose to restore _"rootfs"_ or _"datafs"_, then you are able to choose from your backups found on SDCard. Later system will check backup file consistency and start restoring files.
