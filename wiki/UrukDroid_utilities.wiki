@@ -59,8 +59,9 @@ http://adrian.siemieniak.net/UrukDroid/SDCard-resultsV2.png
 
 
 == copy_from_sd_to_internal.sh ==
+== copy_from_internal_to_sd.sh ==
 
-This is simple script that I use to copy (kind of backup for me) my UrukDroid installation from SDcard to Internal storage. This way whenever I would broke something on me development platform (SDcard) I could easily boot to internal (just remove SDcard and reboot) and fix problem.
+This is simple script that I use to copy (kind of backup for me) my UrukDroid installation from SDcard to Internal storage (and vice-versa). This way whenever I would broke something on me development platform (SDcard) I could easily boot to internal (just remove SDcard and reboot) and fix problem.
 
 It's recommended to run this script on "[http://en.wikipedia.org/wiki/GNU_Screen screen]" - since it's quite CPU consuming operation and sometimes it brakes WiFi connection (of course if you run it over ssh).
 
