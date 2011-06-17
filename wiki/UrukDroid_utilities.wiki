@@ -80,3 +80,5 @@ You can poweroff device, remove SDcard and boot to internal...
 }}}
 
 == mount_sdcard.sh ==
+
+This script is used to mount SDCard storage partition when it is formatted as EXT4 filesystem (vold will fail to do that).
