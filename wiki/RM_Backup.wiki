@@ -8,7 +8,7 @@ Backup files are stored on SDcard - thus it has to be present and should have en
 
 = Why use backups? =
 
-Well despite obvious ;) it's good to prepare backup before every major update/upgrade. This is also a good way of moving entire systems between compatible devices, storing your system for service time etc. etc.
+Well despite obvious ;) it's good to prepare backup before every major update/upgrade. This is also a good way of moving entire system between compatible devices, storing your system for service time etc. etc.
 There are many ways you can utilise this almost "[http://en.wikipedia.org/wiki/Bare-metal_restore bare metal]" backups.
 
 = Details =
@@ -45,3 +45,5 @@ When you choose to create backup file, system will try to mount proper filesyste
 Then you will see backup progress, with estimated time to finish. After successfully created backup file, system will create md5 checksum and finish entire process.
 
 == Restoring backup ==
+
+Restoring backup should be as straight forward as doing it. So you choose to restore rootfs or datafs, then you are able to choose from your backups found on SDCard. Later system will check backup file consistency
