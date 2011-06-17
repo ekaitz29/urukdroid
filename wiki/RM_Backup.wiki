@@ -27,3 +27,17 @@ You should look for backup files on your SDcard in "UrukDroid_backup" directory.
 
 3 directories, 8 files
 }}}
+
+Like you can see this are plain "tar" archives compressed with "gzip". There are also md5 checksum files for validating purpose.
+
+= How to use Backup Menu =
+
+You should boot to "Rescue Menu", choose "Backup Menu". Then you can create backup of "rootfs" and "datafs" or restore those backups.
+
+== Creating backup ==
+
+When you choose to create backup file, system will try to mount proper filesystems and will check if there is enough free space. If there is less free space then uncompressed size of future backup, you will be warned, but you can still proceed.
+
+Then you will see backup progress, with estimated time to finish. After successfully created backup file, system will create md5 checksum and finish entire process.
+
+== Restoring backup ==
