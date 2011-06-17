@@ -9,6 +9,9 @@
 
 If you have already installed Uruk Droid on SDCard, please do an internal installation with EasyInstall. Boot again from SDCard and use "[http://code.google.com/p/urukdroid/wiki/UrukDroid_utilities#copy_from_sd_to_internal.sh copy_from_sd_to_internal.sh]".
 
+== How to migrate from Internal installation method to SDCard? ==
+
+If you have already installed Uruk Droid in internal space, please do an SDCard installation with EasyInstall. Boot again from internal and use "[http://code.google.com/p/urukdroid/wiki/UrukDroid_utilities#copy_from_internal_to_sd.sh copy_from_internal_to_sd.sh]".
 
 == What files need to be removed to install the UrukDroid Market? ==
 
