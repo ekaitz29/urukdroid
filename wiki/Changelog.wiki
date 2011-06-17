@@ -20,7 +20,9 @@ UrukDroid changelog.
  * `[`NEW`]` RM now have [AlternativeOS Alternative OS] boot feature
  * `[`NEW`]` RM now have "bare metal" backup/restore functionality
  * `[`NEW`]` Update process will now communicate with user with help of UrukConfig
+ * `[`NEW`]` Enabled cgroups
  * `[`FIX`]` "Moved" boot image on A101
+ * `[`FIX`]` 3Gmodem_init.sh fixes
 
 *UrukDroid 1.0* (30.04.2011) "[http://www.youtube.com/watch?v=DVx6bXoCnC0 For he is the Kwisatz﻿ Haderach]"
  * `[`FIX`]` sshfs missing files fix
