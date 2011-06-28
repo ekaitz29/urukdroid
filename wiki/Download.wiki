@@ -8,7 +8,7 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
 == Files (`UrukDroid-1.0`): ==
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid_1.0-Install.rar UrukDroid_1.0-Install.rar] ([http://www.megaupload.com/?d=3F9JFUGM mirror1] [http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.0/UrukDroid_1.0-Install.rar mirror2]) (md5sum: 6f4fae907d0ec00f62534ea938913936)
 [Upgrade Upgrade] package (from 0.6+ to 1.0)
- * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 UrukDroid-1.0-upgrade.tbz2] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 mirror1]) (md5sum: e5d5ab31446b338cd37d50bbbcc3cdd0)
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 UrukDroid-1.0-upgrade.tbz2] ([http://www.megaupload.com/?d=HIVDIXFP mirror1] [http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 mirror2]) (md5sum: e5d5ab31446b338cd37d50bbbcc3cdd0)
 *Additional files:*
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-kernel.tbz2 UrukDroid-1.0-kernel.tbz2] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.0/UrukDroid-1.0-kernel.tbz2 mirror1]) (md5sum: c817f5ce4aefdc33327f1dc3bf6dbbc6)
 
