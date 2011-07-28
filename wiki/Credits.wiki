@@ -17,3 +17,4 @@ More special thanks goes to:
  * Martin for A101 testing
  * Scott for A70H testing
  * sibere, woti23, lennb - for pushing me forward :D
+ * and of course to Archos team - NZ, for helping from time to time :)
