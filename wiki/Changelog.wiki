@@ -7,7 +7,12 @@ UrukDroid changelog.
 
 = Changelog: =
 
-*UrukDroid 1.1* _Not yet released_
+*UrukDroid 1.5* _Not yet released_
+ * `[`CHANGE`]` Since 1.1 (beta1/2/3 and release candidate 1/2/3) had stability and compatibility issues that I was unable to trace down (to many changes on changes etc.) I've decided to implement all stuff from beginning on fresh OS. Since all "reverse engineering" stuff was already made and I already have required knowledge - I should be the fastest method. So entire system is cleaned up, updated to latest binaries - and so far looks good :)
+ * `[`FIX`]` No more "soft reboots" (system reloaded it's graphics UI part)
+ * `[`FIX`]` No more turning off WiFi issue (but it happens that WiFi can't pop in after full reboot - another reboot is required)
+
+*UrukDroid 1.1* _Won't be released (since I was unable to make it stable enough)_
  * `[`CHANGE`]` Removed "wpa" service - since wpa_supplicant now can work with standard wifi manager and adhoc networks
  * `[`NEW`]` New wpa_supplicant - hopefully with all features and without most of known problems (sometimes it still refuses to start)
  * `[`CHANGE`]` Updated modules and kernel
