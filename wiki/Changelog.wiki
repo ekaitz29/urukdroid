@@ -12,6 +12,8 @@ UrukDroid changelog.
  * `[`FIX`]` No more "soft reboots" (system reloaded it's graphics UI part)
  * `[`FIX`]` No more turning off WiFi issue (but it happens that WiFi can't pop in after full reboot - another reboot is required)
  * `[`FIX`]` CIFS startup on boot ([http://code.google.com/p/urukdroid/issues/detail?id=57 Issue 57])
+ * `[`CHANGE`]` Update process should be now more chatty and report more errors
+ * `[`CHANGE`]` Reverted back WPA service (which enable UrukDroid WPA supplicant with AdHoc support) - since some people reported problems with adding new networks with Uruk version of WPA supplicant.
 
 *UrukDroid 1.1* _Won't be released (since I was unable to make it stable enough)_
  * `[`CHANGE`]` Removed "wpa" service - since wpa_supplicant now can work with standard wifi manager and adhoc networks
