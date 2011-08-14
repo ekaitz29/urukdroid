@@ -6,7 +6,7 @@
 
 == My UrukDroid (1.0+) fails to boot ==
 
-Even so Uruk will try to repair every partitions during bootup process, it may sometimes fail. This should not happened during normal usage process. But when rootfs (system partition) get badly corrupted, easiest solution is to "ReInstall" it with [EasyInstall]. This will format and install Uruk on your tablet, without touching your datafs (application) or storagefs.
+Even so Uruk will try to repair every partitions during bootup process, it may sometimes fail. This should not happened during normal usage process. But when rootfs (system partition) get badly corrupted, easiest solution is to "[EasyInstall#ReInstall_UrukDroid ReInstall]" it with [EasyInstall]. This will format and install Uruk on your tablet, without touching your datafs (application) or storagefs.
 
 == How to migrate from SDCard to Internal installation method ? ==
 
