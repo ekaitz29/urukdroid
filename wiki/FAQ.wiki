@@ -6,7 +6,7 @@
 
 == I've tried to use OC kernel - but it does not work ==
 
-OC (OverClocked) kernel may work only on some CPUs (it's just luck - not something you can determine). It may also work partially - even if device booted up it does not have to mean it works correctly (there can be some calculation errors, corruptions etc).
+OC (OverClocked) kernel may work only on some CPUs (it's just luck - not something you can determine). It may also work partially - even if device booted up, it does not have to mean it works fully correctly (there can be some calculation errors, corruptions etc).
 
 Anyway if you have tried OC kernel and it failed to boot completely, you need to power off device, go to Developer Menu (just like during installation process) and flash proper zImage and initramfs.cpio.gz  (this are not the files used for EasyInstall!) which can be found in Uruk Droid repository (go to proper version folder): http://sauron.pourix.com/UrukDroid/
 
