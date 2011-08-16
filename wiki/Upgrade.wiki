@@ -2,17 +2,19 @@
 
 = Introduction =
 
-To upgrade from UrukDroid 0.7 you should download special upgrade file (UrukDroid-1.0-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
+To upgrade from UrukDroid 1.0+ (so 1.1 also) you should download special upgrade file (UrukDroid-1.5-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
 
-This upgrade should also work for UrukDroid 0.6 - but it's not tested.
+*If you have UrukDroid 1.5 beta or release candidate* you have to apply [http://forum.xda-developers.com/showpost.php?p=16642940&postcount=1811 this fix] first!
+
+This upgrade should also work for UrukDroid 0.7 - but it's not tested.
 
 == First method: ==
-Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, Astro or RooteExplorer - not build in one "File" manager) to move file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
+Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, FileExpert or RooteExplorer - not build in one "File" manager) to move file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
 Code:
 {{{
 su
 cd /sdcard/
-mv UrukDroid-1.0-upgrade.tbz2 /data/UrukUpdate/
+mv UrukDroid-1.5-upgrade.tbz2 /data/UrukUpdate/
 }}}
 
 == Second method: ==
