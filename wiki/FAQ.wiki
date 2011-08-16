@@ -4,9 +4,19 @@
 
 <wiki:toc max_depth="2" />
 
+== I've tried to use OC kernel - but it does not work ==
+
+OC (OverClocked) kernel may work only on some CPUs (it's just luck - not something you can determine). It may also work partially - even if device booted up it does not have to mean it works correctly (there can be some calculation errors, corruptions etc).
+
+Anyway if you have tried OC kernel and it failed to boot completely, you need to power off device, go to Developer Menu (just like during installation process) and flash proper zImage and initramfs.cpio.gz  (this are not the files used for EasyInstall!) which can be found in Uruk Droid repository (go to proper version folder): http://sauron.pourix.com/UrukDroid/
+
+If device get unstable or has some errors - you may try to revert to normal kernel with UrukDroid package - you can also find this packaged in repository (there name is something like: UrukDroid-1.5-kernel.tbz2).
+
 == My UrukDroid (1.0+) fails to boot ==
 
 Even so Uruk will try to repair every partitions during bootup process, it may sometimes fail. This should not happened during normal usage process. But when rootfs (system partition) get badly corrupted, easiest solution is to "[EasyInstall#ReInstall_UrukDroid ReInstall]" it with [EasyInstall]. This will format and install Uruk on your tablet, without touching your datafs (application) or storagefs.
+
+Of course you can also connect (if it's SDCard) media to Linux machine and try to fsck it manually. It is also possible (if you have Uruk internal and SDCard) to boot from another Uruk and do fsck of other partition from it's shell.
 
 == How to migrate from SDCard to Internal installation method ? ==
 
