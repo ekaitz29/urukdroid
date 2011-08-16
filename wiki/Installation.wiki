@@ -75,6 +75,7 @@ It's a bit old but gives a good insight how it should look like.
 == Step two: optional ==
 
 If you want *GoogleMarket* (and required component to make it work) it's recomended to use (more up to date) [http://www.arctablet.com/blog/archos-tablet/arctools-google-apps-and-market-installer-for-archos-gen8-youtube-fixed/ ArcTools] from AppStore.
+
 You can also install UrukDroid package (thus you will have no WiFi location enabled) - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this package are base on kenyu73 work).
 <font color="darkred" size="+1">If you copied your old /data, you cannot have installed any other version of Market. If you apply this update, on previously installed market/vending etc. - it won't work.</font> This packaged is tested with fresh install of Uruk - where it works.
 Download archive and put it in UrukUpdate directory located on /data partition
