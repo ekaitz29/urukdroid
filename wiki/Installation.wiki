@@ -39,7 +39,7 @@ Use numbers from above picture to find corresponding buttons/sockets in text bel
 == Step one ==
 Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
 
-Download and extract installation files from archive *UrukDroid_1.0-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
+Download and extract installation files from archive *UrukDroid_1.5-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
 
 Flash initramfs.cpio.gz and zImage from SDE boot menu:
  * power on (2) Archos device, hold up/+ volume key (1) until you see _"Archos AXXXX - Boot Menu"_,
@@ -53,12 +53,12 @@ Boot to SDE:
  * choose "Developer edition"
 
 
-You should see *"UrukDroid 1.0 Installation framework"* title. Please choose simple install method. When asked to, connect Archos to PC (5) once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button (2) shortly. Now [EasyInstall EI] will check installation file and prepare it for next step.
+You should see *"UrukDroid 1.5 Installation framework"* title. Please choose simple install method. When asked to, connect Archos to PC (5) once again and copy UrukDroid-install.tgz, disconnect Archos from PC *_properly_* (umount, safely remove device etc.) and press power button (2) shortly. Now [EasyInstall EI] will check installation file and prepare it for next step.
 
 Later, you will be also able to choose whether you want to copy /data partition. It's recommended not to - but you have this option.
 For advanced install method - look below.
 
-After reboot you should see UrukDroid 1.0 boot up screen (if it happens to boot to stock OS, reboot once again and go to _"Boot menu"_, choose _"Developer edition"_). 
+After reboot you should see UrukDroid 1.5 boot up screen (if it happens to boot to stock OS, reboot once again and go to _"Boot menu"_, choose _"Developer edition"_). 
 
 You should see some progress information on bottom of the screen.
 For few minutes you will see installation message with progress bar.
@@ -74,7 +74,8 @@ It's a bit old but gives a good insight how it should look like.
 
 == Step two: optional ==
 
-If you want *GoogleMarket* (and required component to make it work) you can install UrukDroid package - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this package are base on kenyu73 work).
+If you want *GoogleMarket* (and required component to make it work) it's recomended to use (more up to date) [http://www.arctablet.com/blog/archos-tablet/arctools-google-apps-and-market-installer-for-archos-gen8-youtube-fixed/ ArcTools] from AppStore.
+You can also install UrukDroid package (thus you will have no WiFi location enabled) - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this package are base on kenyu73 work).
 <font color="darkred" size="+1">If you copied your old /data, you cannot have installed any other version of Market. If you apply this update, on previously installed market/vending etc. - it won't work.</font> This packaged is tested with fresh install of Uruk - where it works.
 Download archive and put it in UrukUpdate directory located on /data partition
 (so path is /data/UrukUpdate/). You should do it directly from internet browser on Archos Tablet, file manager like Astro or terminal - you shouldn't do it over USB.
@@ -84,11 +85,3 @@ Installation process will start automatically and silently, file will disappear 
 Since UrukDroid 0.7 you are able to choose, during install process, method called "Advanced". This option will give you possibility to:
  * choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage,
  * you are also able to choose Internal installation method with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose filesystem sizes here (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
-
-== Files (`UrukDroid-1.0`): ==
- * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid_1.0-Install.rar UrukDroid_1.0-Install.rar] (md5sum: 6f4fae907d0ec00f62534ea938913936)
- * [http://sauron.pourix.com/UrukDroid/UrukDroid-0.5/UrukDroid-GoogleMarket_1.0.tbz2 UrukDroid-GoogleMarket_1.0.tbz2] (md5sum: f5427bdefa633d52210cd4ace47ba128)
-[Upgrade Upgrade] package (from 0.6+ to 1.0)
- * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 UrukDroid-1.0-upgrade.tbz2] (md5sum: e5d5ab31446b338cd37d50bbbcc3cdd0)
-*Additional files:*
- * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid-1.0-kernel.tbz2 UrukDroid-1.0-kernel.tbz2] (md5sum: c817f5ce4aefdc33327f1dc3bf6dbbc6)
