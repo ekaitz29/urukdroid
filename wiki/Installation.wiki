@@ -11,7 +11,7 @@ This is installation procedure for UrukDroid 1.0+ with [EasyInstall] method. You
 = Some useful information =
 
 == Warning ==
- * UrukDroid is known to work on A70S and H, A101 (8/16GB) and A43
+ * UrukDroid is known to work on A70S and H, A101 (8/16GB) and A43. However on A70H it may be installed only on HD.
  * Be aware that this modification requires SDE and probably some Linux knowledge.
  * By doing the steps described below you probably can't brick your Archos - but do it on your own risk.
  * Root access on your device makes it less secure for malicious software (use more head - less fingers ;) )
