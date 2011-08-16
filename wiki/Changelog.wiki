@@ -33,6 +33,7 @@ UrukDroid changelog.
  * `[`FIX`]` "Moved" boot image on A101
  * `[`FIX`]` 3Gmodem_init.sh fixes
  * `[`NEW`]` You can dissable boot from SDCard by naming any of it's partition "noboot" ('root@urukdroid:/root# e2label /dev/block/mmcblk2p1 noboot')
+ * `[`NEW`]` patch (by Sibere) increasing USB current in Host mode
 
 *UrukDroid 1.0* (30.04.2011) "[http://www.youtube.com/watch?v=DVx6bXoCnC0 For he is the Kwisatz﻿ Haderach]"
  * `[`FIX`]` sshfs missing files fix
