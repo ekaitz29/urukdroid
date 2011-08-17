@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Add your content here.
+This is example how you can boot Debian with UrukDroid and AlternativeOS from RescueMenu. This example is based on Debian from [http://www.debian-archos.com/ Archos-Generation].
 
 
 = Details =
