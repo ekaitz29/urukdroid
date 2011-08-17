@@ -1,0 +1,47 @@
+#summary UrukDroid AlternativeOS - example how to boot GNU Debian
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+This is how /AlternativeOS/debian.boot file may look like
+{{{
+#!/bin/sh
+
+#
+# Script to boot alternative OS: Debian
+#
+# OS_Name: Debian
+# OS_Desc: Debian armel
+#
+# Ver: 1.2 (17.08.2011) Adrian (Sauron) Siemieniak
+#
+
+set -xv
+
+# Device where debian image reside (storagefs on sdcard in example)
+debian_dev="/dev/mmcblk2p1"
+debian_dev_mountp="/mnt/card"
+# Debian image file
+debian_img="rootfs.img"
+debian_mountp="/AlternativeOS"
+
+# Mounting device where image file reside
+$MOUNT $debian_dev $debian_dev_mountp || log "Failed to mount device with debian file"
+
+# Creating loop device
+$LOSETUP /dev/loop0 $debian_dev_mountp"/"$debian_img || log "Mounting system partition failed"
+
+# Mounting debian rootfs disk
+$MOUNT /dev/loop0 $debian_mountp
+
+# Switching to debian
+exec /sbin/switch_root $debian_mountp /sbin/init
+
+# IF it fails - we can do some clean ups
+$UMOUNT $debian_mountp
+$UMOUNT $debian_dev_mountp
+}}}
