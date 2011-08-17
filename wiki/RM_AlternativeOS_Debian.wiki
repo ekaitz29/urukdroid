@@ -7,7 +7,8 @@ This is example how you can boot Debian with UrukDroid and AlternativeOS from Re
 
 = Details =
 
-This is how /AlternativeOS/debian.boot file may look like
+This is how /AlternativeOS/debian.boot file may look like. It assumes you have rootfs.img on your SDCard first partition (default UrukDroid way). Of course you can freely change partition, or even extract rootfs to raw partition and boot it directly.
+
 {{{
 #!/bin/sh
 
