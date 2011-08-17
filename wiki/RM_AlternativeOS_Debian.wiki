@@ -46,3 +46,6 @@ exec /sbin/switch_root $debian_mountp /sbin/init
 $UMOUNT $debian_mountp
 $UMOUNT $debian_dev_mountp
 }}}
+
+And here is short video how bootup process looks like (or may look like)
+<wiki:video url="http://www.youtube.com/watch?v=wKcYPPl26YA"><br>
