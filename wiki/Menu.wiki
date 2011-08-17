@@ -27,6 +27,7 @@ Welcome to UrukDroid documentation
  * [UrukConfig]
  * [RescueMenu UrukDroid Rescue Menu]
   * [RM_AlternativeOS Alternative OS menu]
+   * [RM_AlternativeOS_Debian Booting Debian]
   * [RM_Backup Backup menu]
  * [UrukDroid_utilities UrukDroid utilities]
  * [FAQ Frequently Asked Questions]
