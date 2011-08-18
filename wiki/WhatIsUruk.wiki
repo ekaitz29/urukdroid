@@ -34,4 +34,7 @@ Next level is a *system layer*. These are applications compiled for the exact CP
 
 And third one is *Dalvik/UI layer*. With Android we are given the Java Runtime Environment called Dalvik - this is a place where all Android applications (from Market etc.) reside and work. This is a place where Uruk is just like every other Android - no modifications are made here.
 Most of the things you can actually see are from this layer.
- 
+
+== What is "Uruk"? ==
+
+Isn't it obvious? :) You can read more about [http://en.wikipedia.org/wiki/Uruk-hai Uruk-hai] on Wikipedia, long story short - this are more advance Orcs from Tolkien fiction.
