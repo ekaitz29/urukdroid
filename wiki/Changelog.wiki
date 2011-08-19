@@ -11,7 +11,7 @@ UrukDroid changelog.
  * `[`CHANGE`]` Swap now can use both file and partition at the same time, added simple stats, added default Archos swap partition
  * `[`CHANGE`]` Disabled Archos swap manager (forgot in 1.5)
  * `[`FIX`]` Fixed WPA service (did not switch properly)
- * `[`NEW`]` Added AlternativeOS Debian boot script
+ * `[`FIX`]` NFS4 service don't report failed umount of CIFS/SMB share
  * `[`NEW`]` Fix for remounting to RW mode rootfs (sometimes it happens it starts in RO)
  * `[`CHANGE`]` Alternative OS boot now produces more messages (for easier debug), new Debian boot script (as an example)
  * `[`NEW`]` Added unrar binary
