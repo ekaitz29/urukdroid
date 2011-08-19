@@ -10,6 +10,7 @@ Since UrukDroid 1.1 (some hardly working features were introduced in 1.0) there 
 If you want to boot other then UrukDroid (Android) operating system, like plain Linux (Debian, Armstrong) or try MeeGo - you can now do it with UrukDroid rescue menu. Limitation is to the same kernel (modules are separate).
 
 To do so you need to create proper boot file in /AlternativeOS directory called "name.boot". Rescue menu will automatically search for this type of files and ask user to choose one of them.
+This file has to be a valid shell script with execution rights for root.
 
 = Boot files structure =
 
