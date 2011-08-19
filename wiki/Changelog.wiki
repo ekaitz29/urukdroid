@@ -12,6 +12,7 @@ UrukDroid changelog.
  * `[`CHANGE`]` Disabled Archos swap manager (forgot in 1.5)
  * `[`FIX`]` Fixed WPA service (did not switch properly)
  * `[`NEW`]` Added AlternativeOS Debian boot script
+ * `[`NEW`]` Fix for remounting to RW mode rootfs (sometimes it happens it starts in RO)
 
 *UrukDroid 1.5* (15.08.2011) [http://www.youtube.com/watch?v=8N_tupPBtWQ Manamana!]
  * `[`CHANGE`]` Since UrukDroid 1.1 (both beta1/2/3 and release candidate 1/2/3) had stability and compatibility issues - that I was unable to trace down (too many changes on changes etc.) - I've decided to implement all stuff from beginning on fresh OS. Since all "reverse engineering" stuff was already made and I already have required knowledge - It should be the fastest method. So entire system is cleaned up, updated to latest binaries - and so far looks good :). That's why I've bumped version to 1.5 - just to make it a bit more visible it's not a straight continuation of 1.0/1.1.
