@@ -28,7 +28,7 @@ This is installation procedure for UrukDroid 1.0+ with [EasyInstall] method. You
  * This method REQUIRES 2GB+[http://en.wikipedia.org/wiki/SDHC#SDHC SDHC (SD)] by default, or resizing/formatting internal storage.
 
 
-Since UrukDroid 0.6 there is new automated install method. It puts some restriction on flexibility of installation - but it should satisfy most of user; for more experienced users - you can do it in old (manual) way.
+Since UrukDroid 0.6 there is new automated install method. It puts some restriction on flexibility of installation - but it should satisfy most of users; for more experienced ones - you can do it in old (manual) way.
 
 = Installation =
 
@@ -37,6 +37,9 @@ Since UrukDroid 0.6 there is new automated install method. It puts some restrict
 Use numbers from above picture to find corresponding buttons/sockets in text below.
 
 == Step one ==
+
+*Important notice*: Because of performance reason it is recommended to install UrukDroid internally (on internal storage). In most cases all so called "Force Close" errors, poor performance etc. are because of slow SDCard (10x SDCard does not have to be "good" for operating system - it's a bit more complex work to find "good" SDCard). However because of easiness default "Simple" method is still external.
+
 Assuming you have already installed [http://www.archos.com/support/support_tech/updates.html?country=us&lang=en SDE from Archos]:
 
 Download and extract installation files from archive *UrukDroid_1.5-EasyInstall.rar*. Inside you should find three files: *initramfs.cpio.gz*, *zImage* and *UrukDroid-install.tgz*
