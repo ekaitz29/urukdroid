@@ -79,7 +79,7 @@ It's a bit old but gives a good insight how it should look like.
 
 If you want *GoogleMarket* (and required component to make it work) it's recomended to use (more up to date) [http://www.arctablet.com/blog/archos-tablet/arctools-google-apps-and-market-installer-for-archos-gen8-youtube-fixed/ ArcTools] from AppStore.
 
-You can also install UrukDroid package (thus you will have no WiFi location enabled) - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this package are base on kenyu73 work).
+You can also install [UrukPackages UrukDroid package] (thus you will have no WiFi location enabled) - UrukDroid-GoogleMarket_1.0.tbz2. (files inside this package are base on kenyu73 work).
 <font color="darkred" size="+1">If you copied your old /data, you cannot have installed any other version of Market. If you apply this update, on previously installed market/vending etc. - it won't work.</font> This packaged is tested with fresh install of Uruk - where it works.
 Download archive and put it in UrukUpdate directory located on /data partition
 (so path is /data/UrukUpdate/). You should do it directly from internet browser on Archos Tablet, file manager like Astro or terminal - you shouldn't do it over USB.
@@ -89,3 +89,7 @@ Installation process will start automatically and silently, file will disappear 
 Since UrukDroid 0.7 you are able to choose, during install process, method called "Advanced". This option will give you possibility to:
  * choose partition sizes (from defined list of choices) when installing to SDCard or formatting Internal storage,
  * you are also able to choose Internal installation method with "resize" option. This method will try to reduce size of your current internal storage (visible on stock OS under /mnt/storage) and create additional filesystems. You cannot choose filesystem sizes here (it will use default/simple one 512MB for rootfs and 1GB for datafs) and YOU MUST assure enough free space on shrinked filesystem. So <font color="darkred">MAKE SURE</font> your /mnt/storage has <font color="darkred">AT LEAST 1.7GB free space</font> - preferably more - otherwise this method will fail. This condition is not checked during install process.
+
+= Installation of additional package =
+
+There are few additional [UrukPackages UrukDroid packages] you can install, this are usually files with extension ".tbz2".
