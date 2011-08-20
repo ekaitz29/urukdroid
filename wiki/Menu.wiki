@@ -25,7 +25,7 @@ Welcome to UrukDroid documentation
   * [UrukService_wpa WPA service]
   * [UrukService_vpnc VPN Cisco service]
  * [UrukConfig]
- * [UrukPackages Uruk Packages]
+ * [UrukPackages UrukPackages]
  * [RescueMenu UrukDroid Rescue Menu]
   * [RM_AlternativeOS Alternative OS menu]
    * [RM_AlternativeOS_Debian Booting Debian]
