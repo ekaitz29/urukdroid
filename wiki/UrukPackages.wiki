@@ -26,8 +26,16 @@ This type is used mostly during major system upgrades. All work is done during b
 
 === Kernel ===
 
-
+This are kernel packages, their task is to update kernel and initramfs images. They install without reboot, but of course to see changes reboot is required.
 
 == Installation ==
 
-To install package you need to simply copy/move it to */data/UrukUpdate* folder.
+To install package you need to simply copy/move it to */data/UrukUpdate* folder. During install process (since UrukDroid 1.1) you should see communicates on top bar.
+
+= Trouble shooting =
+
+If you see that package installation failed, read error message. You should see it in top bar (prior to UrukDroid 1.1 you should look for it in text, log file /var/lib/urukdroid/fail.log - this file is also present in later realises).
+
+Most common errors are:
+ * *Wrong file*: This means system did not recognize package, probably it's not an UrukDroid package or it's corrupted
+ * *No package description file*: System was unable to extract package description file. This means that file is probably corrupted (and can't be extracted), but it could also mean that this is proper type of archive, but it's not UrukDroid package.
