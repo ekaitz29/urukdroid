@@ -1,0 +1,27 @@
+#summary UrukDroid update/upgrade packages.
+
+= Introduction =
+
+UrukDroid has it's own package system for doing various type of modification. We have three types of packages:
+ * update
+ * upgrade
+ * kernel
+
+= Details =
+
+For doing all type of already installed system I've prepared packaging system. It's easy and flexible way of modifying Uruk.
+
+== Type of packages ==
+
+Like you already know, we have three types of UrukDroid packages
+
+=== Update ===
+
+This is most common type of packages, it brings all those small changes and fixes to system. This packages usually works in "overwrite" mode - so nothing is erased.
+Proper update can made on system level (so device restart is not required) and on boot time level (during boot up process you will see message about update being applied)
+
+=== Upgrade ===
+
+== Installation ==
+
+To install package
