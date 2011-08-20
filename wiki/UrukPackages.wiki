@@ -22,6 +22,12 @@ Proper update can made on system level (so device restart is not required) and o
 
 === Upgrade ===
 
+This type is used mostly during major system upgrades. All work is done during bootup process and inflicts erasing most of *rootfs* data. So probably all you service configurations will be overwritten.
+
+=== Kernel ===
+
+
+
 == Installation ==
 
-To install package
+To install package you need to simply copy/move it to */data/UrukUpdate* folder.
