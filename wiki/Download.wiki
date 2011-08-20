@@ -6,10 +6,13 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
 
 = Current files: =
 == Files (`UrukDroid-1.5`): ==
+=== EasyInstall package ===
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid_1.5-Install.rar UrukDroid_1.5-Install.rar] ([http://www.megaupload.com/?d=PZGVIBUT mirror1] [http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.5/UrukDroid_1.5-Install.rar mirror2]) (md5sum: 46110c1ac8992fec20a33f54317bf0b6)
-[Upgrade Upgrade] package (from 1.0+ to 1.5)
+=== [Upgrade Upgrade] package ===
+(from 1.0+ to 1.5)
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-upgrade.tbz2 UrukDroid-1.5-upgrade.tbz2] ([http://www.megaupload.com/?d=FND4Z2V3 mirror1] [http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.0/UrukDroid-1.0-upgrade.tbz2 mirror2]) (md5sum: f661a1d1a97ade10c699e7bad11f98b9)
-* [UrukPackages UrukDroid packages] for UD1.5+:*
+=== [UrukPackages UrukDroid packages] ===
+(for UrukDroid 1.5.*)
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-kernel.tbz2 UrukDroid-1.5-kernel.tbz2] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.5/UrukDroid-1.5-kernel.tbz2 mirror1]) (md5sum: 56ab1127d57c6afed631a2cc12198d21)
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-kernelOC.tbz2 UrukDroid-1.5-kernelOC.tbz2 (OverClock)] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.5/UrukDroid-1.5-kernelOC.tbz2 mirror1]) (md5sum: ac8c3ff63a201a8aa32aedb9ae56d045) (this kernel may work with your device, but it may not - it's CPU dependant, it's not recommended for novices and it's not supported by developers - so if it does not work - don't report it).
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-30pxButtons.tbz2 UrukDroid-1.5-30pxButtons.tbz2] This package is changing size of top bar buttons to 30px height.
