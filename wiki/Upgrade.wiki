@@ -4,6 +4,10 @@
 
 To upgrade from UrukDroid 1.0+ (so 1.1 also) you should download special upgrade file (UrukDroid-1.5-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
 
+== Important ==
+
+Upgrade requires you to have at least as much as upgrade file free space on *rootfs* (/) and twice as much free space on *datafs* (/data). Without this it will fail!
+
 *If you have UrukDroid 1.5 beta or release candidate* you have to apply [http://forum.xda-developers.com/showpost.php?p=16642940&postcount=1811 this fix] first!
 
 This upgrade should also work for UrukDroid 0.7 - but it's not tested.
