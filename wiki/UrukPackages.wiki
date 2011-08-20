@@ -39,3 +39,5 @@ If you see that package installation failed, read error message. You should see 
 Most common errors are:
  * *Wrong file*: This means system did not recognize package, probably it's not an UrukDroid package or it's corrupted
  * *No package description file*: System was unable to extract package description file. This means that file is probably corrupted (and can't be extracted), but it could also mean that this is proper type of archive, but it's not UrukDroid package.
+ * *Veryfing signature failed*: This means package was somehow altered. At this level it's weak protection against unskilled package modification, later it may became strong private/public key protection.
+ * *Pre/Post installation script failed*: Package can have some scripts inside to modify more complex updates/upgrades - this is information that one of them failed to complete
