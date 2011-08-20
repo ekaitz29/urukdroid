@@ -12,7 +12,7 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
 *Additional files:*
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-kernel.tbz2 UrukDroid-1.5-kernel.tbz2] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.5/UrukDroid-1.5-kernel.tbz2 mirror1]) (md5sum: 56ab1127d57c6afed631a2cc12198d21)
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-kernelOC.tbz2 UrukDroid-1.5-kernelOC.tbz2 (OverClock)] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.5/UrukDroid-1.5-kernelOC.tbz2 mirror1]) (md5sum: ac8c3ff63a201a8aa32aedb9ae56d045) (this kernel may work with your device, but it may not - it's CPU dependant, it's not recommended for novices and it's not supported by developers - so if it does not work - don't report it).
-
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-small_buttons.tbz2 UrukDroid-1.5-small_buttons.tbz2] package changing size of top bar buttons to 30px
 
 = Old files: =
 == Files (`UrukDroid-1.0`): ==
