@@ -4,6 +4,23 @@
 
 <wiki:toc max_depth="2" />
 
+== How to prevent Uruk from booting SDcard ==
+
+UrukDroid loader always tries to boot from SDCard on the first place, then from Internal storage. Loader checks how many partitions is on SDCard (if present) - if there are 3 or more, it assumes it's Uruk installation and will try to boot from it.
+
+So if (for example) you have:
+ * old installation of Uruk on SDCard and you moved internal
+ * full bootable UrukDroid backup on SDCard
+
+And you want permanently force Uruk to boot from Internal, label first SDCard partition as "noboot".
+You can do it on any other PC, on Uruk it should look like this
+{{{
+su
+e2label /dev/block/mmcblkp2p1 noboot
+}}}
+You may change it back with giving partition any other name (for example "boot").
+This "trick" will work on UrukDroid 1.1+
+
 == I've tried to use OC kernel - but it does not work ==
 
 OC (OverClocked) kernel may work only on some CPUs (it's just luck - not something you can determine). It may also work partially - even if device booted up, it does not have to mean it works fully correctly (there can be some calculation errors, corruptions etc).
