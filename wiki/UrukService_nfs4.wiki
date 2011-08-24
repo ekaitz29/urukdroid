@@ -53,7 +53,7 @@ root@urukdroid:/root# dd if=/dev/zero of=/sdcard/sdcard/nfs4.cache bs=1M count=1
 100+0 records in
 100+0 records out
 104857600 bytes (105 MB) copied, 17.7757 s, 5.9 MB/s
-root@urukdroid:/root# mkfs.ext4 /sdcard/sdcard/nfs4.cache 
+root@urukdroid:/root# mkfs.ext4 -O ^huge_file /sdcard/sdcard/nfs4.cache 
 mke2fs 1.41.12 (17-May-2010)
 /sdcard/sdcard/nfs4.cache is not a block special device.
 Proceed anyway? (y,n) y
