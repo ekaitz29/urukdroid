@@ -4,6 +4,10 @@
 
 <wiki:toc max_depth="2" />
 
+== My UrukDroid fails to hibernate (deep sleep) ==
+
+In most cases this is because there is some background connection or task that won't brake for deep sleep - check for running applications smb/nfs shares etc.
+
 == How to prevent Uruk from booting SDcard ==
 
 UrukDroid loader always tries to boot from SDCard on the first place, then from Internal storage. Loader checks how many partitions is on SDCard (if present) - if there are 3 or more, it assumes it's Uruk installation and will try to boot from it.
