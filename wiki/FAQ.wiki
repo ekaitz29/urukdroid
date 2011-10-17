@@ -4,6 +4,12 @@
 
 <wiki:toc max_depth="2" />
 
+== Battery does not charge to 100% ==
+You can recalibrate battery charge level by:
+* charge Archos battery to full level (when you see it won't charge more for 15-20 minutes - it's probably at 100%, even when it shows something different). I use [http://www.appbrain.com/app/battery-widget/personal.jhjeong.app.batterylite Battery Widget] to control charge level and see how it discharge/charge.
+* erase /data/system/batterystats.bin file (from terminal, or with [http://www.appbrain.com/app/file-expert/xcxin.filexpert File Expert] in root mode)
+* unplug charging cable - you should now see it's 100% charged.
+
 == My UrukDroid fails to hibernate (deep sleep) ==
 
 In most cases this is because there is some background connection or task that won't brake for deep sleep - check for running applications smb/nfs shares etc.
