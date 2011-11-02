@@ -10,6 +10,7 @@ UrukDroid changelog.
  * `[`CHANGE`]` Incorporated changes from Archos firmware 2.4.19 and 2.4.65
  * `[`CHANGE`]` Updated superuser apk and binaries
  * `[`FIX`]` Fixed some library linking
+ * `[`NEW`]` Changed top bar button size to 32px permanently
 
 
 *UrukDroid 1.5.1* (20.08.2011) (this is just fix release)
