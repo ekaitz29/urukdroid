@@ -6,6 +6,11 @@ UrukDroid changelog.
 
 
 = Changelog: =
+*UrukDroid 1.6* _Not yet released_
+ * `[`CHANGE`]` Incorporated changes from Archos firmware 2.4.19 and 2.4.65
+ * `[`CHANGE`]` Updated superuser apk and binaries
+ * `[`FIX`]` Fixed some library linking
+
 
 *UrukDroid 1.5.1* (20.08.2011) (this is just fix release)
  * `[`CHANGE`]` Swap now can use both file and partition at the same time, added simple stats, added default Archos swap partition
