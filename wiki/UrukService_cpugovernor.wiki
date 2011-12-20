@@ -61,12 +61,18 @@ echo 66 > /proc/overclock/max_vsel
 echo 1100000 > /proc/overclock/max_rate
 }}}
 
-First value is voltage, second on is CPU frequency in Mhz. If you find some stable values, you can set them up in configuration file:
+First value is voltage, second on is CPU frequency in hz. If you find some stable values, you can set them up in configuration file:
 {{{
 # Overclock settings
 max_vsel=68
 max_rate=1100000
 }}}
+
+Higher vsel = higher voltage.
+
+To calculate voltage: *max_vsel*12,5 + 600 = real mV*
+
+Default value for 1Ghz is 60 (1,35V).
 
 = Configuration file =
 
