@@ -82,3 +82,6 @@ Default value for 1Ghz is 60 (1,35V).
  * cpu_governor - name of CPU governor (can be any one from Linux available). _Default: interactive_
  * cpu_governor_default - name of CPU governor used when this service is disabled/stopped. _Default: ondemand_
  * cpu_freq_max/cpu_freq_min - if you want to narrow down range of frequencies that CPU governor will use - set this option. You can choose only values from "Available frequencies" (see ./cpugovernor stats). _Default: ""_ (not set)
+ * enable_overclock - enable overclock kernel module. _Default: 0_
+ * max_vsel - CPU maximum voltage, works only if overclock enabled. _Default: 68_
+ * max_rate - CPU maximum frequency rate (Hz), works only if overclock enabled. _Default: 1100000_
