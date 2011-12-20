@@ -28,6 +28,10 @@ CPU statistics (tick spend in every frequency range):
 You can see here current CPU governor, min/max CPU frequencies (used by governor - this are not hardware min/max), available CPU frequencies and table with CPU frequency and number of ticks CPU spend with this clock value.
 In this case CPU mostly works on 300Mhz (56.49%), 600Mhz (28.65%), 800Mhz (0.93%) and 1Ghz (13.95%).
 
+= Overclocking =
+
+Since UrukDroid 1.6 (RC3 exactly) there is build in overclocking kernel module ([http://code.google.com/p/milestone-overclock/ Milestone overclock]).
+
 = Configuration file =
 
 *Location:* /etc/uruk.conf/cpugovernor
