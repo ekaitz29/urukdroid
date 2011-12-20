@@ -12,6 +12,8 @@ UrukDroid changelog.
  * `[`FIX`]` Fixed some library linking
  * `[`NEW`]` Changed top bar button size to 32px permanently
  * `[`NEW`]` New overclock module from [http://code.google.com/p/milestone-overclock/ milestone-overclock] to change CPU voltage and max frequencies on the fly
+ * `[`CHANGE`]` Added overclock support to CPUGovernor service
+ * `[`FIX`]` Restored proper busybox binary
 
 *UrukDroid 1.5.1* (20.08.2011) (this is just fix release)
  * `[`CHANGE`]` Swap now can use both file and partition at the same time, added simple stats, added default Archos swap partition
