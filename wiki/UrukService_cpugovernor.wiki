@@ -30,7 +30,36 @@ In this case CPU mostly works on 300Mhz (56.49%), 600Mhz (28.65%), 800Mhz (0.93%
 
 = Overclocking =
 
-Since UrukDroid 1.6 (RC3 exactly) there is build in overclocking kernel module ([http://code.google.com/p/milestone-overclock/ Milestone overclock]).
+Since UrukDroid 1.6 (RC3 exactly) there is build in overclocking kernel module ([http://code.google.com/p/milestone-overclock/ Milestone overclock]). Basic settings are available through CPUGovernor service.
+
+In configuration file, you can enable overclocking module and set max. CPU frequency.
+
+== How to enable overclocking? ==
+
+First, you should do rootfs backup (from Uruk RescueMenu) - in case if your device became unbootable, you can restore old config.
+
+Then enable in CPUGovernor config file overclocking:
+{{{
+# Overclock
+# 0 = disabled, 1 = enabled
+enable_overclock=1
+}}}
+This will NOT overclock your CPU, it will just enable overclocking (it will load overclock.ko kernel module) - this step is quite safe, so you can enable it in configuration file.
+
+Reboot your device and check if overclocking is running
+{{{
+[root@urukdroid root]# /etc/uruk.d/cpugovernor stats
+Uruk-CPUGovernor statistics:
+        Current governor: interactive
+        Overclock module: Enabled
+}}}
+
+If its enabled - your good to go to next step. Now you should check manually (without putting it to configuration file) what values are good for you. You need to specify MAX CPU frequency and voltage.
+
+{{{
+echo 66 > /proc/overclock/max_vsel
+echo 1100000 > /proc/overclock/max_rate
+}}}
 
 = Configuration file =
 
