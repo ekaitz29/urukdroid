@@ -54,11 +54,18 @@ Uruk-CPUGovernor statistics:
         Overclock module: Enabled
 }}}
 
-If its enabled - your good to go to next step. Now you should check manually (without putting it to configuration file) what values are good for you. You need to specify MAX CPU frequency and voltage.
+If its enabled - your are good to go to next step. Now you should check manually (without putting it to configuration file) what values are good for you. You need to specify MAX CPU frequency and voltage.
 
 {{{
 echo 66 > /proc/overclock/max_vsel
 echo 1100000 > /proc/overclock/max_rate
+}}}
+
+First value is voltage, second on is CPU frequency in Mhz. If you find some stable values, you can set them up in configuration file:
+{{{
+# Overclock settings
+max_vsel=68
+max_rate=1100000
 }}}
 
 = Configuration file =
