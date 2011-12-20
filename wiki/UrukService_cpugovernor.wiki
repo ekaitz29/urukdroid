@@ -12,17 +12,18 @@ To set desired governor you should use this service (this can be done by many mo
 
 With cpugovernor service you can see some low level CPU statistics. It's quite useful for performance/battery draining tuning - and debugging of course.
 {{{
-root@urukdroid:/etc/uruk.d# ./cpugovernor stats
+[root@urukdroid uruk.d]# ./cpugovernor stats
 Uruk-CPUGovernor statistics:
         Current governor: interactive
+        Overclock module: Disabled
         CPU Max: 1000000
         CPU Min: 300000
         Available frequencies: 1000000 800000 600000 300000
 CPU statistics (tick spend in every frequency range):
-1000000 6823
-800000 533
-600000 21580
-300000 47807
+        1000 MHz had    29720 ticks     (13.95%)
+        800 MHz had     1984 ticks      (0.93%)
+        600 MHz had     61024 ticks     (28.65%)
+        300 MHz had     120333 ticks    (56.49%)
 }}}
 You can see here current CPU governor, min/max CPU frequencies (used by governor - this are not hardware min/max), available CPU frequencies and table with CPU frequency and number of ticks CPU spend with this clock value.
 In this case CPU mostly works on 300Mhz (62,3%), 600Mhz (28,1%), 800Mhz (0,7%) and 1Ghz (8,9%).
