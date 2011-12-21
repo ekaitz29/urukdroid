@@ -7,7 +7,7 @@ UrukDroid changelog.
 
 = Changelog: =
 *UrukDroid 1.6* _Not yet released_
- * `[`CHANGE`]` Incorporated changes from Archos firmware 2.4.19 and 2.4.65 and 2.4.80
+ * `[`CHANGE`]` Incorporated changes from Archos firmware 2.4.19, 2.4.65, 2.4.80 and 2.4.81
  * `[`CHANGE`]` Updated superuser apk and binaries
  * `[`FIX`]` Fixed some library linking
  * `[`NEW`]` Changed top bar button size to 32px permanently
