@@ -96,7 +96,12 @@ c02a6240 t cpufreq_stats_update
 overclock: found mpu_opps_addr at 0xc04ab5bc
 overclock: found cpufreq_stats_table_addr at 0xc04bfc68
 }}}
-First we search in kernel symbols for address of *omap2_clk_init_cpufreq_table* and *cpufreq_stats_update*. Then we load overclock kernel module with autodetect option and found memory address *0xc005d2f0*. As a result, in dmesg we can see (*0xc04ab5bc*) proper memory address that should be written in configuration file (/etc/modprobe.d/overclock.conf).
+First we search in kernel symbols for address of *omap2_clk_init_cpufreq_table* and *cpufreq_stats_update*. Then we load overclock kernel module with autodetect option and found memory address *0xc005d2f0* and *0xc02a6240*. As a result, in dmesg we can see (*0xc04ab5bc* and *0xc04bfc68*) proper memory address that should be written in configuration file (/etc/modprobe.d/overclock.conf).
+
+The only line in overclock.conf (only uncommented) should look like this:
+{{{
+options overclock omap2_clk_init_cpufreq_table_addr=0xc04ab5bc cpufreq_stats_update_addr=0xc04bfc68
+}}}
 
 = Configuration file =
 
