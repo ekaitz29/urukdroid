@@ -19,7 +19,7 @@ Uruk-CPUGovernor statistics:
 	Current governor: interactive
 	Overclock module: Enabled
 		Current max vsel: 68
-		Current max rate: 1100000
+		Current max rate: 1000000
 	CPU Max: 1000000
 	CPU Min: 300000
 	Available frequencies: 1000000 800000 600000 300000 
