@@ -44,7 +44,7 @@ Then enable in CPUGovernor config file overclocking:
 # 0 = disabled, 1 = enabled
 enable_overclock=1
 }}}
-This will NOT overclock your CPU, it will just enable overclocking (it will load overclock.ko kernel module) - this step is quite safe, so you can enable it in configuration file.
+This will NOT overclock your CPU, it will just enable overclocking (it will load overclock.ko kernel module) - this step is quite safe, so you can enable it in configuration file (but remember - this is safe on kernel prepared for this module, if you use other kernel - see below).
 
 Reboot your device and check if overclocking is running
 {{{
@@ -73,6 +73,16 @@ Higher vsel = higher voltage.
 To calculate voltage: *max_vsel*12,5 + 600 = real mV*
 
 Default value for 1Ghz is 60 (1,35V).
+
+== How to addjust overclock configuration for other kernels? ==
+
+Overclock module options are configured for exact kernel. If you want to use older/newer/other kernel you need to reconfigure it.
+
+Kernel module options settings are located in /etc/modprobe.d/ directory:
+{{{
+[root@urukdroid misc]# ls /etc/modprobe.d/
+aliases.conf    dvb.conf        overclock.conf
+}}}
 
 = Configuration file =
 
