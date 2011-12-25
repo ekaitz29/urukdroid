@@ -19,15 +19,15 @@ Uruk-CPUGovernor statistics:
 	Current governor: interactive
 	Overclock module: Enabled
 		Current max vsel: 68
-		Current max rate: 1000000
-	CPU Max: 1000000
+		Current max rate: 1100000
+	CPU Max: 1100000
 	CPU Min: 300000
-	Available frequencies: 1000000 800000 600000 300000 
+	Available frequencies: 1100000 800000 600000 300000 
 CPU statistics (tick spend in every frequency range): 
-	1 GHz had 	5514 ticks 	(23.30%)
-	800 MHz had 	519 ticks 	(2.19%)
-	600 MHz had 	10267 ticks 	(43.38%)
-	300 MHz had 	7372 ticks 	(31.15%)
+	1.1 GHz had 	5207 ticks 	(30.28%)
+	800 MHz had 	317 ticks 	(1.84%)
+	600 MHz had 	7090 ticks 	(41.23%)
+	300 MHz had 	4584 ticks 	(26.66%)
 }}}
 You can see here current CPU governor, min/max CPU frequencies (used by governor - this are not hardware min/max), available CPU frequencies and table with CPU frequency and number of ticks CPU spend with this clock value.
 In this case CPU mostly works on 300Mhz (56.49%), 600Mhz (28.65%), 800Mhz (0.93%) and 1Ghz (13.95%).
