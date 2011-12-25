@@ -1,5 +1,7 @@
 #summary UrukDroid CPU governor service.
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 Since our Android/Linux is [http://en.wikipedia.org/wiki/Computer_multitasking multitasking] capable, CPU needs to share it's cycles to more then one running task. This is a job for "CPU governor".
