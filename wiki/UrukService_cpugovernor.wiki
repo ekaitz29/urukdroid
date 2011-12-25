@@ -89,7 +89,7 @@ When you enable overclocking you device may became unstable (this means you shou
  * data corruption - when you download a movie and you see errors, or when you download application from market and it cannot install (says that file is corrupted) - like in force close errors, you have some memory/cpu problems.
 
 
-== How to addjust overclock configuration for other kernels? ==
+== How to adjust overclock configuration for other kernels? ==
 
 Overclock module options are configured for exact kernel. If you want to use older/newer/other kernel you need to reconfigure it.
 
@@ -115,7 +115,7 @@ First we search in kernel symbols for address of *omap2_clk_init_cpufreq_table* 
 
 The only line in overclock.conf (only uncommented) should look like this:
 {{{
-options overclock omap2_clk_init_cpufreq_table_addr=0xc04ab5bc cpufreq_stats_update_addr=0xc04bfc68
+options overclock omap2_clk_init_cpufreq_table_addr=0xc04ab5bc cpufreq_stats_table_addr=0xc04bfc68
 }}}
 
 = Configuration file =
