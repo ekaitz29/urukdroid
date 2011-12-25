@@ -88,13 +88,15 @@ First to need to find proper values for autoconfiguration (memory addresses)
 {{{
 [root@urukdroid uruk.d]# grep omap2_clk_init_cpufreq_table /proc/kallsyms
 c005d2f0 T omap2_clk_init_cpufreq_table
+[root@urukdroid root]# grep cpufreq_stats_update /proc/kallsyms
+c02a6240 t cpufreq_stats_update
 [root@urukdroid uruk.d]# cd /lib/modules/2.6.29-omap1/misc/
-[root@urukdroid misc]# insmod overclock.ko omap2_clk_init_cpufreq_table_addr=0xc005d2f0
+[root@urukdroid misc]# insmod overclock.ko omap2_clk_init_cpufreq_table_addr=0xc005d2f0 cpufreq_stats_update_addr=0xc02a6240
 [root@urukdroid misc]# dmesg | tail -2
-overclock: by Tiago Sousa <mirage@kaotik.org>
 overclock: found mpu_opps_addr at 0xc04ab5bc
+overclock: found cpufreq_stats_table_addr at 0xc04bfc68
 }}}
-First we search in kernel symbols for address of *omap2_clk_init_cpufreq_table*. Then we load overclock kernel module with autodetect option and founded memory address *0xc005d2f0*. As a result, in dmesg we can see proper memory address that should be written in configuration file (/etc/modprobe.d/overclock.conf).
+First we search in kernel symbols for address of *omap2_clk_init_cpufreq_table* and *cpufreq_stats_update*. Then we load overclock kernel module with autodetect option and found memory address *0xc005d2f0*. As a result, in dmesg we can see (*0xc04ab5bc*) proper memory address that should be written in configuration file (/etc/modprobe.d/overclock.conf).
 
 = Configuration file =
 
