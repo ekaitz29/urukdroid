@@ -32,6 +32,8 @@ In this case CPU mostly works on 300Mhz (56.49%), 600Mhz (28.65%), 800Mhz (0.93%
 
 = Overclocking =
 
+*Warning!* Although overclocking usually cannot harm your hardware it's really easy to make device unstable, and corrupt your data on disk drive.
+ 
 Since UrukDroid 1.6 (RC3 exactly) there is build in overclocking kernel module ([http://code.google.com/p/milestone-overclock/ Milestone overclock]). Basic settings are available through CPUGovernor service.
 
 In configuration file, you can enable overclocking module and set max. CPU frequency.
@@ -76,13 +78,13 @@ To calculate voltage: *max_vsel*12,5 + 600 = real mV*
 
 Default value for 1Ghz is 60 (1,35V).
 
-== How do I know if overclock is working properly? ==
+== How do I know if overclocking is working properly? ==
 
 When you enable overclocking you device may became unstable (this means you should give bigger voltage or lover frequency). Device can be unstable on many ways:
-* freezes - when you device stops to respond after loading overclock, your values are wrong (for your device). Usually it also says your values are far from proper ones.
-* reboots - your device works for some time after applying overclock, but reboots without any reason after a while. You are closer then before - but far from ok.
-* force close apps. - your application are force closing from time to time - there are some memory/cpu errors, so you orverclocking settings are still not good enough - but you are close.
-* data corruption - when you download a movie and you see errors, or when you download application from market and it cannot install (says that file is corrupted) - like in force close errors, you have some memory/cpu problems.
+ * freezes - when you device stops to respond after loading overclock, your values are wrong (for your device). Usually it also says your values are far from proper ones.
+ * reboots - your device works for some time after applying overclock, but reboots without any reason after a while. You are closer then before - but far from ok.
+ * force close apps. - your application are force closing from time to time - there are some memory/cpu errors, so you orverclocking settings are still not good enough - but you are close.
+ * data corruption - when you download a movie and you see errors, or when you download application from market and it cannot install (says that file is corrupted) - like in force close errors, you have some memory/cpu problems.
 
 
 == How to addjust overclock configuration for other kernels? ==
