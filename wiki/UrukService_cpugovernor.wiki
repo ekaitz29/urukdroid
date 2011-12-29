@@ -118,6 +118,17 @@ The only line in overclock.conf (only uncommented) should look like this:
 options overclock omap2_clk_init_cpufreq_table_addr=0xc005d2f0 cpufreq_stats_update_addr=0xc02a6240
 }}}
 
+Since UD 1.6RC6 there is an auto-generate option in cpugovernor:
+{{{
+[root@urukdroid root]# /etc/uruk.d/cpugovernor genconf
+options overclock omap2_clk_init_cpufreq_table_addr=0xc005d2ec cpufreq_stats_update_addr=0xc02a76e0
+}}}
+Theoretically it should be enough to redirect it's output to modprobe config file like this:
+{{{
+[root@urukdroid root]# /etc/uruk.d/cpugovernor genconf >/etc/modprobe.d/overclock.conf
+}}}
+But it's not recommended to do it blindly - you should check if output parameters are reasonable.
+
 = Configuration file =
 
 *Location:* /etc/uruk.conf/cpugovernor
