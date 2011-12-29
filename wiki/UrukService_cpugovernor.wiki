@@ -42,7 +42,9 @@ In configuration file, you can enable overclocking module and set max. CPU frequ
 
 == How to enable overclocking? ==
 
-First, you should do rootfs backup (from Uruk RescueMenu) - in case if your device became unbootable, you can restore old config.
+First, you should do rootfs backup (from Uruk RescueMenu) - in case if your device became unbootable or corrupted (see below), you can restore old config.
+
+You may want to take a look at [http://forum.xda-developers.com/showthread.php?t=1373354 overclocking topic on XDA] (to see values, ask questions).
 
 Then enable in CPUGovernor config file overclocking:
 {{{
@@ -51,6 +53,8 @@ Then enable in CPUGovernor config file overclocking:
 enable_overclock=1
 }}}
 This will NOT overclock your CPU, it will just enable overclocking (it will load overclock.ko kernel module) - this step is quite safe, so you can enable it in configuration file (but remember - this is safe on kernel prepared for this module, if you use other kernel - see below).
+
+If this steps fails, you can disable overclocking from RescuMenu.
 
 Reboot your device and check if overclocking is running
 {{{
