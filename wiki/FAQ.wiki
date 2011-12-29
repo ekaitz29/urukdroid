@@ -4,6 +4,14 @@
 
 <wiki:toc max_depth="2" />
 
+== My HDMI connection does not work ==
+Please make sure you did not uninstall/removed system application LiveWallpapers. This is somehow required for Archos interface to switch to other display.
+{{{
+[root@urukdroid root]# ls -l /system/app/Live*
+-rw-r--r--    1 root     root       3270738 Dec 29 18:57 /system/app/LiveWallpapers.apk
+-rw-r--r--    1 root     root         48469 Dec 29 18:57 /system/app/LiveWallpapersPicker.apk
+}}}
+
 == Battery does not charge to 100% ==
 You can recalibrate battery charge level by:
  * charge Archos battery to full level (when you see it won't charge any more for 15-20 minutes - it's probably at 100%, even if it shows something different). I use [http://www.appbrain.com/app/battery-widget/personal.jhjeong.app.batterylite Battery Widget] to control charge level and see how it discharge/charge.
