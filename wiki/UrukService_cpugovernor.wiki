@@ -54,7 +54,7 @@ enable_overclock=1
 }}}
 This will NOT overclock your CPU, it will just enable overclocking (it will load overclock.ko kernel module) - this step is quite safe, so you can enable it in configuration file (but remember - this is safe on kernel prepared for this module, if you use other kernel - see below).
 
-If this steps fails, you can disable overclocking from RescuMenu.
+If this steps fails, you can disable overclocking from RescueMenu.
 
 Reboot your device and check if overclocking is running
 {{{
