@@ -1,0 +1,9 @@
+#summary Repair Menu of Rescue Menu.
+
+= Introduction =
+
+Backup menu is a easy way to backup your entire, vital partitions of UrukDroid. This is rootfs partition (hold operating system) and datafs (storing installed application and it's settings).
+
+Backup files are stored on SDcard - thus it has to be present and should have enough free space to create backup.
+
+= Why use backups? =
