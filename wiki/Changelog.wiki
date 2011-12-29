@@ -12,8 +12,17 @@ UrukDroid changelog.
  * `[`FIX`]` Fixed some library linking
  * `[`NEW`]` Changed top bar button size to 32px permanently
  * `[`NEW`]` New overclock module from [http://code.google.com/p/milestone-overclock/ milestone-overclock] to change CPU voltage and max frequencies on the fly
- * `[`CHANGE`]` Added overclock support to CPUGovernor service
+ * `[`CHANGE`]` Added [UrukService_cpugovernor overclock support to CPUGovernor] service
  * `[`FIX`]` Restored proper busybox binary
+ * `[`NEW`]` New patches on kernel from December update from Archos git
+ * `[`NEW`]` Full iptables support (with NAT, conntrack etc) - so everything is now possible (redirect, proxies etc)
+ * `[`NEW`]` Full kernel timing for power consumption monitoring
+ * `[`NEW`]` Recompiled WiFi and HDMI drivers
+ * `[`NEW`]` Added python 2.7, [http://guichaz.free.fr/iotop/ iotop] (for watching i/o operations), [http://www.linuxpowertop.org/ PowerTOP] (for power consumption monitoring - but it's not as useful as on x86)
+ * `[`NEW`]` Added ntfs-3g support - full read/write support for NTFS file systems (need to be used manually, vold does not use it)
+ * `[`CHANGE`]` Added UrukDroid Rescue Menu - Repair submenu with disabling overclocking (for those who made their device unbootable with overclocking) and Dalvik cache cleaner
+ * `[`NEW`]` New feature in cpugovernor script (genconf, current)
+ * `[`CHANGE`]` Update script now tries to keep /data/.tmp directory cleaner, and for those with disk shortage /data/.tmp can be now symlink to directory on sdcard
 
 *UrukDroid 1.5.1* (20.08.2011) (this is just fix release)
  * `[`CHANGE`]` Swap now can use both file and partition at the same time, added simple stats, added default Archos swap partition
