@@ -20,7 +20,7 @@ UrukDroid changelog.
  * `[`NEW`]` Recompiled WiFi and HDMI drivers
  * `[`NEW`]` Added python 2.7, [http://guichaz.free.fr/iotop/ iotop] (for watching i/o operations), [http://www.linuxpowertop.org/ PowerTOP] (for power consumption monitoring - but it's not as useful as on x86)
  * `[`NEW`]` Added ntfs-3g support - full read/write support for NTFS file systems (need to be used manually, vold does not use it)
- * `[`CHANGE`]` Added UrukDroid Rescue Menu - Repair submenu with disabling overclocking (for those who made their device unbootable with overclocking) and Dalvik cache cleaner
+ * `[`CHANGE`]` Added UrukDroid Rescue Menu - [RM_Repair Repair submenu] with disabling overclocking (for those who made their device unbootable with overclocking) and Dalvik cache cleaner
  * `[`NEW`]` New feature in cpugovernor script (genconf, current)
  * `[`CHANGE`]` Update script now tries to keep /data/.tmp directory cleaner, and for those with disk shortage /data/.tmp can be now symlink to directory on sdcard
 
