@@ -30,6 +30,7 @@ Welcome to UrukDroid documentation
   * [RM_AlternativeOS Alternative OS menu]
    * [RM_AlternativeOS_Debian Booting Debian]
   * [RM_Backup Backup menu]
+  * [RM_Repair Repair menu]
  * [UrukDroid_utilities UrukDroid utilities]
  * [FAQ Frequently Asked Questions]
  * [Credits]
