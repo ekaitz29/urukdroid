@@ -22,7 +22,15 @@ UrukDroid changelog.
  * `[`NEW`]` Added ntfs-3g support - full read/write support for NTFS file systems (need to be used manually, vold does not use it)
  * `[`CHANGE`]` Added UrukDroid Rescue Menu - [RM_Repair Repair submenu] with disabling overclocking (for those who made their device unbootable with overclocking) and Dalvik cache cleaner
  * `[`NEW`]` New feature in cpugovernor script (genconf, current)
- * `[`CHANGE`]` Update script now tries to keep /data/.tmp directory cleaner, and for those with disk shortage /data/.tmp can be now symlink to directory on sdcard
+ * `[`CHANGE`]` Update subsystem
+ ** scripts now tries to keep /data/.tmp directory cleaner,
+ ** for those with disk shortage /data/.tmp can be now symlink to directory on sdcard
+ ** updater now checks if you have enough free space in /data/.tmp before it begin installation
+ ** update process now can be during bootup (better one) if you have enough free space on rootfs, or on running system (not so nice - this is default behavior until UD 1.6 release)
+ * `[`FIX`]` recompiled hdml kernel driver from sources, fixes some issues
+ * `[`CHANGE`]` restoring backup in Rescue Menu now erases partition before restore (until now it was just overwriting)
+ * `[`FIX`]` added (again ;)) xbox pad kernel support (was missed out in new kernel compilation)
+ * `[`FIX`]` fixes scp/sftp-server (on some configuration refused to start child processes)
 
 *UrukDroid 1.5.1* (20.08.2011) (this is just fix release)
  * `[`CHANGE`]` Swap now can use both file and partition at the same time, added simple stats, added default Archos swap partition
