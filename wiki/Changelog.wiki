@@ -6,7 +6,8 @@ UrukDroid changelog.
 
 
 = Changelog: =
-*UrukDroid 1.6* _Not yet released_
+
+*UrukDroid 1.6* (02.01.2012) DOV FUS LOS Wahl ko Daar Sivaas!
  * `[`CHANGE`]` Incorporated changes from Archos firmware 2.4.19, 2.4.65, 2.4.80 and 2.4.81
  * `[`CHANGE`]` Updated superuser apk and binaries
  * `[`FIX`]` Fixed some library linking
