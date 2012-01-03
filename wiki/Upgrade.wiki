@@ -27,8 +27,8 @@ UD version <1.6
 
 UD version 1.6+
  It will require free space on datafs (to put update package) in size of update package, same amount free space on storage (/mnt/storage) and:
-* if there is enough free space on rootfs (/) to put update file, update will be done during reboot - this is more clean way of doing updates
-* if there is not enough free space on rootfs (/) update will be done on living system - you will probably notice some "force close" errors etc. and device will reboot itself automatically
+ * if there is enough free space on rootfs (/) to put update file, update will be done during reboot - this is more clean way of doing updates
+ * if there is not enough free space on rootfs (/) update will be done on living system - you will probably notice some "force close" errors etc. and device will reboot itself automatically
 
 = How to apply updates/upgrades? =
 
