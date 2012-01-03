@@ -12,20 +12,21 @@ Since UrukDroid 1.5 there is full [RM_Backup backup support], so before doing an
 To update from UrukDroid 1.5+ (so 1.5.1 also) you should download special update package (UrukDroid-1.6-update.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
 
 
-== Important for Upgrade ==
+== Free space requirements for upgrade ==
 
-Version <1.6
-Upgrade requires you to have at least as much as upgrade file free space on *rootfs* (/) and twice as much free space on *datafs* (/data). Without this it will fail!
+UD version <1.6:
+ Upgrade requires you to have at least as much as upgrade file free space on *rootfs* (/) and twice as much free space on *datafs* (/data). Without this it will fail!
 
-Versions 1.6+
-Upgrade requires free space in size of about 110% of update package on datafs (/data), storage (/mnt/storage) and rootfs (/).
+UD versions 1.6+
+ Upgrade requires free space in size of about 110% of update package on datafs (/data), storage (/mnt/storage) and rootfs (/).
 
-== Important for Updates ==
-Version <1.6
-Update will require twice free space on datafs (/data) as the size of update package.
+== Free space requirements for updates ==
 
-Version 1.6+
-It will require free space on datafs (to put update package) in size of update package, same amount free space on storage (/mnt/storage) and:
+UD version <1.6
+ Update will require twice free space on datafs (/data) as the size of update package.
+
+UD version 1.6+
+ It will require free space on datafs (to put update package) in size of update package, same amount free space on storage (/mnt/storage) and:
 * if there is enough free space on rootfs (/) to put update file, update will be done during reboot - this is more clean way of doing updates
 * if there is not enough free space on rootfs (/) update will be done on living system - you will probably notice some "force close" errors etc. and device will reboot itself automatically
 
