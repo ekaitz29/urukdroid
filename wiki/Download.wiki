@@ -8,7 +8,7 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
 == Files (`UrukDroid-1.6`): ==
 
 === [Upgrade Update] package ===
- * [https://rapidshare.com/files/324046889/UrukDroid-1.6-update.tbz2 UrukDroid-1.6-update.tbz2] (md5sum: d12a45fa3149c953c98e5a3f883bb4f6)
+ * [https://rapidshare.com/files/1238619642/UrukDroid-1.6-update.tbz2 UrukDroid-1.6-update.tbz2] (md5sum: 50c10e1e27143d5fac498dbafd22656b)
 
 = Current files: =
 == Files (`UrukDroid-1.5`): ==
