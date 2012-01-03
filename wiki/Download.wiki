@@ -5,6 +5,12 @@
 All UrukDroid releases (and other files) can be downloaded from [http://sauron.pourix.com/UrukDroid/ Uruk file server]. Below you will find direct links to chosen Uruk files.
 
 = Current files: =
+== Files (`UrukDroid-1.6`): ==
+
+=== [Upgrade Update] package ===
+ * [https://rapidshare.com/files/3522990038/UrukDroid-1.6-update.tbz2 UrukDroid-1.6-update.tbz2] (md5sum: UrukDroid-1.6-update.tbz2)
+
+= Current files: =
 == Files (`UrukDroid-1.5`): ==
 === EasyInstall package ===
 (all required files to do a fresh install of UrukDroid, or repair broken installation)
