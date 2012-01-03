@@ -2,18 +2,34 @@
 
 = Introduction =
 
-To upgrade from UrukDroid 1.0+ (so 1.1 also) you should download special upgrade file (UrukDroid-1.5-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
+To upgrade from UrukDroid 1.0+ (so 1.1 also) you should download special upgrade file (for example UrukDroid-1.5-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
 
-== Important ==
+You may also use sometimes update files - mainly for do small updates (like from 1.5 to 1.5.1).
 
+The main difference is that upgrade overwrites almost entire rootfs (so its a bit simplified install) and updates only files that really changed. In both cases be prepared that some configuration files (mainly /etc/uruk.conf) may be altered.
+
+
+== Important for Upgrade ==
+
+Version <1.6
 Upgrade requires you to have at least as much as upgrade file free space on *rootfs* (/) and twice as much free space on *datafs* (/data). Without this it will fail!
 
-*If you have UrukDroid 1.5 beta or release candidate* you have to apply [http://forum.xda-developers.com/showpost.php?p=16642940&postcount=1811 this fix] first!
+Versions 1.6+
+Upgrade requires free space in size of about 110% of update package on datafs (/data), storage (/mnt/storage) and rootfs (/).
 
-This upgrade should also work for UrukDroid 0.7 - but it's not tested.
+== Important for Updates ==
+Version <1.6
+Update will require twice free space on datafs (/data) as the size of update package.
+
+Version 1.6+
+It will require free space on datafs (to put update package) in size of update package, same amount free space on storage (/mnt/storage) and:
+* if there is enough free space on rootfs (/) to put update file, update will be done during reboot - this is more clean way of doing updates
+* if there is not enough free space on rootfs (/) update will be done on living system - you will probably notice some "force close" errors etc. and device will reboot itself automatically
+
+= How to apply updates/upgrades? =
 
 == First method: ==
-Put upgrade file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileManager, FileExpert or RooteExplorer - not build in one "File" manager) to move file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
+Put package file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileExpert or RooteExplorer) to move file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
 Code:
 {{{
 su
@@ -24,11 +40,11 @@ mv UrukDroid-1.5-upgrade.tbz2 /data/UrukUpdate/
 == Second method: ==
 Use [UrukConfig] to enable [UrukService_sshd SSHD] (if you don't have it started already), and use any SCP/SSH client (like WinSCP, or plain scp on Linux) to copy file (default username is "root", password is "UrukDroid") to "/data/UrukUpdate".
 
-= Upgrade =
+= Update process =
 
-In both above cases upgrade will start automatically. It will alter kernel, initramfs and when finished, device will reboot itself. This upgrade can take up to 10 minutes - so be patient.
+In both above cases upgrade will start automatically. You should see messages in top bar with important progress steps.
 
-If you are unsure if upgrade is still in progress - you can watch CPU usage. For example with "top" - if there is something (like bzip2, gzip, tar) intensively working - upgrade is still in progress.
+Some updates/upgrade may automatically reboot your devices.
 
 You can also monitor _"/var/lib/urukdroid/update.log"_ file - to see upgrade progress.
 {{{
@@ -45,4 +61,4 @@ UrukUpd: Processing upgrade...
 UrukUpd: Extracting upgrade...
 }}}
 
-If upgrade will fail somehow, you should look for a reason in /var/lib/urukdroid/fail.log.
+If upgrade or update will fail somehow, you should look for a reason in /var/lib/urukdroid/fail.log.
