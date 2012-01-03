@@ -12,16 +12,19 @@ Goal of this system is to allow users to do most of the operations they are allo
  * EXT4 ([http://forum.xda-developers.com/showpost.php?p=10239762&postcount=2 much faster than ext3], can store files >4GB comparing to FAT32)
  * Full read/write access to every part of the system
  * root (su + superuser.apk) out of the box
- * new services like: samba, sshd, vpnc, openvpn, dvbt, nfs4
+ * new services like: samba, sshd, vpnc, openvpn, dvbt, nfs4, wpa
+ * full iptables support (firewall), power tuning support
+ * on the fly [UrukService_cpugovernor overclocking support]
  * [http://forum.xda-developers.com/showthread.php?t=940470 3G/usb tether support]
  * Possibility to remove some google/Archos apps
  * Swap memory in RAM (CompCache) or on disk - when and where you need it
  * No 300MB limit for apps (and no faulty app2sd required)
- * You can have SD card Class 8/10 - that can be much faster than internal flash (check [http://forum.xda-developers.com/showthread.php?t=934087 this thread])
  * Many new new kernel modules (usbserial, ntfs, [http://forum.xda-developers.com/showthread.php?t=940470 3G modems], nfs4, cifs, hfs, iptables etc.)
  * DVB-T support for selected tuners
  * updated modules, firmware (like WiFi)
  * User friendly [UrukConfig] application
+ * [RescueMenu RescueMenu] on early system boot level for UrukDroid healing, full [RM_Backup backup/restore] feature and [RM_AlternativeOS AlternativeOS] subsystem
+ * You can have much more space on SD card - it that can be also faster than internal flash - but usually not (check [http://forum.xda-developers.com/showthread.php?t=934087 this thread])
  * ... and much, much more - too much to mention all here - please read [Changelog]
 
 == How Android/UrukDroid is build ==
