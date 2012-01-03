@@ -2,11 +2,13 @@
 
 = Introduction =
 
-To upgrade from UrukDroid 1.0+ (so 1.1 also) you should download special upgrade file (for example UrukDroid-1.5-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
+To move from one version of UrukDroid to another there are some updates and upgrades files prepared.
+
+The main difference between update and upgrade is that upgrade overwrites almost entire rootfs (so its a bit simplified install) and updates only files that has really changed. In both cases be prepared that some configuration files (so entire /etc/) may be altered.
+
+To upgrade from UrukDroid 1.5+ (so 1.5.1 also) you should download special upgrade file (UrukDroid-1.6-upgrade.tbz2) from [Download] section. You need to place this file in *"/data/UrukUpdate"* directory.
 
 You may also use sometimes update files - mainly for do small updates (like from 1.5 to 1.5.1).
-
-The main difference is that upgrade overwrites almost entire rootfs (so its a bit simplified install) and updates only files that really changed. In both cases be prepared that some configuration files (mainly /etc/uruk.conf) may be altered.
 
 
 == Important for Upgrade ==
