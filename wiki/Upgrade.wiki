@@ -17,15 +17,15 @@ To update from UrukDroid 1.5+ (so 1.5.1 also) you should download special update
 UD version <1.6:
  Upgrade requires you to have at least as much as upgrade file free space on *rootfs* (/) and twice as much free space on *datafs* (/data). Without this it will fail!
 
-UD versions 1.6+
+UD versions 1.6+:
  Upgrade requires free space in size of about 110% of update package on datafs (/data), storage (/mnt/storage) and rootfs (/).
 
 == Free space requirements for updates ==
 
-UD version <1.6
+UD version <1.6:
  Update will require twice free space on datafs (/data) as the size of update package.
 
-UD version 1.6+
+UD version 1.6+:
  It will require free space on datafs (to put update package) in size of update package, same amount free space on storage (/mnt/storage) and:
  * if there is enough free space on rootfs (/) to put update file, update will be done during reboot - this is more clean way of doing updates
  * if there is not enough free space on rootfs (/) update will be done on living system - you will probably notice some "force close" errors etc. and device will reboot itself automatically
@@ -33,7 +33,7 @@ UD version 1.6+
 = How to apply updates/upgrades? =
 
 == First method: ==
-Put package file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like FileExpert or RooteExplorer) to move file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
+Put package file on your internal storage by any means - this is /mnt/storage (also visible as /sdcard/). Then use file manager (like [http://www.appbrain.com/app/file-expert/xcxin.filexpert FileExpert] or RooteExplorer) to move file to proper directory or do as follow on terminal (or over [UrukService_sshd ssh]).
 Code:
 {{{
 su
