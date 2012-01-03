@@ -9,7 +9,7 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
 
 === EasyInstall package ===
 (all required files to do a fresh install of UrukDroid, or repair broken installation)
- * [a UrukDroid_1.6-Install.rar] (md5sum: 089051ce581916c3b89fc5f97fda22c8)
+ * [https://rapidshare.com/files/3644484605/UrukDroid_1.6-Install.rar UrukDroid_1.6-Install.rar] (md5sum: 089051ce581916c3b89fc5f97fda22c8)
 === [Upgrade Update] package ===
 (files required to upgrade UrukDroid 1.5+ (1.5 or any newer including beta and RC of 1.6) to UrukDroid 1.6
  * [https://rapidshare.com/files/1238619642/UrukDroid-1.6-update.tbz2 UrukDroid-1.6-update.tbz2] (md5sum: 50c10e1e27143d5fac498dbafd22656b)
