@@ -14,7 +14,8 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
 (files required to upgrade UrukDroid 1.5+ (1.5 or any newer including beta and RC of 1.6) to UrukDroid 1.6
  * [https://rapidshare.com/files/1238619642/UrukDroid-1.6-update.tbz2 UrukDroid-1.6-update.tbz2] (md5sum: 50c10e1e27143d5fac498dbafd22656b)
 
-= Current files: =
+= Old files: =
+
 == Files (`UrukDroid-1.5`): ==
 === EasyInstall package ===
 (all required files to do a fresh install of UrukDroid, or repair broken installation)
@@ -33,7 +34,6 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-30pxButtons.tbz2 UrukDroid-1.5-30pxButtons.tbz2] This package is changing size of top bar buttons to 30px height (original size is 48x80).
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.5/UrukDroid-1.5-32pxButtons.tbz2 UrukDroid-1.5-32pxButtons.tbz2] This package is changing size of top bar buttons to 32px height and 70px width (original size is 48x80).
 
-= Old files: =
 == Files (`UrukDroid-1.0`): ==
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.0/UrukDroid_1.0-Install.rar UrukDroid_1.0-Install.rar] ([http://www.megaupload.com/?d=3F9JFUGM mirror1] [http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.0/UrukDroid_1.0-Install.rar mirror2]) (md5sum: 6f4fae907d0ec00f62534ea938913936)
 [Upgrade Upgrade] package (from 0.6+ to 1.0)
