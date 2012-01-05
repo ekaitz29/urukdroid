@@ -20,7 +20,7 @@ You can recalibrate battery charge level by:
 
 == My UrukDroid fails to hibernate (deep sleep) ==
 
-In most cases this is because there is some background connection or task that won't brake for deep sleep - check for running applications smb/nfs shares etc.
+In most cases this is because there is some background connection or task that won't brake for deep sleep - check for running applications smb/nfs shares etc. Do tests with disabled WiFi.
 
 == How to prevent Uruk from booting SDcard ==
 
