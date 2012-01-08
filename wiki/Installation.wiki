@@ -18,7 +18,8 @@ This is installation procedure for UrukDroid 1.0+ with [EasyInstall] method. You
 
 
 == Known problems: ==
- * Sometimes WiFi can't be turned on - restart fix problem
+ * Sometimes WiFi can't be turned on - restart fix the problem
+ * If you can't connect to WiFi, please try build in WiFi Manager utility/widget
 
 
 == Before you start: ==
