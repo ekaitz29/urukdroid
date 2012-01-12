@@ -1,9 +1,6 @@
 #summary UrukDroid changelog.
 
-= Introduction =
-
-UrukDroid changelog.
-
+<wiki:toc max_depth="2" />
 
 = Changelog: =
 
