@@ -1,7 +1,5 @@
 #summary UrukDroid changelog.
 
-<wiki:toc max_depth="2" />
-
 = Changelog: =
 
 *UrukDroid 1.6* (02.01.2012) "DOV FUS LOS Wahl ko Daar Sivaas!"
@@ -187,10 +185,3 @@
  * recompiled kernel with ext4, nfs4, fb console
  * added su and superuser.apk
  * bootup changes (to make it work)
-
-== Features planed in next releases: ==
- * backup scripts
- * proxy settings
- * adhoc working
- * CynanogenMOD parts backported
- * OC/UC kernel be default
