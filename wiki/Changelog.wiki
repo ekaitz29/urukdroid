@@ -2,6 +2,16 @@
 
 = Changelog: =
 
+*UrukDroid 1.6.1* (13.01.2012) (this is just fix release)
+ * `[`FIX`]` Fixed samba issue (running samba service could cause reboot loop)
+ * `[`FIX`]` Fixed iptables REDIRECT filter (for transparent proxy)
+ * `[`CHANGE`]` Added some missing modules joydev, ec168
+ * `[`CHANGE`]` Restored default settings for mediascanner (on) and wpa (off)
+ * `[`NEW`]` Added /etc/rc.local file for user "on boot" settings
+ * `[`CHANGE`]` Failed updates will now be deleted (to prevent update on every reboot)
+ * `[`CHANGE`]` Updated xtables (iptables) libraries/binaries
+ * `[`NEW`]` Added AlternativeOS Ubuntu script
+
 *UrukDroid 1.6* (02.01.2012) "DOV FUS LOS Wahl ko Daar Sivaas!"
  * `[`CHANGE`]` Incorporated changes from Archos firmware 2.4.19, 2.4.65, 2.4.80 and 2.4.81
  * `[`CHANGE`]` Updated superuser apk and binaries
