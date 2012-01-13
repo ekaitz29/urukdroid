@@ -14,6 +14,10 @@ All UrukDroid releases (and other files) can be downloaded from [http://sauron.p
 (files required to upgrade UrukDroid 1.5+ (1.5 or any newer including beta and RC of 1.6) to UrukDroid 1.6
  * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.6/UrukDroid-1.6-update.tbz2 UrukDroid-1.6-update.tbz2] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.6/UrukDroid-1.6-update.tbz2 mirror1] [https://rapidshare.com/files/3705726836/UrukDroid-1.6-update.tbz2 mirror2]) (md5sum: c86495814e6987ea4946614a35bc4e1a)
 
+=== [UrukPackages Update] package ===
+(this is the fix release - apply it to 1.6 installation)
+ * [http://sauron.pourix.com/UrukDroid/UrukDroid-1.6/UrukDroid-1.6.1-update.tbz2 UrukDroid-1.6.1-update.tbz2] ([http://dl.dropbox.com/u/1017593/ArchosGEN8/UrukDroid-1.6/UrukDroid-1.6.1-update.tbz2 mirror1])
+
 = Old files: =
 
 == Files (`UrukDroid-1.5`): ==
