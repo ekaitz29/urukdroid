@@ -2,6 +2,9 @@
 
 = Changelog: =
 
+*UrukDroid 1.6.2* (31.01.2012) (this is crypt update)
+ * `[`NEW`]` Added cyptsetup util, library and modules - to enable disk encryption. More [http://forum.xda-developers.com/showpost.php?p=22025706&postcount=2415 here] and [http://forum.xda-developers.com/showpost.php?p=21613545&postcount=2411 here]
+
 *UrukDroid 1.6.1* (13.01.2012) (this is just fix release)
  * `[`FIX`]` Fixed samba issue (running samba service could cause reboot loop)
  * `[`FIX`]` Fixed iptables REDIRECT filter (for transparent proxy)
